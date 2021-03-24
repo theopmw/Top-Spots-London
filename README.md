@@ -1,45 +1,173 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Top Spots London
 
-Welcome USER_NAME,
+Top Spots London showcases some of the most exciting food and drink destinations across the capital. It has been designed to allow the user to interact with the site on several levels to really explore the food and drink scene in London and discover a wide range of exciting and unique places to visit.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+The site has been designed to be accessible and respoinsive on a range of devices to allow users to search for recommended destinations from wherever they are.
 
-## Gitpod Reminders
+The site has also been designed to allow the user to filter by type of venue so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Mention something about the range of culinary experiences available in London and how diverse the London food/drink scene is? Explosion of streetfood over the last 10-15 years?
 
-`python3 -m http.server`
+Something about having an easily accessible, well curated list of London food/drink destinations?
 
-A blue button should appear to click: *Make Public*,
+---
+## UX
+---
 
-Another blue button should appear to click: *Open Browser*.
+### Ideal User
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### The ideal user for this site:
 
-A blue button should appear to click: *Make Public*,
+* Lives in London, is planing a visit to London or is currently visiting London.
+* Has an interest in eating out and visiting interesting venues that provide food and/or drinks.
+* Has disposable income.
 
-Another blue button should appear to click: *Open Browser*.
+#### Visitors to this site are searching for:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Inspiration for food and drink destinations to visit in London.
 
-## Updates Since The Instructional Video
+### User Stories
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* First time user goals:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    1. As a first time user, I want to easily understand the purpose of the site.
+    2. As a first time user, I want to easily understand how to use the site.
+    3. As a first time user, I want to easily understand how to navigate the site in order to find what I need efficiently.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Returning user goals:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    1. As a returning user, I want to easily find new places I would like to visit.
+    2. As a returning user, I want to be able to filter places by area and or category in order to easily find what I am looking for.
+    3. As a returning user, I would like to be able to make contact with any questions or comments I have.
+    4. As a returning user, I would like to be able to find out more about the site and its goals.
+    5. As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
+    6. As a returning user, I would like the abilty to easily find links to a venues social media channels.
+    7. As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Frequent user goals:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    1. As a frequent user, I would like the ability to recommend venues that I have discovered that I would like to see added to the site.
+    2. As a frequent user, I would like the ability to pin places I would like to visit.
+    3. As a frequent user, I would like the ability to rate or mark the places I have been.
+    4. As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map.
+    
+### Wireframes
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Design
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Colour Scheme
 
---------
+#### Typography
 
-Happy coding!
+#### Imagery
+
+---
+## Features
+---
+
+Each page features a responsive **navigation bar** with conventional placing of logo (top left) and navigation menu items (top right).
+
+Each page features a **footer** with (social media links and?) copyright information.
+
+Each page features a **hero image** featuring the London skyline.
+
+#### Home
+
+The landing page features an **interactive map** (Google Maps API) featuring a range of **custom markers** denoting the type of venue, the map also utilises the Google Places API to allow users to search for places on the map that are not among the featured destinations. 
+
+Above the map there is also a **key/ledgend** that also acts as a filter to show and hide different catgories of venue through checking and unchecking the relevant checkboxes. 
+
+To th right of the **key/legend** are a series of 3 dropdown **combo boxes** that allow the user to filter by location, venue type and venue. 
+
+Below the **combo boxes** is an **info box** which displays information on the selected venue. The information displayed for each venue is as follows:
+
+* The name of the venue
+* The address of the venue
+* A brief summary of the venue and what it offers
+* Images of the venue
+* Link to the venues website
+* Link to the venues social media
+* Link to the venues trip advisor page
+
+#### About
+
+The About page features a brief paragraph about the site and its goals
+
+#### Contact
+
+The contact page features a contact form allowing the user to send direct messages to ask questions, ask for further information or suggest/recommend places to add to the ste.
+
+### Existing Features
+
+### Features to Implement in Future
+
+
+---
+## Technologies Used
+---
+
+### Languages Used
+
+* HTML
+* CSS
+* JavaScript
+
+### Frameworks, Libraries and Programs Used
+
+---
+## Testing
+---
+
+---
+## Deployment
+---
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/theopmw/Top-Spots-London)
+2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. Another dropdown will appear to the right, select "/(root)" in this dropdown.
+6. Then click Save.
+7. The page will then refresh.
+8. Scroll back down through the page to locate the now published [site link](ADD GITHUB PAGE LINK) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/theopmw/Top-Spots-London)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/theopmw/Top-Spots-London).
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type "git clone", and then paste the URL you copied in Step 3:
+
+```
+$ git clone https://github.com/theopmw/Top-Spots-London
+```
+
+7. Press Enter and your local clone will be created.
+
+---
+## Credits
+---
+
+### Code
+
+### Content
+
+### Media
+
+### Acknowledgements
+
+### Disclaimer

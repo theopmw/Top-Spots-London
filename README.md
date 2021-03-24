@@ -10,9 +10,7 @@ Mention something about the range of culinary experiences available in London an
 
 Something about having an easily accessible, well curated list of London food/drink destinations?
 
----
 ## UX
----
 
 ### Ideal User
 
@@ -57,15 +55,13 @@ Something about having an easily accessible, well curated list of London food/dr
 
 #### Colour Scheme
 
-The colour used for icons is #005b8f 
+The colour used for map marker icons is dusky blue (#005B8F) for the background and white (#FFFFFF) for the image.
 
 #### Typography
 
 #### Imagery
 
----
 ## Features
----
 
 Each page features a responsive **navigation bar** with conventional placing of logo (top left) and navigation menu items (top right).
 
@@ -75,7 +71,7 @@ Each page features a **hero image** featuring the London skyline.
 
 #### Home
 
-The landing page features an **interactive map** (Google Maps API) featuring a range of **custom markers** denoting the type of venue, the map also utilises the Google Places API to allow users to search for places on the map that are not among the featured destinations. 
+The landing page features an **interactive map** (Google Maps API) displaying a range of **custom markers** denoting the type of venue, the map also utilises the Google Places API to allow users to search for places on the map that are not among the featured destinations. 
 
 Above the map there is also a **key/ledgend** that also acts as a filter to show and hide different catgories of venue through checking and unchecking the relevant checkboxes. 
 
@@ -103,10 +99,7 @@ The contact page features a contact form allowing the user to send direct messag
 
 ### Features to Implement in Future
 
-
----
 ## Technologies Used
----
 
 ### Languages Used
 
@@ -116,29 +109,22 @@ The contact page features a contact form allowing the user to send direct messag
 
 ### Frameworks, Libraries and Programs Used
 
-### Frameworks, Libraries & Programs Used
-
 * [Gitpod](https://gitpod.io/) - **Gitpod** was used for the IDE while building the website.
+* [Git](https://git-scm.com/) - **Git** was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub](https://github.com/) - **GitHub** is used to store the projects code after being pushed from Git.
 * [Bootstrap 4.5.3](https://www.bootstrapcdn.com/) - **Bootstrap** was used to assist with the responsiveness and styling of the website.
 * [Font Awesome](https://fontawesome.com/) - **Font Awesome** was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-* [Fonts Geek](https://fontsgeek.com/) - **Fonts Geek** were used to download and import the 'Johnston P22 Underground' font into the style.css file using the @font-face CSS at-rule to style the fonts used on all pages of the project.
 * [Google Fonts](https://fonts.google.com/) - **Google fonts** were used to import the 'Roboto' font into the style.css file to style the fonts used on all pages of the project.
 * [TinyPNG](https://tinypng.com/) - **TinyPNG** was used to reduce the file size of .png/.jpg files used.
 * [JQuery](https://jquery.com/) - **jQuery** came with Bootstrap to make the navbar responsive but was also used for Bootstrap's Javascript modal component.
-* [Git](https://git-scm.com/) - **Git** was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-* [GitHub](https://github.com/) - **GitHub** is used to store the projects code after being pushed from Git.
 * [Balsamiq](https://balsamiq.com/) - **Balsamiq** was used to create the wireframes during the design process.
 * [Web Formatter](https://webformatter.com/) - **Web Formatter** was used to beautify code.
 
----
 ## Testing
----
 
 Detailed testing information can be found in separate [TESTING.md](TESTING.md) file.
 
----
 ## Deployment
----
 
 ### GitHub Pages
 
@@ -176,9 +162,7 @@ $ git clone https://github.com/theopmw/Top-Spots-London
 
 7. Press Enter and your local clone will be created.
 
----
 ## Credits
----
 
 ### Code
 
@@ -193,7 +177,6 @@ Map marker icons used were taken from [Map Icons Collection](https://mapicons.ma
 * [Street Food Market Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/terrace/)
 * [Brewery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
 * [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
-
 
 ### Acknowledgements
 

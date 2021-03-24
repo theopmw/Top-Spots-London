@@ -57,6 +57,8 @@ Something about having an easily accessible, well curated list of London food/dr
 
 #### Colour Scheme
 
+The colour used for icons is #005b8f 
+
 #### Typography
 
 #### Imagery
@@ -77,7 +79,7 @@ The landing page features an **interactive map** (Google Maps API) featuring a r
 
 Above the map there is also a **key/ledgend** that also acts as a filter to show and hide different catgories of venue through checking and unchecking the relevant checkboxes. 
 
-To th right of the **key/legend** are a series of 3 dropdown **combo boxes** that allow the user to filter by location, venue type and venue. 
+To the right of the **key/legend** are a series of 3 dropdown **combo boxes** that allow the user to filter by location, venue type and venue. 
 
 Below the **combo boxes** is an **info box** which displays information on the selected venue. The information displayed for each venue is as follows:
 
@@ -114,9 +116,25 @@ The contact page features a contact form allowing the user to send direct messag
 
 ### Frameworks, Libraries and Programs Used
 
+### Frameworks, Libraries & Programs Used
+
+* [Gitpod](https://gitpod.io/) - **Gitpod** was used for the IDE while building the website.
+* [Bootstrap 4.5.3](https://www.bootstrapcdn.com/) - **Bootstrap** was used to assist with the responsiveness and styling of the website.
+* [Font Awesome](https://fontawesome.com/) - **Font Awesome** was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+* [Fonts Geek](https://fontsgeek.com/) - **Fonts Geek** were used to download and import the 'Johnston P22 Underground' font into the style.css file using the @font-face CSS at-rule to style the fonts used on all pages of the project.
+* [Google Fonts](https://fonts.google.com/) - **Google fonts** were used to import the 'Roboto' font into the style.css file to style the fonts used on all pages of the project.
+* [TinyPNG](https://tinypng.com/) - **TinyPNG** was used to reduce the file size of .png/.jpg files used.
+* [JQuery](https://jquery.com/) - **jQuery** came with Bootstrap to make the navbar responsive but was also used for Bootstrap's Javascript modal component.
+* [Git](https://git-scm.com/) - **Git** was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub](https://github.com/) - **GitHub** is used to store the projects code after being pushed from Git.
+* [Balsamiq](https://balsamiq.com/) - **Balsamiq** was used to create the wireframes during the design process.
+* [Web Formatter](https://webformatter.com/) - **Web Formatter** was used to beautify code.
+
 ---
 ## Testing
 ---
+
+Detailed testing information can be found in separate [TESTING.md](TESTING.md) file.
 
 ---
 ## Deployment
@@ -168,6 +186,19 @@ $ git clone https://github.com/theopmw/Top-Spots-London
 
 ### Media
 
+Map marker icons used were taken from [Map Icons Collection](https://mapicons.mapsmarker.com) (full licence information [here](https://mapicons.mapsmarker.com/about/license/)):
+* [Restaurant Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/restaurant/)
+* [Pub Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/bar/)
+* [Cocktail Bar Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/cocktail-bar/)
+* [Street Food Market Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/terrace/)
+* [Brewery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
+* [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
+
+
 ### Acknowledgements
 
+* Thanks to my Code Institute Mentor, Akshat Garg, for continuous feedback and support.
+
 ### Disclaimer
+
+All content on this site was developed for educational purposes only.

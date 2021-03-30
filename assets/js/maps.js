@@ -69,7 +69,7 @@ function initMap() {
         },
     ];
 
-    // Loop over
+    // Loop over the venues array of objects
     for (let i = 0; i < venues.length; i++) {
         const marker = new google.maps.Marker({
             position: venues[i].position,

@@ -113,6 +113,18 @@ function initMap() {
         $('#legend input:checkbox').attr('checked', 'checked');
     });
 
+    // Target id=restarant-checkbox and add event listener for change event
+    // This logs a messsage to the console when the box is checked and unchecked
+    // Credit: Code used modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    let restaurantCheckbox = document.querySelector("input[id=restaurant-checkbox]");
+    restaurantCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            console.log("Checkbox is checked..");
+        } else {
+            console.log("Checkbox is not checked..");
+        }
+    });
+
     /*
     // Loop over the venues array of objects
     for (let i = 0; i < venues.length; i++) {

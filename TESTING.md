@@ -1,5 +1,7 @@
 ## Bugs
 
+### Pushing the venues into separate arrays sorted by type:
+
 Below is the inital code to loop over the venue array and generate a marker for each one:
 
 ```

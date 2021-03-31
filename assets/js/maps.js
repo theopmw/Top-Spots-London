@@ -1,4 +1,11 @@
 
+// Marker arrays by venue type
+let restaurantMarkers = [];
+let pubMarkers = [];
+let cocktailBarMarkers = [];
+let streetMarkers = [];
+let breweryMarkers = [];
+let distilleryMarkers = [];
 
 function initMap() {
     const mapProp = { // Create a variable to store the map properties
@@ -69,6 +76,38 @@ function initMap() {
         },
     ];
 
+    // markerToArray function to take any venue, make a maker and push it into the chosen array
+    function markerToArray(venue, arrayName) {
+        const marker = new google.maps.Marker({
+            position: venue.position,
+            icon: icons[venue.type].icon,
+            map: map,
+        });
+
+        arrayName.push(marker)
+
+    };
+
+    // Loop over the venues and for each venue, depending on the type, call the markerToArray function (with the venue and specific array passed as arguments)
+    for (let i = 0; i < venues.length; i++) {
+        if (venues[i].type === "restaurant") {
+            markerToArray(venues[i], restaurantMarkers);
+        } else if (venues[i].type === "pub") {
+            markerToArray(venues[i], pubMarkers);
+        } else if (venues[i].type === "cocktail") {
+            markerToArray(venues[i], cocktailBarMarkers);
+        } else if (venues[i].type === "street") {
+            markerToArray(venues[i], streetMarkers);
+        } else if (venues[i].type === "brewery") {
+            markerToArray(venues[i], breweryMarkers);
+        } else if (venues[i].type === "distillery") {
+            markerToArray(venues[i], distilleryMarkers);
+        }
+    };
+
+    console.log(streetMarkers);
+
+    /*
     // Loop over the venues array of objects
     for (let i = 0; i < venues.length; i++) {
         const marker = new google.maps.Marker({
@@ -77,6 +116,7 @@ function initMap() {
             map: map,
         });
     };
-};
+    */
+}; // initMap close tags
 
 initMap();

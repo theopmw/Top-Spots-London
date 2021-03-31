@@ -107,6 +107,12 @@ function initMap() {
 
     console.log(streetMarkers);
 
+    // Check all legend checkboxes on page load
+    // Credit: https://stackoverflow.com/questions/3126736/check-all-checkboxes-on-page-load-with-jquery
+    $(function () {
+        $('#legend input:checkbox').attr('checked', 'checked');
+    });
+
     /*
     // Loop over the venues array of objects
     for (let i = 0; i < venues.length; i++) {

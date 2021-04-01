@@ -123,6 +123,8 @@ function initMap() {
         $('#legend input:checkbox').attr('checked', 'checked');
     });
 
+    // ------------------------------------Restaurant Markers
+
     // Sets the map on all markers in the restaurantMarkers array.
     function restaurantSetMapOnAll(map) {
         for (let i = 0; i < restaurantMarkers.length; i++) {
@@ -131,7 +133,6 @@ function initMap() {
     }
 
     // Target id=restarant-checkbox and add event listener for change event
-    // This logs a messsage to the console when the box is checked and unchecked
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
@@ -139,18 +140,140 @@ function initMap() {
     restaurantCheckbox.addEventListener('change', function () {
         if (this.checked) {
             // Shows any markers currently in the array
-            function showMarkers() {
-                restaurantSetMapOnAll(map);
-            }
-            showMarkers();
-            // console.log("Checkbox is checked..");
+            restaurantSetMapOnAll(map);
+            // function showMarkers() {
+            //     restaurantSetMapOnAll(map);
+            // }
+            // showMarkers();
         } else {
             // Hides any markers currently in the array
-            function clearMarkers() {
-                restaurantSetMapOnAll(null);
-            }
-            clearMarkers();
-            // console.log("Checkbox is not checked..");
+            restaurantSetMapOnAll(null);
+            // function clearMarkers() {
+            //     restaurantSetMapOnAll(null);
+            // }
+            // clearMarkers();
+        }
+    });
+
+    // ------------------------------------Pub Markers
+
+    // Sets the map on all markers in the pubMarkers array.
+    function pubSetMapOnAll(map) {
+        for (let i = 0; i < pubMarkers.length; i++) {
+            pubMarkers[i].setMap(map);
+        }
+    }
+
+    // Target id=pub-checkbox and add event listener for change event
+    // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+    let pubCheckbox = document.querySelector("input[id=pub-checkbox]");
+    pubCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Shows any markers currently in the array
+            pubSetMapOnAll(map);
+        } else {
+            // Hides any markers currently in the array
+            pubSetMapOnAll(null)
+        }
+    });
+
+    // ------------------------------------Cocktail Bar Markers
+
+    // Sets the map on all markers in the cocktailMarkers array.
+    function cocktailSetMapOnAll(map) {
+        for (let i = 0; i < cocktailBarMarkers.length; i++) {
+            cocktailBarMarkers[i].setMap(map);
+        }
+    }
+
+    // Target id=cocktail-bar-checkbox and add event listener for change event
+    // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+    let cocktailCheckbox = document.querySelector("input[id=cocktail-bar-checkbox]");
+    cocktailCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Shows any markers currently in the array
+            cocktailSetMapOnAll(map);
+        } else {
+            // Hides any markers currently in the array
+            cocktailSetMapOnAll(null)
+        }
+    });
+
+    // ------------------------------------Street Food Market Markers
+
+    // Sets the map on all markers in the streetMarkers array.
+    function streetSetMapOnAll(map) {
+        for (let i = 0; i < streetMarkers.length; i++) {
+            streetMarkers[i].setMap(map);
+        }
+    }
+
+    // Target id=street-food-market-checkbox and add event listener for change event
+    // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+    let streetCheckbox = document.querySelector("input[id=street-food-market-checkbox]");
+    streetCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Shows any markers currently in the array
+            streetSetMapOnAll(map);
+        } else {
+            // Hides any markers currently in the array
+            streetSetMapOnAll(null)
+        }
+    });
+
+// ------------------------------------Brewery Markers
+
+    // Sets the map on all markers in the breweryMarkers array.
+    function brewerySetMapOnAll(map) {
+        for (let i = 0; i < breweryMarkers.length; i++) {
+            breweryMarkers[i].setMap(map);
+        }
+    }
+
+    // Target id=brewery-checkbox and add event listener for change event
+    // This logs a messsage to the console when the box is checked and unchecked
+    // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+    let breweryCheckbox = document.querySelector("input[id=brewery-checkbox]");
+    breweryCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Shows any markers currently in the array
+            brewerySetMapOnAll(map);
+        } else {
+            // Hides any markers currently in the array
+            brewerySetMapOnAll(null)
+        }
+    });
+
+// ------------------------------------Distillery Markers
+
+    // Sets the map on all markers in the distilleryMarkers array.
+    function distillerySetMapOnAll(map) {
+        for (let i = 0; i < distilleryMarkers.length; i++) {
+            distilleryMarkers[i].setMap(map);
+        }
+    }
+
+    // Target id=distillery-checkbox and add event listener for change event
+    // This logs a messsage to the console when the box is checked and unchecked
+    // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+    let distilleryCheckbox = document.querySelector("input[id=distillery-checkbox]");
+    distilleryCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Shows any markers currently in the array
+            distillerySetMapOnAll(map);
+        } else {
+            // Hides any markers currently in the array
+            distillerySetMapOnAll(null)
         }
     });
 

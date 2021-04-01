@@ -29,7 +29,7 @@ To do this, the markerToArray function was written which takes an item (venue) a
 Outside the function, a for-loop was written to iterate over the venues array and for each venue, depending on the type, the markerToArray function is called, with the venue and the specific array passed as arguments.
 
 ```
-// markerToArray function to take any venue, make a maker and push it into the chosen array
+// markerToArray function to take any venue, make a maker and push it into the specific array
     function markerToArray(venue, arrayName) {
         const marker = new google.maps.Marker({
             position: venue.position,
@@ -57,4 +57,44 @@ Outside the function, a for-loop was written to iterate over the venues array an
             markerToArray(venues[i], distilleryMarkers);
         }
     };
-    ```
+
+```
+
+#### Refactoring code used for the map checkbox event listener
+
+In the code to show and hide each venue type marker, code was simplified from:
+
+```
+    let pubCheckbox = document.querySelector("input[id=pub-checkbox]");
+    pubCheckbox.addEventListener('change', function () {
+    if (this.checked) {
+            // Shows any markers currently in the array
+            function showMarkers() {
+                pubSetMapOnAll(map);
+            }
+            showMarkers();
+        } else {
+            // Hides any markers currently in the array
+            function clearMarkers() {
+                pubSetMapOnAll(null);
+            }
+            clearMarkers();
+        }
+
+```
+    To:
+
+```
+    let pubCheckbox = document.querySelector("input[id=pub-checkbox]");
+    pubCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            // Shows any markers currently in the array
+            pubSetMapOnAll(map);
+        } else {
+            // Hides any markers currently in the array
+            pubSetMapOnAll(null)
+        }
+    });
+```
+
+This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesarry to gain the functionality required amd was just wasted code.

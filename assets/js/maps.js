@@ -77,7 +77,7 @@ function initMap() {
             position: new google.maps.LatLng(51.445578111741455, -0.14422145331540792),
             type: "distillery",
         },
-         { // The Laundry
+        { // The Laundry
             position: new google.maps.LatLng(51.46288429684225, -0.1110045386230423),
             type: "restaurant",
         },
@@ -227,7 +227,7 @@ function initMap() {
         }
     });
 
-// ------------------------------------Brewery Markers
+    // ------------------------------------Brewery Markers
 
     // Sets the map on all markers in the breweryMarkers array.
     function brewerySetMapOnAll(map) {
@@ -252,7 +252,7 @@ function initMap() {
         }
     });
 
-// ------------------------------------Distillery Markers
+    // ------------------------------------Distillery Markers
 
     // Sets the map on all markers in the distilleryMarkers array.
     function distillerySetMapOnAll(map) {
@@ -276,6 +276,40 @@ function initMap() {
             distillerySetMapOnAll(null)
         }
     });
+
+    // ------------------------------------Show All Button
+
+
+    document.getElementById("show-all-button").addEventListener("click", function () {
+        restaurantSetMapOnAll(map);
+        pubSetMapOnAll(map);
+        cocktailSetMapOnAll(map);
+        streetSetMapOnAll(map);
+        brewerySetMapOnAll(map);
+        distillerySetMapOnAll(map);
+    });
+
+    // function showMarkers() {
+    //     restaurantSetMapOnAll(map);
+    //     pubSetMapOnAll(map);
+    //     cocktailSetMapOnAll(map);
+    //     streetSetMapOnAll(map);
+    //     brewerySetMapOnAll(map);
+    //     distillerySetMapOnAll(map);
+
+    // };
+
+    // ------------------------------------Hide All Button
+
+    document.getElementById("hide-all-button").addEventListener("click", function () {
+        restaurantSetMapOnAll(null);
+        pubSetMapOnAll(null);
+        cocktailSetMapOnAll(null);
+        streetSetMapOnAll(null);
+        brewerySetMapOnAll(null);
+        distillerySetMapOnAll(null);
+    });
+
 
 }; // initMap END --------------------------------
 

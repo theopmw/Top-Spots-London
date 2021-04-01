@@ -1,5 +1,6 @@
+let map;
 
-// Marker arrays by venue type
+// Empty marker arrays by venue type (Filled by markerToArray function)
 let restaurantMarkers = [];
 let pubMarkers = [];
 let cocktailBarMarkers = [];
@@ -13,10 +14,11 @@ function initMap() {
         zoom: 12, // Set the zoom level of the map
     };
 
-    const map = new google.maps.Map(document.getElementById("map"), mapProp); // Creates a new map inside the div that has the id of "map" and calls mapProp to see how to render the map
+    map = new google.maps.Map(document.getElementById("map"), mapProp); // Creates a new map inside the div that has the id of "map" and calls mapProp to see how to render the map
 
-    // Credit: Map marker positioning and creation of custom google maps markers taken from https://developers.google.com/maps/documentation/javascript/custom-markers#maps_custom_markers-javascript
+    // Credit: Map marker positioning and creation of custom Google Maps markers taken from https://developers.google.com/maps/documentation/javascript/custom-markers#maps_custom_markers-javascript
     // Credit: Custom marker icons taken from Map Icons Collection https://mapicons.mapsmarker.com/
+    // Credit: Marker icon images hosted on https://imgbb.com/
 
     // Set all icon types
     const iconBase =
@@ -46,7 +48,8 @@ function initMap() {
     const venues = [
         // South London
         { // Pop Brixton
-            // content: "<h4>Pop Brixton</h4>",
+            content: "<h4>Pop Brixton</h4>",
+            name: "Pop Brixton",
             position: new google.maps.LatLng(51.46341404023569, -0.11228722008675468),
             type: "street",
         },
@@ -75,11 +78,11 @@ function initMap() {
             type: "distillery",
         },
     ];
-
-    // markerToArray function to take any venue, make a maker and push it into the chosen array
+    // toMarkerArray was here
+    // markerToArray function to take any venue, make a maker and push it into the specific array
     function markerToArray(venue, arrayName) {
         const marker = new google.maps.Marker({
-            position: venue.position,
+            position: venue.position, // sets marker position to venue.position
             icon: icons[venue.type].icon,
             map: map,
         });
@@ -106,6 +109,9 @@ function initMap() {
     };
 
     console.log(streetMarkers);
+    console.log(streetMarkers[0]);
+    console.log(streetMarkers[1]);
+    console.log(restaurantMarkers);
 
     // Check all legend checkboxes on page load
     // Credit: https://stackoverflow.com/questions/3126736/check-all-checkboxes-on-page-load-with-jquery
@@ -113,28 +119,41 @@ function initMap() {
         $('#legend input:checkbox').attr('checked', 'checked');
     });
 
+    // Sets the map on all markers in the restaurantMarkers array.
+    function restaurantSetMapOnAll(map) {
+        for (let i = 0; i < restaurantMarkers.length; i++) {
+            restaurantMarkers[i].setMap(map);
+        }
+    }
+
     // Target id=restarant-checkbox and add event listener for change event
     // This logs a messsage to the console when the box is checked and unchecked
-    // Credit: Code used modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
+    // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
     let restaurantCheckbox = document.querySelector("input[id=restaurant-checkbox]");
     restaurantCheckbox.addEventListener('change', function () {
         if (this.checked) {
-            console.log("Checkbox is checked..");
+            // Shows any markers currently in the array
+            function showMarkers() {
+                restaurantSetMapOnAll(map);
+            }
+            showMarkers();
+            // console.log("Checkbox is checked..");
         } else {
-            console.log("Checkbox is not checked..");
+            // Hides any markers currently in the array
+            function clearMarkers() {
+                restaurantSetMapOnAll(null);
+            }
+            clearMarkers();
+            // console.log("Checkbox is not checked..");
         }
     });
 
-    /*
-    // Loop over the venues array of objects
-    for (let i = 0; i < venues.length; i++) {
-        const marker = new google.maps.Marker({
-            position: venues[i].position,
-            icon: icons[venues[i].type].icon,
-            map: map,
-        });
-    };
-    */
-}; // initMap close tags
+}; // initMap END --------------------------------
+
+
+
+
 
 initMap();

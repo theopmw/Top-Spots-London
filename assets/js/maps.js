@@ -77,6 +77,10 @@ function initMap() {
             position: new google.maps.LatLng(51.445578111741455, -0.14422145331540792),
             type: "distillery",
         },
+         { // The Laundry
+            position: new google.maps.LatLng(51.46288429684225, -0.1110045386230423),
+            type: "restaurant",
+        },
     ];
     // toMarkerArray was here
     // markerToArray function to take any venue, make a maker and push it into the specific array

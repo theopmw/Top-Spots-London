@@ -302,10 +302,14 @@ function initMap() {
         }
     });
 
+    // Check or uncheck all venue type marker checkboxes when "Show/Hide All" checkbox is checked or unchecked
+    // Credit: JQuery code modified from https://stackoverflow.com/questions/5229023/how-do-i-check-uncheck-all-checkboxes-with-a-button-using-jquery
+    $("#show-hide-all-checkbox").change(function () {
+        $(".venue-type-checkbox").prop('checked', $(this).prop("checked"));
+    });
+
+
+
 }; // initMap END --------------------------------
-
-
-
-
 
 initMap();

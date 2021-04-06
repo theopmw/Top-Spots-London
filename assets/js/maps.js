@@ -277,7 +277,7 @@ function initMap() {
 
     // ------------------------------------Show/Hide All Checkbox
 
-    // Target id=id=show-hide-all-checkbox and add event listener for change event
+    // Target id=show-hide-all-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
@@ -300,18 +300,6 @@ function initMap() {
             brewerySetMapOnAll(null);
             distillerySetMapOnAll(null);
         }
-    });
-
-    // ------------------------------------Show All Button
-
-
-    document.getElementById("show-all-button").addEventListener("click", function () {
-        restaurantSetMapOnAll(map);
-        pubSetMapOnAll(map);
-        cocktailSetMapOnAll(map);
-        streetSetMapOnAll(map);
-        brewerySetMapOnAll(map);
-        distillerySetMapOnAll(map);
     });
 
 }; // initMap END --------------------------------

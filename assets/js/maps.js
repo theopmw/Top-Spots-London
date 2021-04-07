@@ -1,5 +1,18 @@
 let map;
 
+// Set variables to target div ids from the HTML (info container)
+let venueName = document.getElementById("name");
+let venueAddress = document.getElementById("address");
+let venueDescription = document.getElementById("description");
+let venueWebsite = document.getElementById("website");
+let venuefacebook = document.getElementById("facebook");
+let venueTwitter = document.getElementById("twitter");
+let venueInstagram = document.getElementById("instagram");
+let venueTripadvisor =document.getElementById("tripadvisor");
+
+console.log(venueName)
+
+
 // Empty marker arrays by venue type (Filled by markerToArray function)
 let restaurantMarkers = [];
 let pubMarkers = [];
@@ -95,7 +108,7 @@ function initMap() {
     function markerToArray(venue, arrayName) {
         const marker = new google.maps.Marker({
             position: venue.position, // sets marker position to venue.position
-            icon: icons[venue.type].icon,
+            icon: icons[venue.type].icon, // sets marker icon
             map: map,
         });
 
@@ -120,11 +133,6 @@ function initMap() {
         }
     };
 
-    console.log(streetMarkers);
-    console.log(streetMarkers[0]);
-    console.log(streetMarkers[1]);
-    console.log(restaurantMarkers);
-
     // Check all legend checkboxes on page load
     // Credit: https://stackoverflow.com/questions/3126736/check-all-checkboxes-on-page-load-with-jquery
     $(function () {
@@ -137,8 +145,8 @@ function initMap() {
     function restaurantSetMapOnAll(map) {
         for (let i = 0; i < restaurantMarkers.length; i++) {
             restaurantMarkers[i].setMap(map);
-        }
-    }
+        };
+    };
 
     // Target id=restarant-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
@@ -217,8 +225,8 @@ function initMap() {
     function streetSetMapOnAll(map) {
         for (let i = 0; i < streetMarkers.length; i++) {
             streetMarkers[i].setMap(map);
-        }
-    }
+        };
+    };
 
     // Target id=street-food-market-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
@@ -241,8 +249,8 @@ function initMap() {
     function brewerySetMapOnAll(map) {
         for (let i = 0; i < breweryMarkers.length; i++) {
             breweryMarkers[i].setMap(map);
-        }
-    }
+        };
+    };
 
     // Target id=brewery-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
@@ -265,8 +273,8 @@ function initMap() {
     function distillerySetMapOnAll(map) {
         for (let i = 0; i < distilleryMarkers.length; i++) {
             distilleryMarkers[i].setMap(map);
-        }
-    }
+        };
+    };
 
     // Target id=distillery-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
@@ -321,3 +329,9 @@ function initMap() {
 }; // initMap END --------------------------------
 
 initMap();
+
+// venues.forEach(venue => {
+//     venue.addEventListener("click", () => {
+
+//     });
+// });

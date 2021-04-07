@@ -50,6 +50,14 @@ function initMap() {
         { // Pop Brixton
             content: "<h4>Pop Brixton</h4>",
             name: "Pop Brixton",
+            address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
+            // Credit: text taken from https://www.popbrixton.org/
+            description: "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
+            website: "https://www.popbrixton.org/",
+            facebook: "https://www.facebook.com/popbrixton/",
+            twitter: "https://twitter.com/PopBrixton",
+            instagram: "https://www.instagram.com/popbrixton/",
+            tripadvisor: "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
             position: new google.maps.LatLng(51.46341404023569, -0.11228722008675468),
             type: "street",
         },

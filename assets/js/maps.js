@@ -7,7 +7,7 @@ let venueName = document.getElementById("name");
 let venueAddress = document.getElementById("address");
 let venueDescription = document.getElementById("description");
 let venueWebsite = document.getElementById("website");
-let venuefacebook = document.getElementById("facebook");
+let venueFacebook = document.getElementById("facebook");
 let venueTwitter = document.getElementById("twitter");
 let venueInstagram = document.getElementById("instagram");
 let venueTripadvisor = document.getElementById("tripadvisor");
@@ -27,7 +27,8 @@ let distilleryMarkers = [];
 
 initMap();
 function initMap() {
-    const mapProp = { // Create a variable to store the map properties
+    const mapProp = {
+        // Create a variable to store the map properties
         center: new google.maps.LatLng(51.50146775108939, -0.12200993061141865), // Set the coordinates of the centre of the map
         zoom: 12, // Set the zoom level of the map
     };
@@ -39,8 +40,7 @@ function initMap() {
     // Credit: Marker icon images hosted on https://imgbb.com/
 
     // Set all icon types
-    const iconBase =
-        "https://i.ibb.co/";
+    const iconBase = "https://i.ibb.co/";
     const icons = {
         restaurant: {
             icon: iconBase + "TtkWP50/restaurant.png", // Restaurant icon
@@ -59,56 +59,92 @@ function initMap() {
         },
         distillery: {
             icon: iconBase + "gdFtTFr/distillery.png", // Distillery icon
-        }
+        },
     };
 
     // Store all venues in an array
     venues = [
         // South London
-        { // Pop Brixton
+        {
+            // Pop Brixton
             content: "<h4>Pop Brixton</h4>",
             name: "Pop Brixton",
             address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
             // Credit: text taken from https://www.popbrixton.org/
-            description: "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
+            description:
+                "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
             website: "https://www.popbrixton.org/",
             facebook: "https://www.facebook.com/popbrixton/",
             twitter: "https://twitter.com/PopBrixton",
             instagram: "https://www.instagram.com/popbrixton/",
-            tripadvisor: "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
-            position: new google.maps.LatLng(51.46341404023569, -0.11228722008675468),
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
+            position: new google.maps.LatLng(
+                51.46341404023569,
+                -0.11228722008675468
+            ),
             type: "street",
         },
-        { // Tola
-            position: new google.maps.LatLng(51.473367183358455, -0.07046348616823567),
+        {
+            // Tola
+            position: new google.maps.LatLng(
+                51.473367183358455,
+                -0.07046348616823567
+            ),
             type: "cocktail",
         },
-        { // Peckham Levels
-            position: new google.maps.LatLng(51.471557276187816, -0.06720426931757024),
+        {
+            // Peckham Levels
+            position: new google.maps.LatLng(
+                51.471557276187816,
+                -0.06720426931757024
+            ),
             type: "street",
         },
-        { // Balham Bowls Club
-            position: new google.maps.LatLng(51.445067652541034, -0.15250217267682872),
+        {
+            // Balham Bowls Club
+            position: new google.maps.LatLng(
+                51.445067652541034,
+                -0.15250217267682872
+            ),
             type: "pub",
         },
-        { // Brunswick House
-            position: new google.maps.LatLng(51.484885901267916, -0.12661603219847756),
+        {
+            // Brunswick House
+            name: "Pop Brixton",
+            address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
+            position: new google.maps.LatLng(
+                51.484885901267916,
+                -0.12661603219847756
+            ),
             type: "restaurant",
         },
-        { // Mondo Brewery
-            position: new google.maps.LatLng(51.47515303781801, -0.14036621534394356),
+        {
+            // Mondo Brewery
+            position: new google.maps.LatLng(
+                51.47515303781801,
+                -0.14036621534394356
+            ),
             type: "brewery",
         },
-        { // Haymans Gin Distillery
-            position: new google.maps.LatLng(51.445578111741455, -0.14422145331540792),
+        {
+            // Haymans Gin Distillery
+            position: new google.maps.LatLng(
+                51.445578111741455,
+                -0.14422145331540792
+            ),
             type: "distillery",
         },
-        { // The Laundry
-            position: new google.maps.LatLng(51.46288429684225, -0.1110045386230423),
+        {
+            // The Laundry
+            position: new google.maps.LatLng(
+                51.46288429684225,
+                -0.1110045386230423
+            ),
             type: "restaurant",
         },
     ];
-    // toMarkerArray was here
+
     // markerToArray function to take any venue, make a maker and push it into the specific array
     function markerToArray(venue, arrayName) {
         const marker = new google.maps.Marker({
@@ -117,9 +153,20 @@ function initMap() {
             map: map,
         });
 
-        arrayName.push(marker)
+        // Click event listener to listen for marker click and push venue data to the corresponding div in the DOM
+        marker.addListener("click", () => {
+            venueName.innerHTML = venue.name;
+            venueAddress.innerHTML = venue.address;
+            venueDescription.innerHTML = venue.description;
+            venueWebsite.innerHTML = venue.website;
+            venueFacebook.innerHTML = venue.facebook;
+            venueTwitter.innerHTML = venue.twitter;
+            venueInstagram.innerHTML = venue.instagram;
+            venueTripadvisor.innerHTML = venue.tripadvisor;
+        });
 
-    };
+        arrayName.push(marker);
+    }
 
     // Loop over the venues and for each venue, depending on the type, call the markerToArray function (with the venue and specific array passed as arguments)
     for (let i = 0; i < venues.length; i++) {
@@ -136,12 +183,12 @@ function initMap() {
         } else if (venues[i].type === "distillery") {
             markerToArray(venues[i], distilleryMarkers);
         }
-    };
+    }
 
     // Check all legend checkboxes on page load
     // Credit: https://stackoverflow.com/questions/3126736/check-all-checkboxes-on-page-load-with-jquery
-    $(function() {
-        $('#legend input:checkbox').attr('checked', 'checked');
+    $(function () {
+        $("#legend input:checkbox").attr("checked", "checked");
     });
 
     // ------------------------------------Restaurant Markers
@@ -150,15 +197,17 @@ function initMap() {
     function restaurantSetMapOnAll(map) {
         for (let i = 0; i < restaurantMarkers.length; i++) {
             restaurantMarkers[i].setMap(map);
-        };
-    };
+        }
+    }
 
     // Target id=restarant-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
-    let restaurantCheckbox = document.querySelector("input[id=restaurant-checkbox]");
-    restaurantCheckbox.addEventListener('change', function() {
+    let restaurantCheckbox = document.querySelector(
+        "input[id=restaurant-checkbox]"
+    );
+    restaurantCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the array
             restaurantSetMapOnAll(map);
@@ -190,13 +239,13 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let pubCheckbox = document.querySelector("input[id=pub-checkbox]");
-    pubCheckbox.addEventListener('change', function() {
+    pubCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the array
             pubSetMapOnAll(map);
         } else {
             // Hides any markers currently in the array
-            pubSetMapOnAll(null)
+            pubSetMapOnAll(null);
         }
     });
 
@@ -213,14 +262,16 @@ function initMap() {
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
-    let cocktailCheckbox = document.querySelector("input[id=cocktail-bar-checkbox]");
-    cocktailCheckbox.addEventListener('change', function() {
+    let cocktailCheckbox = document.querySelector(
+        "input[id=cocktail-bar-checkbox]"
+    );
+    cocktailCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the array
             cocktailSetMapOnAll(map);
         } else {
             // Hides any markers currently in the array
-            cocktailSetMapOnAll(null)
+            cocktailSetMapOnAll(null);
         }
     });
 
@@ -230,21 +281,23 @@ function initMap() {
     function streetSetMapOnAll(map) {
         for (let i = 0; i < streetMarkers.length; i++) {
             streetMarkers[i].setMap(map);
-        };
-    };
+        }
+    }
 
     // Target id=street-food-market-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
-    let streetCheckbox = document.querySelector("input[id=street-food-market-checkbox]");
-    streetCheckbox.addEventListener('change', function() {
+    let streetCheckbox = document.querySelector(
+        "input[id=street-food-market-checkbox]"
+    );
+    streetCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the array
             streetSetMapOnAll(map);
         } else {
             // Hides any markers currently in the array
-            streetSetMapOnAll(null)
+            streetSetMapOnAll(null);
         }
     });
 
@@ -254,21 +307,21 @@ function initMap() {
     function brewerySetMapOnAll(map) {
         for (let i = 0; i < breweryMarkers.length; i++) {
             breweryMarkers[i].setMap(map);
-        };
-    };
+        }
+    }
 
     // Target id=brewery-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let breweryCheckbox = document.querySelector("input[id=brewery-checkbox]");
-    breweryCheckbox.addEventListener('change', function() {
+    breweryCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the array
             brewerySetMapOnAll(map);
         } else {
             // Hides any markers currently in the array
-            brewerySetMapOnAll(null)
+            brewerySetMapOnAll(null);
         }
     });
 
@@ -278,21 +331,23 @@ function initMap() {
     function distillerySetMapOnAll(map) {
         for (let i = 0; i < distilleryMarkers.length; i++) {
             distilleryMarkers[i].setMap(map);
-        };
-    };
+        }
+    }
 
     // Target id=distillery-checkbox and add event listener for change event
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
-    let distilleryCheckbox = document.querySelector("input[id=distillery-checkbox]");
-    distilleryCheckbox.addEventListener('change', function() {
+    let distilleryCheckbox = document.querySelector(
+        "input[id=distillery-checkbox]"
+    );
+    distilleryCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the array
             distillerySetMapOnAll(map);
         } else {
             // Hides any markers currently in the array
-            distillerySetMapOnAll(null)
+            distillerySetMapOnAll(null);
         }
     });
 
@@ -302,8 +357,10 @@ function initMap() {
     // Credit: Code used for event listener modified from https://stackoverflow.com/questions/14544104/checkbox-check-event-listener
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
-    let showHideCheckbox = document.querySelector("input[id=show-hide-all-checkbox]");
-    showHideCheckbox.addEventListener('change', function() {
+    let showHideCheckbox = document.querySelector(
+        "input[id=show-hide-all-checkbox]"
+    );
+    showHideCheckbox.addEventListener("change", function () {
         if (this.checked) {
             // Shows any markers currently in the below arrays
             restaurantSetMapOnAll(map);
@@ -325,8 +382,8 @@ function initMap() {
 
     // Check or uncheck all venue type marker checkboxes when "Show/Hide All" checkbox is checked or unchecked
     // Credit: JQuery code modified from https://stackoverflow.com/questions/5229023/how-do-i-check-uncheck-all-checkboxes-with-a-button-using-jquery
-    $("#show-hide-all-checkbox").change(function() {
-        $(".venue-type-checkbox").prop('checked', $(this).prop("checked"));
+    $("#show-hide-all-checkbox").change(function () {
+        $(".venue-type-checkbox").prop("checked", $(this).prop("checked"));
     });
 
     // Loop through venues and add click event listener (can I use markers here?)
@@ -339,14 +396,4 @@ function initMap() {
     // });
 
 
-
 } // initMap END --------------------------------
-
-// venues.forEach(venue => {
-//     venue.addEventListener("click", function() { // Create a function to call here? Push() array items into selected div?
-//         venueName.innerHTML = venue.name;
-//         venueAddress.innerHTML = venue.address;
-//     })
-// });
-
-// initMap();

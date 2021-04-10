@@ -1,6 +1,8 @@
 let map;
 
-// Set variables to target div ids from the HTML (info container)
+let venues;
+
+// Set variables to target div ids from index.html
 let venueName = document.getElementById("name");
 let venueAddress = document.getElementById("address");
 let venueDescription = document.getElementById("description");
@@ -8,10 +10,12 @@ let venueWebsite = document.getElementById("website");
 let venuefacebook = document.getElementById("facebook");
 let venueTwitter = document.getElementById("twitter");
 let venueInstagram = document.getElementById("instagram");
-let venueTripadvisor =document.getElementById("tripadvisor");
+let venueTripadvisor = document.getElementById("tripadvisor");
 
-console.log(venueName)
+// Or use JQuery:
+// let venueName = $("#name");
 
+console.log(venueName);
 
 // Empty marker arrays by venue type (Filled by markerToArray function)
 let restaurantMarkers = [];
@@ -21,6 +25,7 @@ let streetMarkers = [];
 let breweryMarkers = [];
 let distilleryMarkers = [];
 
+initMap();
 function initMap() {
     const mapProp = { // Create a variable to store the map properties
         center: new google.maps.LatLng(51.50146775108939, -0.12200993061141865), // Set the coordinates of the centre of the map
@@ -58,7 +63,7 @@ function initMap() {
     };
 
     // Store all venues in an array
-    const venues = [
+    venues = [
         // South London
         { // Pop Brixton
             content: "<h4>Pop Brixton</h4>",
@@ -135,7 +140,7 @@ function initMap() {
 
     // Check all legend checkboxes on page load
     // Credit: https://stackoverflow.com/questions/3126736/check-all-checkboxes-on-page-load-with-jquery
-    $(function () {
+    $(function() {
         $('#legend input:checkbox').attr('checked', 'checked');
     });
 
@@ -153,7 +158,7 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let restaurantCheckbox = document.querySelector("input[id=restaurant-checkbox]");
-    restaurantCheckbox.addEventListener('change', function () {
+    restaurantCheckbox.addEventListener('change', function() {
         if (this.checked) {
             // Shows any markers currently in the array
             restaurantSetMapOnAll(map);
@@ -185,7 +190,7 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let pubCheckbox = document.querySelector("input[id=pub-checkbox]");
-    pubCheckbox.addEventListener('change', function () {
+    pubCheckbox.addEventListener('change', function() {
         if (this.checked) {
             // Shows any markers currently in the array
             pubSetMapOnAll(map);
@@ -209,7 +214,7 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let cocktailCheckbox = document.querySelector("input[id=cocktail-bar-checkbox]");
-    cocktailCheckbox.addEventListener('change', function () {
+    cocktailCheckbox.addEventListener('change', function() {
         if (this.checked) {
             // Shows any markers currently in the array
             cocktailSetMapOnAll(map);
@@ -233,7 +238,7 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let streetCheckbox = document.querySelector("input[id=street-food-market-checkbox]");
-    streetCheckbox.addEventListener('change', function () {
+    streetCheckbox.addEventListener('change', function() {
         if (this.checked) {
             // Shows any markers currently in the array
             streetSetMapOnAll(map);
@@ -257,7 +262,7 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let breweryCheckbox = document.querySelector("input[id=brewery-checkbox]");
-    breweryCheckbox.addEventListener('change', function () {
+    breweryCheckbox.addEventListener('change', function() {
         if (this.checked) {
             // Shows any markers currently in the array
             brewerySetMapOnAll(map);
@@ -281,7 +286,7 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let distilleryCheckbox = document.querySelector("input[id=distillery-checkbox]");
-    distilleryCheckbox.addEventListener('change', function () {
+    distilleryCheckbox.addEventListener('change', function() {
         if (this.checked) {
             // Shows any markers currently in the array
             distillerySetMapOnAll(map);
@@ -298,9 +303,9 @@ function initMap() {
     // Credit: Code used for showMarkers function modified from https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
     let showHideCheckbox = document.querySelector("input[id=show-hide-all-checkbox]");
-    showHideCheckbox.addEventListener('change', function () {
+    showHideCheckbox.addEventListener('change', function() {
         if (this.checked) {
-            // Shows any markers currently in the array
+            // Shows any markers currently in the below arrays
             restaurantSetMapOnAll(map);
             pubSetMapOnAll(map);
             cocktailSetMapOnAll(map);
@@ -308,7 +313,7 @@ function initMap() {
             brewerySetMapOnAll(map);
             distillerySetMapOnAll(map);
         } else {
-            // Hides any markers currently in the array
+            // Hides any markers currently in the below arrays
             restaurantSetMapOnAll(null);
             pubSetMapOnAll(null);
             cocktailSetMapOnAll(null);
@@ -320,18 +325,28 @@ function initMap() {
 
     // Check or uncheck all venue type marker checkboxes when "Show/Hide All" checkbox is checked or unchecked
     // Credit: JQuery code modified from https://stackoverflow.com/questions/5229023/how-do-i-check-uncheck-all-checkboxes-with-a-button-using-jquery
-    $("#show-hide-all-checkbox").change(function () {
+    $("#show-hide-all-checkbox").change(function() {
         $(".venue-type-checkbox").prop('checked', $(this).prop("checked"));
     });
 
+    // Loop through venues and add click event listener (can I use markers here?)
+    // Could help: https://stackoverflow.com/questions/44288505/passing-in-array-data-into-div-elements
+    // venues.forEach(venue => {
+    //     venue.addEventListener("click", () => { // Create a function to call here? Push() array items into selected div?
+    //         venueName.innerHTML = venues.name;
+    //         venueAddress.innerHTML = venues.address;
+    //     })
+    // });
 
 
-}; // initMap END --------------------------------
 
-initMap();
+} // initMap END --------------------------------
 
 // venues.forEach(venue => {
-//     venue.addEventListener("click", () => {
-
-//     });
+//     venue.addEventListener("click", function() { // Create a function to call here? Push() array items into selected div?
+//         venueName.innerHTML = venue.name;
+//         venueAddress.innerHTML = venue.address;
+//     })
 // });
+
+// initMap();

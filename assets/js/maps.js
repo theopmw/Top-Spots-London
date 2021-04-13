@@ -105,6 +105,17 @@ function initMap() {
         },
         {
             // Peckham Levels
+            name: "Peckham Levels",
+            address: "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
+            // Credit: text taken from https://peckhamlevels.org/
+            description:
+                "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
+            website: "https://peckhamlevels.org/",
+            facebook: "https://www.facebook.com/peckhamlevels/",
+            twitter: "https://twitter.com/peckhamlevels/",
+            instagram: "https://www.instagram.com/peckhamlevels/",
+            tripadvisor:
+                "",
             position: new google.maps.LatLng(
                 51.471557276187816,
                 -0.06720426931757024

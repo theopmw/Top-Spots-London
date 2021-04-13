@@ -67,7 +67,6 @@ function initMap() {
         // South London
         {
             // Pop Brixton
-            content: "<h4>Pop Brixton</h4>",
             name: "Pop Brixton",
             address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
             // Credit: text taken from https://www.popbrixton.org/
@@ -87,6 +86,17 @@ function initMap() {
         },
         {
             // Tola
+            name: "Tola",
+            address: "56 Peckham High St, Peckham, London, SE15 5DP",
+            // Credit: text taken from https://www.tolapeckham.com/
+            description:
+                "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
+            website: "https://www.tolapeckham.com/",
+            facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
+            twitter: "",
+            instagram: "https://www.instagram.com/tolapeckham/",
+            tripadvisor:
+                "",
             position: new google.maps.LatLng(
                 51.473367183358455,
                 -0.07046348616823567

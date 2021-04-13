@@ -162,6 +162,17 @@ function initMap() {
         },
         {
             // Mondo Brewery
+            name: "Mondo Brewing Company",
+            address: "86 Stewart's Rd, Nine Elms, London, SW8 4UG",
+            // Credit: text taken from https://mondobeer.com/
+            description:
+                "Mondo Brewing is an independent brewery grounded in London, founded in 2014 by two Americans. A stone’s throw away from the iconic Battersea Power Station, their brewery and tap house are nestled just a few hundred yards south of there, waiting to be discovered by thirsty patrons.",
+            website: "https://mondobeer.com/",
+            facebook: "https://www.facebook.com/mondobrewing/",
+            twitter: "https://twitter.com/mondobrewing",
+            instagram: "https://www.instagram.com/mondobrewing/",
+            tripadvisor:
+                "",
             position: new google.maps.LatLng(
                 51.47515303781801,
                 -0.14036621534394356
@@ -169,15 +180,8 @@ function initMap() {
             type: "brewery",
         },
         {
-            // Haymans Gin Distillery
-            position: new google.maps.LatLng(
-                51.445578111741455,
-                -0.14422145331540792
-            ),
-            type: "distillery",
-        },
-        {
             // The Laundry
+            
             position: new google.maps.LatLng(
                 51.46288429684225,
                 -0.1110045386230423

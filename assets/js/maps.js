@@ -181,7 +181,17 @@ function initMap() {
         },
         {
             // The Laundry
-            
+            name: "The Laundry",
+            address: "374 Coldharbour Ln, Brixton, London SW9 8PL",
+            // Credit: text taken from https://thelaundrybrixton.com/
+            description:
+                "The Laundry is an all day neighbourhood dining destination. Set in the heart of Brixton on Coldharbour Lane, The Laundry is a bustling all-day neighbourhood Bistro, Wine Shop & Café with a heated terrace.",
+            website: "https://thelaundrybrixton.com/",
+            facebook: "https://www.facebook.com/brixtonlaundry/",
+            twitter: "",
+            instagram: "https://www.instagram.com/brixtonlaundry/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d19430377-Reviews-The_Laundry-London_England.html",
             position: new google.maps.LatLng(
                 51.46288429684225,
                 -0.1110045386230423

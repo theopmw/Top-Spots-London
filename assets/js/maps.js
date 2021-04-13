@@ -124,6 +124,17 @@ function initMap() {
         },
         {
             // Balham Bowls Club
+            name: "Balham Bowls Club",
+            address: "7-9 Ramsden Rd, Balham, London, SW12 8QX",
+            // Credit: text taken from https://balhambowlsclub.com/
+            description:
+                "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
+            website: "https://balhambowlsclub.com/",
+            facebook: "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
+            twitter: "https://twitter.com/balhambowls?lang=en/",
+            instagram: "https://www.instagram.com/balhambowls/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
             position: new google.maps.LatLng(
                 51.445067652541034,
                 -0.15250217267682872

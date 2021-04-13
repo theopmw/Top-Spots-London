@@ -158,7 +158,8 @@ function initMap() {
             venueName.innerHTML = venue.name;
             venueAddress.innerHTML = venue.address;
             venueDescription.innerHTML = venue.description;
-            venueWebsite.innerHTML = venue.website;
+            venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
+            <span class="sr-only">Website</span>Visit ${venue.name} Website</a>`;
             venueFacebook.innerHTML = `<a href="${venue.facebook}" target="_blank" rel="noopener">
             <i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>`;
             venueTwitter.innerHTML =  `<a href="${venue.twitter}" target="_blank" rel="noopener">

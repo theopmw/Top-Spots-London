@@ -95,8 +95,7 @@ function initMap() {
             facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
             twitter: "",
             instagram: "https://www.instagram.com/tolapeckham/",
-            tripadvisor:
-                "",
+            tripadvisor: "",
             position: new google.maps.LatLng(
                 51.473367183358455,
                 -0.07046348616823567
@@ -106,7 +105,8 @@ function initMap() {
         {
             // Peckham Levels
             name: "Peckham Levels",
-            address: "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
+            address:
+                "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
             // Credit: text taken from https://peckhamlevels.org/
             description:
                 "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
@@ -114,8 +114,7 @@ function initMap() {
             facebook: "https://www.facebook.com/peckhamlevels/",
             twitter: "https://twitter.com/peckhamlevels/",
             instagram: "https://www.instagram.com/peckhamlevels/",
-            tripadvisor:
-                "",
+            tripadvisor: "",
             position: new google.maps.LatLng(
                 51.471557276187816,
                 -0.06720426931757024
@@ -130,7 +129,8 @@ function initMap() {
             description:
                 "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
             website: "https://balhambowlsclub.com/",
-            facebook: "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
+            facebook:
+                "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
             twitter: "https://twitter.com/balhambowls?lang=en/",
             instagram: "https://www.instagram.com/balhambowls/?hl=en",
             tripadvisor:
@@ -171,8 +171,7 @@ function initMap() {
             facebook: "https://www.facebook.com/mondobrewing/",
             twitter: "https://twitter.com/mondobrewing",
             instagram: "https://www.instagram.com/mondobrewing/",
-            tripadvisor:
-                "",
+            tripadvisor: "",
             position: new google.maps.LatLng(
                 51.47515303781801,
                 -0.14036621534394356
@@ -200,23 +199,41 @@ function initMap() {
         },
         {
             // Bar Douro, London Bridge
-              // The Laundry
-              name: "Bar Douro",
-              address: "35B, Arch, 85B Southwark Bridge Rd, London, SE1 0NQ",
-              // Credit: text taken from https://www.bardouro.co.uk/london-bridge
-              description:
-                  "Occupying a railway arch in London's buzzing Flat Iron Square, Bar Douro was created as a way to bring authentic Portuguese food to London. With ties to Portugal traced back through the family, Bar Douro has matched exquisite Portuguese wines with all the tradition of local Portuguese food. The atmospheric 30-cover marble counter-top dining space offers an intimate window to the best of Portuguese culinary heritage.",
-              website: "https://www.bardouro.co.uk/london-bridge",
-              facebook: "https://www.facebook.com/bardourouk/",
-              twitter: "https://twitter.com/bardouro",
-              instagram: "https://www.instagram.com/bardouro/",
-              tripadvisor:
-                  "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
-              position: new google.maps.LatLng(
-                51.50460622554422, 
+            name: "Bar Douro",
+            address: "35B, Arch, 85B Southwark Bridge Rd, London, SE1 0NQ",
+            // Credit: text taken from https://www.bardouro.co.uk/london-bridge
+            description:
+                "Occupying a railway arch in London's buzzing Flat Iron Square, Bar Douro was created as a way to bring authentic Portuguese food to London. With ties to Portugal traced back through the family, Bar Douro has matched exquisite Portuguese wines with all the tradition of local Portuguese food. The atmospheric 30-cover marble counter-top dining space offers an intimate window to the best of Portuguese culinary heritage.",
+            website: "https://www.bardouro.co.uk/london-bridge",
+            facebook: "https://www.facebook.com/bardourouk/",
+            twitter: "https://twitter.com/bardouro",
+            instagram: "https://www.instagram.com/bardouro/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
+            position: new google.maps.LatLng(
+                51.50460622554422,
                 -0.09526187321534595
-              ),
-              type: "restaurant",
+            ),
+            type: "restaurant",
+        },
+        {
+            // The Tapas Room, Brixton Village
+            name: "The Tapas Room, Brixton Village",
+            address: "Unit 52, Brixton Village, Coldharbour Ln, Brixton, London, SW9 8PS",
+            // Credit: text taken from https://www.thetapasroom.co.uk/
+            description:
+                "Wine Shop, Tapas Bar & Delicatessen, The Tapas Room presents an unrivalled & thorough range of specialist Spanish & Basque Wine, Sherry, Cava, Vermouth and Craft Beers alongside a refined Tapas, charcuterie, cheese & deli menu. The Tapas Room is the sister business to the acclaimed street food van and Pop Brixton restaurant Donostia Social Club and the associated DSC Imports which specialises in the exclusive distribution of Basque and Spanish wines & beers to the London bar and restaurant industry. The Tapas Room was launched in order to encourage a culture of learning more about Spanish wine, with the result of drinking better for less, in an intimate and friendly environment.",
+            website: "https://www.thetapasroom.co.uk/",
+            facebook: "https://www.facebook.com/thetapasroom",
+            twitter: "https://twitter.com/thetapasroom",
+            instagram: "https://www.instagram.com/thetapasroom/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d21237612-Reviews-The_Tapas_Room-London_England.html",
+            position: new google.maps.LatLng(
+                51.462593456997624, 
+                -0.11181741121010706
+            ),
+            type: "restaurant",
         },
     ];
 
@@ -237,15 +254,15 @@ function initMap() {
             <span class="sr-only">Website</span>Visit ${venue.name} Website</a>`;
             venueFacebook.innerHTML = `<a href="${venue.facebook}" target="_blank" rel="noopener">
             <i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>`;
-            venueTwitter.innerHTML =  `<a href="${venue.twitter}" target="_blank" rel="noopener">
+            venueTwitter.innerHTML = `<a href="${venue.twitter}" target="_blank" rel="noopener">
             <i class="fab fa-twitter" aria-hidden="true"></i>
             <span class="sr-only">Twitter</span>`;
             venueInstagram.innerHTML = `<a href="${venue.instagram}" target="_blank" rel="noopener">
             <i class="fab fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>`
+            <span class="sr-only">Instagram</span>`;
             venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener">
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
-            <span class="sr-only">Trip Advisor</span>`
+            <span class="sr-only">Trip Advisor</span>`;
         });
 
         arrayName.push(marker);
@@ -477,6 +494,4 @@ function initMap() {
     //         venueAddress.innerHTML = venues.address;
     //     })
     // });
-
-
 } // initMap END --------------------------------

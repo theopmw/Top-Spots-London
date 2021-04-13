@@ -198,6 +198,26 @@ function initMap() {
             ),
             type: "restaurant",
         },
+        {
+            // Bar Douro, London Bridge
+              // The Laundry
+              name: "Bar Douro",
+              address: "35B, Arch, 85B Southwark Bridge Rd, London, SE1 0NQ",
+              // Credit: text taken from https://www.bardouro.co.uk/london-bridge
+              description:
+                  "Occupying a railway arch in London's buzzing Flat Iron Square, Bar Douro was created as a way to bring authentic Portuguese food to London. With ties to Portugal traced back through the family, Bar Douro has matched exquisite Portuguese wines with all the tradition of local Portuguese food. The atmospheric 30-cover marble counter-top dining space offers an intimate window to the best of Portuguese culinary heritage.",
+              website: "https://www.bardouro.co.uk/london-bridge",
+              facebook: "https://www.facebook.com/bardourouk/",
+              twitter: "https://twitter.com/bardouro",
+              instagram: "https://www.instagram.com/bardouro/",
+              tripadvisor:
+                  "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
+              position: new google.maps.LatLng(
+                51.50460622554422, 
+                -0.09526187321534595
+              ),
+              type: "restaurant",
+        },
     ];
 
     // markerToArray function to take any venue, make a maker and push it into the specific array

@@ -143,8 +143,17 @@ function initMap() {
         },
         {
             // Brunswick House
-            name: "Pop Brixton",
-            address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
+            name: "Brunswick House",
+            address: "30 Wandsworth Rd, Vauxhall, London, SW8 2LG",
+            // Credit: text taken from https://brunswickhouse.london/
+            description:
+                "Serving Breakfast, Lunch and Dinner in the crumbling grandeur of and antique-filled Georgian mansion, built for the Duke of Brunswick in 1758. Heated outdoor terrace, cocktail bar, romantic candle-lit dining room, intimate private rooms for eating and celebrating, historic vaulted cellars with an incredible list of rare wines and bar snacks.",
+            website: "https://brunswickhouse.london/",
+            facebook: "https://www.facebook.com/BrunswickHouseLondon/",
+            twitter: "https://twitter.com/brunswickhse?lang=en",
+            instagram: "https://www.instagram.com/brunswick_house/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d2402977-Reviews-Brunswick_House-London_England.html",
             position: new google.maps.LatLng(
                 51.484885901267916,
                 -0.12661603219847756

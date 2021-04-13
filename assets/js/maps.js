@@ -159,10 +159,17 @@ function initMap() {
             venueAddress.innerHTML = venue.address;
             venueDescription.innerHTML = venue.description;
             venueWebsite.innerHTML = venue.website;
-            venueFacebook.innerHTML = venue.facebook;
-            venueTwitter.innerHTML = venue.twitter;
-            venueInstagram.innerHTML = venue.instagram;
-            venueTripadvisor.innerHTML = venue.tripadvisor;
+            venueFacebook.innerHTML = `<a href="${venue.facebook}" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>`;
+            venueTwitter.innerHTML =  `<a href="${venue.twitter}" target="_blank" rel="noopener">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span>`;
+            venueInstagram.innerHTML = `<a href="${venue.instagram}" target="_blank" rel="noopener">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>`
+            venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener">
+            <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+            <span class="sr-only">Trip Advisor</span>`
         });
 
         arrayName.push(marker);

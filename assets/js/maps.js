@@ -273,6 +273,25 @@ function initMap() {
             ),
             type: "restaurant",
         },
+        {
+            // the Faltering Fullback
+            name: "The Faltering Fullback",
+            address: "19 Perth Rd, Stroud Green, London, N4 3HB",
+            // Credit: text taken from http://falteringfullback.com/
+            description:
+                "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
+            website: "http://falteringfullback.com/",
+            facebook: "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
+            twitter: "",
+            instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
+            position: new google.maps.LatLng(
+                51.56868558992803, 
+                -0.10817859523605393
+            ),
+            type: "pub",
+        },
     ];
 
     // markerToArray function to take any venue, make a maker and push it into the specific array

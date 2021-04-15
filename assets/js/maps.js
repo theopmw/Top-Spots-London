@@ -265,6 +265,11 @@ function initMap() {
             <span class="sr-only">Trip Advisor</span>`;
         });
 
+        marker.addListener("dblclick", () => {
+            map.setZoom(15);
+            map.setCenter(marker.getPosition());
+          });
+
         arrayName.push(marker);
     }
 

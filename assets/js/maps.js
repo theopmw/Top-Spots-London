@@ -274,7 +274,7 @@ function initMap() {
             type: "restaurant",
         },
         {
-            // the Faltering Fullback
+            // The Faltering Fullback
             name: "The Faltering Fullback",
             address: "19 Perth Rd, Stroud Green, London, N4 3HB",
             // Credit: text taken from http://falteringfullback.com/
@@ -291,6 +291,25 @@ function initMap() {
                 -0.10817859523605393
             ),
             type: "pub",
+        },
+        {
+            // Smoking Goat
+            name: "Smoking Goat",
+            address: "64 Shoreditch High St, Shoreditch, London, E1 6JJ",
+            // Credit: text taken from https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TEkrryyzSEo3YLRSNagwsTA3M0xOMkgyTzZMMzFIsjKoMDRNNjQ1TUpLS7RIMrG0MPPiKc7Nz87MS1dIz08sAQCmGRRj&q=smoking+goat&rlz=1C5CHFA_enGB919GB919&oq=smoking+&aqs=chrome.1.69i57j46i131i175i199i433j0i433l6j0.2861j0j4&sourceid=chrome&ie=UTF-8
+            description:
+                "Cool, laid-back restaurant with quirky dishes & drinks inspired by Bangkok’s late-night canteens.",
+            website: "https://www.smokinggoatbar.com/",
+            facebook: "https://www.facebook.com/Smoking-Goat-Shoreditch-815145515363047/",
+            twitter: "#",
+            instagram: "https://www.instagram.com/smokinggoatbar/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d13078857-Reviews-Smoking_Goat_Shoreditch-London_England.html",
+            position: new google.maps.LatLng(
+                51.52495237670227, 
+                -0.07757001481354464
+            ),
+            type: "restaurant",
         },
     ];
 
@@ -322,6 +341,7 @@ function initMap() {
             <span class="sr-only">Trip Advisor</span>`;
         });
 
+        // Event listener to zoom ans center map on marker double click
         marker.addListener("dblclick", () => {
             map.setZoom(15);
             map.setCenter(marker.getPosition());

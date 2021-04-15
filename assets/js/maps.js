@@ -236,7 +236,7 @@ function initMap() {
             type: "restaurant",
         },
         {
-            // The Tapas Room, Brixton Village
+            // The Camberwell Arms
             name: "The Camberwell Arms",
             address: "65 Camberwell Church St, Camberwell, London, SE5 8TR",
             // Credit: text taken from https://thecamberwellarms.co.uk/about/
@@ -253,6 +253,25 @@ function initMap() {
                 -0.08844233069014149
             ),
             type: "pub",
+        },
+        {
+            // Peckham Cellars
+            name: "Peckham Cellars",
+            address: "125 Queen's Rd, Peckham, London, SE15 2ND",
+            // Credit: text taken from https://peckhamcellars.co.uk/
+            description:
+                "Your local South-East spot for buying and drinking great wines and eating delicious, seasonally-focused food. Peckham Cellars is your friendly neighbourhood wine bar and shop with a bonus wine delivery service!  The complete package for all your wining and dining needs. Peckham Cellars is a Bib Gourmand Winner 2021.",
+            website: "https://peckhamcellars.co.uk/",
+            facebook: "https://www.facebook.com/peckhamcellars/",
+            twitter: "https://twitter.com/peckhamcellars?lang=en",
+            instagram: "https://www.instagram.com/peckhamcellars/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d20083945-Reviews-Peckham_Cellars-London_England.html",
+            position: new google.maps.LatLng(
+                51.47387240142246, 
+                -0.05882183068764925
+            ),
+            type: "restaurant",
         },
     ];
 

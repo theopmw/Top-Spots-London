@@ -235,6 +235,25 @@ function initMap() {
             ),
             type: "restaurant",
         },
+        {
+            // The Tapas Room, Brixton Village
+            name: "The Camberwell Arms",
+            address: "65 Camberwell Church St, Camberwell, London, SE5 8TR",
+            // Credit: text taken from https://thecamberwellarms.co.uk/about/
+            description:
+                "The Camberwell Arms is a South London restaurant and bar, headed up by Chef Director, Michael Davies, who creates regularly changing menus based on seasonal and quality ingredients. Set within a public house, bars are also an integral part of what they do. The Camberwell Arms has two bars – downstairs you will find a traditional pub, a place to drop in for a drink and a snack, whilst the upstairs bar is open late for classic drinks and great music with a 2am license.",
+            website: "https://thecamberwellarms.co.uk/",
+            facebook: "https://www.facebook.com/thecamberwellarms/",
+            twitter: "https://twitter.com/camberwellarms",
+            instagram: "https://www.instagram.com/thecamberwellarms/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
+            position: new google.maps.LatLng(
+                51.47442936151898, 
+                -0.08844233069014149
+            ),
+            type: "pub",
+        },
     ];
 
     // markerToArray function to take any venue, make a maker and push it into the specific array

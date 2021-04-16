@@ -93,9 +93,9 @@ function initMap() {
                 "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
             website: "https://www.tolapeckham.com/",
             facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
-            twitter: "",
+            twitter: "#",
             instagram: "https://www.instagram.com/tolapeckham/",
-            tripadvisor: "",
+            tripadvisor: "#",
             position: new google.maps.LatLng(
                 51.473367183358455,
                 -0.07046348616823567
@@ -114,7 +114,7 @@ function initMap() {
             facebook: "https://www.facebook.com/peckhamlevels/",
             twitter: "https://twitter.com/peckhamlevels/",
             instagram: "https://www.instagram.com/peckhamlevels/",
-            tripadvisor: "",
+            tripadvisor: "#",
             position: new google.maps.LatLng(
                 51.471557276187816,
                 -0.06720426931757024
@@ -171,7 +171,7 @@ function initMap() {
             facebook: "https://www.facebook.com/mondobrewing/",
             twitter: "https://twitter.com/mondobrewing",
             instagram: "https://www.instagram.com/mondobrewing/",
-            tripadvisor: "",
+            tripadvisor: "#",
             position: new google.maps.LatLng(
                 51.47515303781801,
                 -0.14036621534394356
@@ -187,7 +187,7 @@ function initMap() {
                 "The Laundry is an all day neighbourhood dining destination. Set in the heart of Brixton on Coldharbour Lane, The Laundry is a bustling all-day neighbourhood Bistro, Wine Shop & Café with a heated terrace.",
             website: "https://thelaundrybrixton.com/",
             facebook: "https://www.facebook.com/brixtonlaundry/",
-            twitter: "",
+            twitter: "#",
             instagram: "https://www.instagram.com/brixtonlaundry/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d19430377-Reviews-The_Laundry-London_England.html",
@@ -219,7 +219,8 @@ function initMap() {
         {
             // The Tapas Room, Brixton Village
             name: "The Tapas Room, Brixton Village",
-            address: "Unit 52, Brixton Village, Coldharbour Ln, Brixton, London, SW9 8PS",
+            address:
+                "Unit 52, Brixton Village, Coldharbour Ln, Brixton, London, SW9 8PS",
             // Credit: text taken from https://www.thetapasroom.co.uk/
             description:
                 "Wine Shop, Tapas Bar & Delicatessen, The Tapas Room presents an unrivalled & thorough range of specialist Spanish & Basque Wine, Sherry, Cava, Vermouth and Craft Beers alongside a refined Tapas, charcuterie, cheese & deli menu. The Tapas Room is the sister business to the acclaimed street food van and Pop Brixton restaurant Donostia Social Club and the associated DSC Imports which specialises in the exclusive distribution of Basque and Spanish wines & beers to the London bar and restaurant industry. The Tapas Room was launched in order to encourage a culture of learning more about Spanish wine, with the result of drinking better for less, in an intimate and friendly environment.",
@@ -230,7 +231,7 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d21237612-Reviews-The_Tapas_Room-London_England.html",
             position: new google.maps.LatLng(
-                51.462593456997624, 
+                51.462593456997624,
                 -0.11181741121010706
             ),
             type: "restaurant",
@@ -249,7 +250,7 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
             position: new google.maps.LatLng(
-                51.47442936151898, 
+                51.47442936151898,
                 -0.08844233069014149
             ),
             type: "pub",
@@ -268,7 +269,7 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d20083945-Reviews-Peckham_Cellars-London_England.html",
             position: new google.maps.LatLng(
-                51.47387240142246, 
+                51.47387240142246,
                 -0.05882183068764925
             ),
             type: "restaurant",
@@ -281,13 +282,14 @@ function initMap() {
             description:
                 "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
             website: "http://falteringfullback.com/",
-            facebook: "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
-            twitter: "",
+            facebook:
+                "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
+            twitter: "#",
             instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
             position: new google.maps.LatLng(
-                51.56868558992803, 
+                51.56868558992803,
                 -0.10817859523605393
             ),
             type: "pub",
@@ -300,13 +302,14 @@ function initMap() {
             description:
                 "Cool, laid-back restaurant with quirky dishes & drinks inspired by Bangkok’s late-night canteens.",
             website: "https://www.smokinggoatbar.com/",
-            facebook: "https://www.facebook.com/Smoking-Goat-Shoreditch-815145515363047/",
+            facebook:
+                "https://www.facebook.com/Smoking-Goat-Shoreditch-815145515363047/",
             twitter: "#",
             instagram: "https://www.instagram.com/smokinggoatbar/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d13078857-Reviews-Smoking_Goat_Shoreditch-London_England.html",
             position: new google.maps.LatLng(
-                51.52495237670227, 
+                51.52495237670227,
                 -0.07757001481354464
             ),
             type: "restaurant",
@@ -328,24 +331,54 @@ function initMap() {
             venueDescription.innerHTML = venue.description;
             venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
             <span class="sr-only">Website</span>Visit ${venue.name} Website</a>`;
-            venueFacebook.innerHTML = `<a href="${venue.facebook}" target="_blank" rel="noopener">
-            <i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>`;
-            venueTwitter.innerHTML = `<a href="${venue.twitter}" target="_blank" rel="noopener">
+// Facebook
+            if (venue.facebook === "#") {
+                // Check to see if the venue.favebook value is "#"
+                venueFacebook.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+            } else {
+                venueFacebook.classList.remove("d-none"); // If venue.facebook has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
+                venueFacebook.innerHTML = `<a href="${venue.facebook}" target="_blank" rel="noopener"> 
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        <span class="sr-only">Facebook</span>`; // generates the icon and link to be displayed in the DOM
+            };
+// Twitter
+            if (venue.twitter === "#") {
+                // Check to see if the venue.twitter value is "#"
+                venueTwitter.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+            } else {
+                venueTwitter.classList.remove("d-none"); // If venue.twitter has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
+                venueTwitter.innerHTML = `<a href="${venue.twitter}" target="_blank" rel="noopener"> 
             <i class="fab fa-twitter" aria-hidden="true"></i>
-            <span class="sr-only">Twitter</span>`;
-            venueInstagram.innerHTML = `<a href="${venue.instagram}" target="_blank" rel="noopener">
+            <span class="sr-only">Twitter</span>`; // generates the icon and link to be displayed in the DOM
+            };
+// Instagram
+            if (venue.instagram === "#") {
+                // Check to see if the venue.instagram value is "#"
+                venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+            } else {
+                venueInstagram.classList.remove("d-none"); // If venue.instagram has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
+                venueInstagram.innerHTML = `<a href="${venue.instagram}" target="_blank" rel="noopener"> 
             <i class="fab fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>`;
-            venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener">
+            <span class="sr-only">Instagram</span>`; // generates the icon and link to be displayed in the DOM
+            };
+//Trip Advisor
+            if (venue.tripadvisor === "#") {
+                // Check to see if the venue.tripadvisor value is "#"
+                venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+            } else {
+                venueTripadvisor.classList.remove("d-none"); // If venue.instagram has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
+                venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener"> 
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
-            <span class="sr-only">Trip Advisor</span>`;
+            <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
+            };
+         
         });
 
         // Event listener to zoom ans center map on marker double click
         marker.addListener("dblclick", () => {
             map.setZoom(15);
             map.setCenter(marker.getPosition());
-          });
+        });
 
         arrayName.push(marker);
     }

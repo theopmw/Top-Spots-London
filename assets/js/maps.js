@@ -314,6 +314,25 @@ function initMap() {
             ),
             type: "restaurant",
         },
+        {
+            // DinTai Fung
+            name: "Din Tai Fung",
+            address: "5 Henrietta St, Covent Garden, London, WC2E 8PS",
+            description:
+                "Taiwan is know for producing somne of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling",
+            website: "https://www.dintaifung-uk.com/",
+            facebook:
+                "https://www.facebook.com/dintaifunguk/",
+            twitter: "#",
+            instagram: "https://www.instagram.com/dintaifunguk/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d15599297-Reviews-Din_Tai_Fung_UK-London_England.html",
+            position: new google.maps.LatLng(
+                51.51128445720902, 
+                -0.12321491534128642
+            ),
+            type: "restaurant",
+        },
     ];
 
     // markerToArray function to take any venue, make a maker and push it into the specific array

@@ -64,83 +64,7 @@ function initMap() {
 
     // Store all venues in an array
     venues = [
-        // South London
-        {
-            // Pop Brixton
-            name: "Pop Brixton",
-            address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
-            // Credit: text taken from https://www.popbrixton.org/
-            description:
-                "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
-            website: "https://www.popbrixton.org/",
-            facebook: "https://www.facebook.com/popbrixton/",
-            twitter: "https://twitter.com/PopBrixton",
-            instagram: "https://www.instagram.com/popbrixton/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
-            position: new google.maps.LatLng(
-                51.46341404023569,
-                -0.11228722008675468
-            ),
-            type: "street",
-        },
-        {
-            // Tola
-            name: "Tola",
-            address: "56 Peckham High St, Peckham, London, SE15 5DP",
-            // Credit: text taken from https://www.tolapeckham.com/
-            description:
-                "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
-            website: "https://www.tolapeckham.com/",
-            facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
-            twitter: "#",
-            instagram: "https://www.instagram.com/tolapeckham/",
-            tripadvisor: "#",
-            position: new google.maps.LatLng(
-                51.473367183358455,
-                -0.07046348616823567
-            ),
-            type: "cocktail",
-        },
-        {
-            // Peckham Levels
-            name: "Peckham Levels",
-            address:
-                "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
-            // Credit: text taken from https://peckhamlevels.org/
-            description:
-                "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
-            website: "https://peckhamlevels.org/",
-            facebook: "https://www.facebook.com/peckhamlevels/",
-            twitter: "https://twitter.com/peckhamlevels/",
-            instagram: "https://www.instagram.com/peckhamlevels/",
-            tripadvisor: "#",
-            position: new google.maps.LatLng(
-                51.471557276187816,
-                -0.06720426931757024
-            ),
-            type: "street",
-        },
-        {
-            // Balham Bowls Club
-            name: "Balham Bowls Club",
-            address: "7-9 Ramsden Rd, Balham, London, SW12 8QX",
-            // Credit: text taken from https://balhambowlsclub.com/
-            description:
-                "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
-            website: "https://balhambowlsclub.com/",
-            facebook:
-                "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
-            twitter: "https://twitter.com/balhambowls?lang=en/",
-            instagram: "https://www.instagram.com/balhambowls/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
-            position: new google.maps.LatLng(
-                51.445067652541034,
-                -0.15250217267682872
-            ),
-            type: "pub",
-        },
+        // --------------------------------------------Restaurants
         {
             // Brunswick House
             name: "Brunswick House",
@@ -159,24 +83,6 @@ function initMap() {
                 -0.12661603219847756
             ),
             type: "restaurant",
-        },
-        {
-            // Mondo Brewery
-            name: "Mondo Brewing Company",
-            address: "86 Stewart's Rd, Nine Elms, London, SW8 4UG",
-            // Credit: text taken from https://mondobeer.com/
-            description:
-                "Mondo Brewing is an independent brewery grounded in London, founded in 2014 by two Americans. A stone’s throw away from the iconic Battersea Power Station, their brewery and tap house are nestled just a few hundred yards south of there, waiting to be discovered by thirsty patrons.",
-            website: "https://mondobeer.com/",
-            facebook: "https://www.facebook.com/mondobrewing/",
-            twitter: "https://twitter.com/mondobrewing",
-            instagram: "https://www.instagram.com/mondobrewing/",
-            tripadvisor: "#",
-            position: new google.maps.LatLng(
-                51.47515303781801,
-                -0.14036621534394356
-            ),
-            type: "brewery",
         },
         {
             // The Laundry
@@ -237,25 +143,6 @@ function initMap() {
             type: "restaurant",
         },
         {
-            // The Camberwell Arms
-            name: "The Camberwell Arms",
-            address: "65 Camberwell Church St, Camberwell, London, SE5 8TR",
-            // Credit: text taken from https://thecamberwellarms.co.uk/about/
-            description:
-                "The Camberwell Arms is a South London restaurant and bar, headed up by Chef Director, Michael Davies, who creates regularly changing menus based on seasonal and quality ingredients. Set within a public house, bars are also an integral part of what they do. The Camberwell Arms has two bars – downstairs you will find a traditional pub, a place to drop in for a drink and a snack, whilst the upstairs bar is open late for classic drinks and great music with a 2am license.",
-            website: "https://thecamberwellarms.co.uk/",
-            facebook: "https://www.facebook.com/thecamberwellarms/",
-            twitter: "https://twitter.com/camberwellarms",
-            instagram: "https://www.instagram.com/thecamberwellarms/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
-            position: new google.maps.LatLng(
-                51.47442936151898,
-                -0.08844233069014149
-            ),
-            type: "pub",
-        },
-        {
             // Peckham Cellars
             name: "Peckham Cellars",
             address: "125 Queen's Rd, Peckham, London, SE15 2ND",
@@ -273,26 +160,6 @@ function initMap() {
                 -0.05882183068764925
             ),
             type: "restaurant",
-        },
-        {
-            // The Faltering Fullback
-            name: "The Faltering Fullback",
-            address: "19 Perth Rd, Stroud Green, London, N4 3HB",
-            // Credit: text taken from http://falteringfullback.com/
-            description:
-                "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
-            website: "http://falteringfullback.com/",
-            facebook:
-                "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
-            twitter: "#",
-            instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
-            position: new google.maps.LatLng(
-                51.56868558992803,
-                -0.10817859523605393
-            ),
-            type: "pub",
         },
         {
             // Smoking Goat
@@ -321,17 +188,95 @@ function initMap() {
             description:
                 "Taiwan is know for producing somne of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling",
             website: "https://www.dintaifung-uk.com/",
-            facebook:
-                "https://www.facebook.com/dintaifunguk/",
+            facebook: "https://www.facebook.com/dintaifunguk/",
             twitter: "#",
             instagram: "https://www.instagram.com/dintaifunguk/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d15599297-Reviews-Din_Tai_Fung_UK-London_England.html",
             position: new google.maps.LatLng(
-                51.51128445720902, 
+                51.51128445720902,
                 -0.12321491534128642
             ),
             type: "restaurant",
+        },
+        // --------------------------------------------Pubs
+        {
+            // Balham Bowls Club
+            name: "Balham Bowls Club",
+            address: "7-9 Ramsden Rd, Balham, London, SW12 8QX",
+            // Credit: text taken from https://balhambowlsclub.com/
+            description:
+                "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
+            website: "https://balhambowlsclub.com/",
+            facebook:
+                "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
+            twitter: "https://twitter.com/balhambowls?lang=en/",
+            instagram: "https://www.instagram.com/balhambowls/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
+            position: new google.maps.LatLng(
+                51.445067652541034,
+                -0.15250217267682872
+            ),
+            type: "pub",
+        },
+        {
+            // The Camberwell Arms
+            name: "The Camberwell Arms",
+            address: "65 Camberwell Church St, Camberwell, London, SE5 8TR",
+            // Credit: text taken from https://thecamberwellarms.co.uk/about/
+            description:
+                "The Camberwell Arms is a South London restaurant and bar, headed up by Chef Director, Michael Davies, who creates regularly changing menus based on seasonal and quality ingredients. Set within a public house, bars are also an integral part of what they do. The Camberwell Arms has two bars – downstairs you will find a traditional pub, a place to drop in for a drink and a snack, whilst the upstairs bar is open late for classic drinks and great music with a 2am license.",
+            website: "https://thecamberwellarms.co.uk/",
+            facebook: "https://www.facebook.com/thecamberwellarms/",
+            twitter: "https://twitter.com/camberwellarms",
+            instagram: "https://www.instagram.com/thecamberwellarms/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
+            position: new google.maps.LatLng(
+                51.47442936151898,
+                -0.08844233069014149
+            ),
+            type: "pub",
+        },
+        {
+            // The Faltering Fullback
+            name: "The Faltering Fullback",
+            address: "19 Perth Rd, Stroud Green, London, N4 3HB",
+            // Credit: text taken from http://falteringfullback.com/
+            description:
+                "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
+            website: "http://falteringfullback.com/",
+            facebook:
+                "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
+            twitter: "#",
+            instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
+            position: new google.maps.LatLng(
+                51.56868558992803,
+                -0.10817859523605393
+            ),
+            type: "pub",
+        },
+        // --------------------------------------------Cocktail Bars
+        {
+            // Tola
+            name: "Tola",
+            address: "56 Peckham High St, Peckham, London, SE15 5DP",
+            // Credit: text taken from https://www.tolapeckham.com/
+            description:
+                "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
+            website: "https://www.tolapeckham.com/",
+            facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
+            twitter: "#",
+            instagram: "https://www.instagram.com/tolapeckham/",
+            tripadvisor: "#",
+            position: new google.maps.LatLng(
+                51.473367183358455,
+                -0.07046348616823567
+            ),
+            type: "cocktail",
         },
         {
             // Callooh Callay
@@ -340,17 +285,75 @@ function initMap() {
             description:
                 "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well woth a visit!",
             website: "https://www.calloohcallaybar.com/",
-            facebook:
-                "https://www.facebook.com/CalloohCallayLondon",
+            facebook: "https://www.facebook.com/CalloohCallayLondon",
             twitter: "https://twitter.com/callooh_callay?lang=en",
             instagram: "https://www.instagram.com/calloohcallaybar/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
             position: new google.maps.LatLng(
-                51.53018929401269, 
+                51.53018929401269,
                 -0.08013603750097852
             ),
             type: "cocktail",
+        },
+        // --------------------------------------------Street Food Markets
+        {
+            // Pop Brixton
+            name: "Pop Brixton",
+            address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
+            // Credit: text taken from https://www.popbrixton.org/
+            description:
+                "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
+            website: "https://www.popbrixton.org/",
+            facebook: "https://www.facebook.com/popbrixton/",
+            twitter: "https://twitter.com/PopBrixton",
+            instagram: "https://www.instagram.com/popbrixton/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
+            position: new google.maps.LatLng(
+                51.46341404023569,
+                -0.11228722008675468
+            ),
+            type: "street",
+        },
+        
+        {
+            // Peckham Levels
+            name: "Peckham Levels",
+            address:
+                "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
+            // Credit: text taken from https://peckhamlevels.org/
+            description:
+                "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
+            website: "https://peckhamlevels.org/",
+            facebook: "https://www.facebook.com/peckhamlevels/",
+            twitter: "https://twitter.com/peckhamlevels/",
+            instagram: "https://www.instagram.com/peckhamlevels/",
+            tripadvisor: "#",
+            position: new google.maps.LatLng(
+                51.471557276187816,
+                -0.06720426931757024
+            ),
+            type: "street",
+        },
+        // --------------------------------------------Breweries
+        {
+            // Mondo Brewery
+            name: "Mondo Brewing Company",
+            address: "86 Stewart's Rd, Nine Elms, London, SW8 4UG",
+            // Credit: text taken from https://mondobeer.com/
+            description:
+                "Mondo Brewing is an independent brewery grounded in London, founded in 2014 by two Americans. A stone’s throw away from the iconic Battersea Power Station, their brewery and tap house are nestled just a few hundred yards south of there, waiting to be discovered by thirsty patrons.",
+            website: "https://mondobeer.com/",
+            facebook: "https://www.facebook.com/mondobrewing/",
+            twitter: "https://twitter.com/mondobrewing",
+            instagram: "https://www.instagram.com/mondobrewing/",
+            tripadvisor: "#",
+            position: new google.maps.LatLng(
+                51.47515303781801,
+                -0.14036621534394356
+            ),
+            type: "brewery",
         },
     ];
 
@@ -369,7 +372,7 @@ function initMap() {
             venueDescription.innerHTML = venue.description;
             venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
             <span class="sr-only">Website</span>Visit ${venue.name} Website</a>`;
-// Facebook
+            // Facebook
             if (venue.facebook === "#") {
                 // Check to see if the venue.favebook value is "#"
                 venueFacebook.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
@@ -378,8 +381,8 @@ function initMap() {
                 venueFacebook.innerHTML = `<a href="${venue.facebook}" target="_blank" rel="noopener"> 
         <i class="fab fa-facebook-f" aria-hidden="true"></i>
         <span class="sr-only">Facebook</span>`; // generates the icon and link to be displayed in the DOM
-            };
-// Twitter
+            }
+            // Twitter
             if (venue.twitter === "#") {
                 // Check to see if the venue.twitter value is "#"
                 venueTwitter.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
@@ -388,8 +391,8 @@ function initMap() {
                 venueTwitter.innerHTML = `<a href="${venue.twitter}" target="_blank" rel="noopener"> 
             <i class="fab fa-twitter" aria-hidden="true"></i>
             <span class="sr-only">Twitter</span>`; // generates the icon and link to be displayed in the DOM
-            };
-// Instagram
+            }
+            // Instagram
             if (venue.instagram === "#") {
                 // Check to see if the venue.instagram value is "#"
                 venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
@@ -398,8 +401,8 @@ function initMap() {
                 venueInstagram.innerHTML = `<a href="${venue.instagram}" target="_blank" rel="noopener"> 
             <i class="fab fa-instagram" aria-hidden="true"></i>
             <span class="sr-only">Instagram</span>`; // generates the icon and link to be displayed in the DOM
-            };
-//Trip Advisor
+            }
+            //Trip Advisor
             if (venue.tripadvisor === "#") {
                 // Check to see if the venue.tripadvisor value is "#"
                 venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
@@ -408,8 +411,7 @@ function initMap() {
                 venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener"> 
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
-            };
-         
+            }
         });
 
         // Event listener to zoom ans center map on marker double click

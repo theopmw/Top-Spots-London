@@ -199,6 +199,24 @@ function initMap() {
             ),
             type: "restaurant",
         },
+        {
+            // Buona Sera
+            name: "Buona Sera",
+            address: "22-26 Northcote Rd, London, SW11 1NX",
+            description:
+                "Italian restaurant serving up traditional staples. A family run, bright and airy venue. Relaxed atmosphere with professional, friendly service.",
+            website: "https://www.buonasera.co.uk/",
+            facebook: "https://www.facebook.com/buonaserarestaurant/?ref=page_internal",
+            twitter: "#",
+            instagram: "https://www.instagram.com/buonasera.restaurant/",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
+            position: new google.maps.LatLng(
+                51.460531990991264, 
+                -0.16674799999999998
+            ),
+            type: "restaurant",
+        },
         // --------------------------------------------Pubs
         {
             // Balham Bowls Club

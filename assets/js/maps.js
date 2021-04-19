@@ -333,6 +333,25 @@ function initMap() {
             ),
             type: "restaurant",
         },
+        {
+            // Callooh Callay
+            name: "Callooh Callay",
+            address: "65 Rivington St, Shoreditch, London, EC2A 3AY",
+            description:
+                "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well woth a visit!",
+            website: "https://www.calloohcallaybar.com/",
+            facebook:
+                "https://www.facebook.com/CalloohCallayLondon",
+            twitter: "https://twitter.com/callooh_callay?lang=en",
+            instagram: "https://www.instagram.com/calloohcallaybar/?hl=en",
+            tripadvisor:
+                "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
+            position: new google.maps.LatLng(
+                51.53018929401269, 
+                -0.08013603750097852
+            ),
+            type: "cocktail",
+        },
     ];
 
     // markerToArray function to take any venue, make a maker and push it into the specific array

@@ -432,12 +432,14 @@ function initMap() {
             }
         });
 
-        // Event listener to zoom ans center map on marker double click
+        // Credit: code modified from https://stackoverflow.com/questions/17775270/google-maps-zoom-in-on-marker-with-one-click-multiple-markers
+        // Event listener to zoom and center map on marker double click
         marker.addListener("dblclick", () => {
             map.setZoom(15);
             map.setCenter(marker.getPosition());
         });
 
+        // Credit: code modified from https://developers.google.com/maps/documentation/javascript/infowindows
         // Info window for each marker to display venue name
         const infowindow = new google.maps.InfoWindow({
             content: venue.name,

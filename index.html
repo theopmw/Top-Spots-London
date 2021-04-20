@@ -60,10 +60,13 @@
             </nav>
 
             <section>
-                <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div id="legend" class="sm-col col-md-4">
+                <div class="container">
+                    <div class="row d-md-block">
+                        <div class="col-md-4 float-left">
+                            <div id="map"></div>
+                        </div>
+                        <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
+                        <div id="legend" class="col-md-8 float-right">
                             <div class="legend">
                                 <table>
                                     <thead>
@@ -194,20 +197,12 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="sm-col col-md-8">
+
+                        <div class="col-md-8 float-right">
                             <h1>Filter Boxes</h1>
                         </div>
-                    </div>
-                </div>
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="sm-col col-md-4">
-                            <h1 class="map-heading">MAP</h1>
-                            <div id="map"></div>
-                        </div>
-
-                        <div class="col-sm col-md-8">
+                        <div class="col-md-8 float-right">
                             <h1 class="info-heading">INFO</h1>
                             <div id="name">TEST</div>
                             <div id="address"></div>
@@ -216,16 +211,32 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col list-inline social-links">
-                                        <div id="facebook" class="list-inline-item"></div>
-                                        <div id="twitter" class="list-inline-item"></div>
-                                        <div id="instagram" class="list-inline-item"></div>
-                                        <div id="tripadvisor" class="list-inline-item"></div>
+                                        <div
+                                            id="facebook"
+                                            class="list-inline-item"
+                                        ></div>
+                                        <div
+                                            id="twitter"
+                                            class="list-inline-item"
+                                        ></div>
+                                        <div
+                                            id="instagram"
+                                            class="list-inline-item"
+                                        ></div>
+                                        <div
+                                            id="tripadvisor"
+                                            class="list-inline-item"
+                                        ></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                      
                     </div>
                 </div>
+
+                
             </section>
         </header>
 

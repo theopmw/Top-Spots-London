@@ -425,7 +425,7 @@ function initMap() {
                 // Check to see if the venue.tripadvisor value is "#"
                 venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
             } else {
-                venueTripadvisor.classList.remove("d-none"); // If venue.instagram has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
+                venueTripadvisor.classList.remove("d-none"); // If venue.tripadvisor has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
                 venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener"> 
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
@@ -436,6 +436,21 @@ function initMap() {
         marker.addListener("dblclick", () => {
             map.setZoom(15);
             map.setCenter(marker.getPosition());
+        });
+
+        // Info window for each marker to display venue name
+        const infowindow = new google.maps.InfoWindow({
+            content: venue.name,
+          });
+        
+        // display infowindow containing venue name for each marker on mouse-over
+        marker.addListener('mouseover', function() {
+            infowindow.open(map, this);
+        });
+        
+        // hide infowindow containing venue name for each marker on mouse-out
+        marker.addListener('mouseout', function() {
+            infowindow.close();
         });
 
         arrayName.push(marker);

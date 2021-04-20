@@ -212,8 +212,8 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
             position: new google.maps.LatLng(
-                51.460531990991264, 
-                -0.16674799999999998
+                51.460318082023775, 
+                -0.16687674600056668
             ),
             type: "restaurant",
         },
@@ -309,8 +309,8 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
             position: new google.maps.LatLng(
-                51.53018929401269,
-                -0.08013603750097852
+                51.5263352998997, 
+                -0.07990549598159494
             ),
             type: "cocktail",
         },

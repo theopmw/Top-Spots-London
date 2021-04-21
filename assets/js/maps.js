@@ -676,12 +676,13 @@ function initMap() {
         $(".venue-type-checkbox").prop("checked", $(this).prop("checked"));
     });
 
-    // Loop through venues and add click event listener (can I use markers here?)
-    // Could help: https://stackoverflow.com/questions/44288505/passing-in-array-data-into-div-elements
-    // venues.forEach(venue => {
-    //     venue.addEventListener("click", () => { // Create a function to call here? Push() array items into selected div?
-    //         venueName.innerHTML = venues.name;
-    //         venueAddress.innerHTML = venues.address;
-    //     })
-    // });
+      // Create the search box and link it to the UI element.
+    // Credit: https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript
+    const input = document.getElementById("pac-input");
+    const searchBox = new google.maps.places.SearchBox(input);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    // Bias the SearchBox results towards current map's viewport.
+    map.addListener("bounds_changed", () => {
+        searchBox.setBounds(map.getBounds());
+    });
 } // initMap END --------------------------------

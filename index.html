@@ -71,12 +71,6 @@
                             placeholder="Search Box"
                           />
                             <div id="map"></div>
-
-                            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-                            <script
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&callback=initAutocomplete&libraries=places&v=weekly"
-                            async
-                          ></script>
                         </div>
                         <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
                         <div id="legend" class="col-md-8 float-right">
@@ -253,7 +247,7 @@
             </section>
         </header>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly"></script>
         <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 
         <script

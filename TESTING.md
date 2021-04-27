@@ -1,6 +1,48 @@
 ## Bugs
 
-#### Map not loading on every page load
+### Map search box not working correctly and breaking map functionality
+
+Expected:  
+When using the map search box, a list of predicted searches should appear in the dropdown, allowing the user to either finish their own search or select one of the options from the dropdown. A marker should then be created for that place and the map should zoom in on that location.
+
+Testing:  
+The feature was tested by loading the page, typing something into the search box to see if predictions loaded in the dropdown, and then trying to add a marker to that location.
+
+Result:  
+Having followed the instructions listed in the Google documentation [here](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript) and [here](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-html), this feature did not always work. On some occasions the map would not even load on page load. On others, the map and search bar would load but the dropdown would not appear when the user starts to type a location. On other occasions the map loads and the search bar works as expected, providing suggested locations in the dropdown and adding a marker to that location when selected.
+
+The following errors were listed in the Chrome Developer Tools Console:
+
+![Screenshot showing console before fix](https://i.ibb.co/vZqpxLW/Screenshot-2021-04-27-at-15-01-42.png)
+
+
+Fix:  
+To fix this, the Google Placeslaces script had to be removed and the script for the map at the end of the HTML body had to be modified from:
+``` 
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8">
+/script>
+```
+
+To:
+
+```
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly">
+</script>
+```
+
+This meant the Google Map, Google Places API and Places Library loaded correctly and the map and search box worked as they should.
+
+Screen shot of Chrome Developer Tools Console after fix:
+
+![Screenshot showing console after fix](https://i.ibb.co/DYr9rCk/Screenshot-2021-04-27-at-15-18-46.png)
+
+
+## Testing
+
+
+### Map not loading on every page load
 
 There was an issue with the Google Map not loading on every page load. See screenshot of site preview and error message from console below:
 

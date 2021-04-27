@@ -206,13 +206,14 @@ function initMap() {
             description:
                 "Italian restaurant serving up traditional staples. A family run, bright and airy venue. Relaxed atmosphere with professional, friendly service.",
             website: "https://www.buonasera.co.uk/",
-            facebook: "https://www.facebook.com/buonaserarestaurant/?ref=page_internal",
+            facebook:
+                "https://www.facebook.com/buonaserarestaurant/?ref=page_internal",
             twitter: "#",
             instagram: "https://www.instagram.com/buonasera.restaurant/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
             position: new google.maps.LatLng(
-                51.460318082023775, 
+                51.460318082023775,
                 -0.16687674600056668
             ),
             type: "restaurant",
@@ -309,7 +310,7 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
             position: new google.maps.LatLng(
-                51.5263352998997, 
+                51.5263352998997,
                 -0.07990549598159494
             ),
             type: "cocktail",
@@ -334,7 +335,7 @@ function initMap() {
             ),
             type: "street",
         },
-        
+
         {
             // Peckham Levels
             name: "Peckham Levels",
@@ -443,15 +444,15 @@ function initMap() {
         // Info window for each marker to display venue name
         const infowindow = new google.maps.InfoWindow({
             content: venue.name,
-          });
-        
+        });
+
         // display infowindow containing venue name for each marker on mouse-over
-        marker.addListener('mouseover', function() {
+        marker.addListener("mouseover", function () {
             infowindow.open(map, this);
         });
-        
+
         // hide infowindow containing venue name for each marker on mouse-out
-        marker.addListener('mouseout', function() {
+        marker.addListener("mouseout", function () {
             infowindow.close();
         });
 
@@ -676,13 +677,63 @@ function initMap() {
         $(".venue-type-checkbox").prop("checked", $(this).prop("checked"));
     });
 
-      // Create the search box and link it to the UI element.
-    // Credit: https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript
+    // ------------------------------------Google Places API
+    // Credit: code modified from https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-javascript
+
+    // Create the search box and link it to the UI element.
     const input = document.getElementById("pac-input");
     const searchBox = new google.maps.places.SearchBox(input);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
     // Bias the SearchBox results towards current map's viewport.
     map.addListener("bounds_changed", () => {
         searchBox.setBounds(map.getBounds());
+    });
+
+    let placeMarkers = [];
+    // Listen for the event fired when the user selects a prediction and retrieve
+    // more details for that place.
+    searchBox.addListener("places_changed", () => {
+        const places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+            return;
+        }
+        // Clear out the old markers on new user search
+        placeMarkers.forEach((marker) => {
+            marker.setMap(null);
+        });
+        placeMarkers = [];
+        // For each place, get the icon, name and location
+        const bounds = new google.maps.LatLngBounds();
+        places.forEach((place) => {
+            if (!place.geometry || !place.geometry.location) {
+                console.log("Returned place contains no geometry");
+                return;
+            }
+            const icon = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25),
+            };
+            // Create a marker for each place
+            placeMarkers.push(
+                new google.maps.Marker({
+                    map,
+                    icon,
+                    title: place.name,
+                    position: place.geometry.location,
+                })
+            );
+
+            if (place.geometry.viewport) {
+                // Only geocodes have viewport
+                bounds.union(place.geometry.viewport);
+            } else {
+                bounds.extend(place.geometry.location);
+            }
+        });
+        map.fitBounds(bounds);
     });
 } // initMap END --------------------------------

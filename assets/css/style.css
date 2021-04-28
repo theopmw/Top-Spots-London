@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid:wght@100;300;400;900&display=swap");
 
-#map {
-    width: 100%;
-    height: 85vh;
+/* ---------------------------------------------------General spacing/text */
+
+
+
+/* ---------------------------------Text */
+
+.font-londrina-shadow {
+    font-family: "Londrina Shadow", sans-serif;
 }
+
+.font-londrina-solid {
+    font-family: "Londrina Solid", sans-serif;
+}
+
+/* ---------------------------------------------------Header */
+
+/* ---------------------------------Logo */
 
 .logo {
     background-color: #063367;
@@ -23,17 +36,9 @@
     padding-left: 1.375rem;
     margin-top: -0.4375rem;
     margin-bottom: 0;
-    
 }
 
-.font-londrina-shadow {
-    font-family: 'Londrina Shadow', sans-serif;
-}
-
-.font-londrina-solid {
-    font-family: 'Londrina Solid', sans-serif;
-    
-}
+/* ---------------------------------Navbar */
 
 .navbar {
     background-color: #063367;
@@ -46,6 +51,9 @@
     font-weight: 100;
 }
 
-/* .navbar-nav { 
-    flex-direction: row;
-} */
+/* ---------------------------------------------------Map */
+
+#map {
+    width: 100%;
+    height: 85vh;
+}

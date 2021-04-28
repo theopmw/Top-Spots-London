@@ -32,231 +32,199 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col logo">
-                        <h4 class="font-londrina-shadow logo-1 d-flex justify-content-center">TOP SPOTS</h4>
-                        <h5 class="font-londrina-solid logo-2 d-flex justify-content-center">LONDON</h5>
+                        <h4
+                            class="font-londrina-shadow logo-1 d-flex justify-content-center"
+                        >
+                            TOP SPOTS
+                        </h4>
+                        <h5
+                            class="font-londrina-solid logo-2 d-flex justify-content-center"
+                        >
+                            LONDON
+                        </h5>
                     </div>
-                    
                 </div>
             </div>
-            <nav class="navbar navbar-light navbar-expand-sm">
-                <a href="index.html" class="navbar-brand"></a>
 
-                <button
-                    class="navbar-toggler ml-auto custom-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <div id="navbarNavDropdown" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="active nav-item ml-md-2 ml-lg-4">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item ml-md-2 ml-lg-4">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item ml-md-2 ml-lg-4">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <nav class="navbar navbar-dark navbar-expand font-londrina-solid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="active nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </nav>
-            
-            
-
-            <section>
-                <div class="container-fluid">
-                    <div class="row d-md-block">
-                        <div class="col-md-4 float-left">
-                            <!-- Credit: https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-html -->
-                            <input
+        </header>
+        <section>
+            <div class="container-fluid">
+                <div class="row d-md-block">
+                    <div class="col-md-4 float-left">
+                        <!-- Credit: https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-html -->
+                        <input
                             id="pac-input"
                             class="controls"
                             type="text"
                             placeholder="Search Box"
-                          />
-                            <div id="map"></div>
+                        />
+                        <div id="map"></div>
+                    </div>
+                    <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
+                    <div id="legend" class="col-md-8 float-right">
+                        <div class="legend">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h4>Legend</h4>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input"
+                                                        id="show-hide-all-checkbox"
+                                                    />
+                                                    Show/Hide All
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input venue-type-checkbox"
+                                                        id="restaurant-checkbox"
+                                                    /><img
+                                                        src="assets/images/map_icons/restaurant.png"
+                                                    />
+                                                    Restaurants
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input venue-type-checkbox"
+                                                        id="pub-checkbox"
+                                                    /><img
+                                                        src="assets/images/map_icons/pub.png"
+                                                    />
+                                                    Pubs
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input venue-type-checkbox"
+                                                        id="cocktail-bar-checkbox"
+                                                    /><img
+                                                        src="assets/images/map_icons/cocktail_bar.png"
+                                                    />
+                                                    Cocktail Bars
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input venue-type-checkbox"
+                                                        id="street-food-market-checkbox"
+                                                    /><img
+                                                        src="assets/images/map_icons/street_food_market.png"
+                                                    />
+                                                    Street Food Markets
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input venue-type-checkbox"
+                                                        id="brewery-checkbox"
+                                                    /><img
+                                                        src="assets/images/map_icons/brewery.png"
+                                                    />
+                                                    Breweries
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="form-check-input venue-type-checkbox"
+                                                        id="distillery-checkbox"
+                                                    /><img
+                                                        src="assets/images/map_icons/distillery.png"
+                                                    />
+                                                    Distilleries
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
-                        <div id="legend" class="col-md-8 float-right">
-                            <div class="legend">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <h4>Legend</h4>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input"
-                                                            id="show-hide-all-checkbox"
-                                                        />
-                                                        Show/Hide All
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input venue-type-checkbox"
-                                                            id="restaurant-checkbox"
-                                                        /><img
-                                                            src="assets/images/map_icons/restaurant.png"
-                                                        />
-                                                        Restaurants
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input venue-type-checkbox"
-                                                            id="pub-checkbox"
-                                                        /><img
-                                                            src="assets/images/map_icons/pub.png"
-                                                        />
-                                                        Pubs
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input venue-type-checkbox"
-                                                            id="cocktail-bar-checkbox"
-                                                        /><img
-                                                            src="assets/images/map_icons/cocktail_bar.png"
-                                                        />
-                                                        Cocktail Bars
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input venue-type-checkbox"
-                                                            id="street-food-market-checkbox"
-                                                        /><img
-                                                            src="assets/images/map_icons/street_food_market.png"
-                                                        />
-                                                        Street Food Markets
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input venue-type-checkbox"
-                                                            id="brewery-checkbox"
-                                                        /><img
-                                                            src="assets/images/map_icons/brewery.png"
-                                                        />
-                                                        Breweries
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-check-inline">
-                                                    <label
-                                                        class="form-check-label"
-                                                    >
-                                                        <input
-                                                            type="checkbox"
-                                                            class="form-check-input venue-type-checkbox"
-                                                            id="distillery-checkbox"
-                                                        /><img
-                                                            src="assets/images/map_icons/distillery.png"
-                                                        />
-                                                        Distilleries
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    </div>
 
-                        <div class="col-md-8 float-right">
-                            <h1>Filter Boxes</h1>
-                        </div>
+                    <div class="col-md-8 float-right">
+                        <h1>Filter Boxes</h1>
+                    </div>
 
-                        <div class="col-md-8 float-right">
-                            <h1 class="info-heading">INFO</h1>
-                            <div id="name">TEST</div>
-                            <div id="address"></div>
-                            <div id="description"></div>
-                            <div id="website"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col list-inline social-links">
-                                        <div
-                                            id="facebook"
-                                            class="list-inline-item"
-                                        ></div>
-                                        <div
-                                            id="twitter"
-                                            class="list-inline-item"
-                                        ></div>
-                                        <div
-                                            id="instagram"
-                                            class="list-inline-item"
-                                        ></div>
-                                        <div
-                                            id="tripadvisor"
-                                            class="list-inline-item"
-                                        ></div>
-                                    </div>
+                    <div class="col-md-8 float-right">
+                        <h1 class="info-heading">INFO</h1>
+                        <div id="name">TEST</div>
+                        <div id="address"></div>
+                        <div id="description"></div>
+                        <div id="website"></div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col list-inline social-links">
+                                    <div
+                                        id="facebook"
+                                        class="list-inline-item"
+                                    ></div>
+                                    <div
+                                        id="twitter"
+                                        class="list-inline-item"
+                                    ></div>
+                                    <div
+                                        id="instagram"
+                                        class="list-inline-item"
+                                    ></div>
+                                    <div
+                                        id="tripadvisor"
+                                        class="list-inline-item"
+                                    ></div>
                                 </div>
                             </div>
                         </div>
-
-                      
                     </div>
                 </div>
-
-                
-            </section>
-        </header>
+            </div>
+        </section>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly"></script>
         <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>

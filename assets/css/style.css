@@ -2,9 +2,6 @@
 
 /* ---------------------------------------------------General spacing/text/borders */
 
-
-
-
 /* ---------------------------------Text */
 
 .font-londrina-shadow {
@@ -17,11 +14,10 @@
 
 /* ---------------------------------Borders*/
 
-
 #legend,
 #filter-box,
-#name,
-#address,
+/* #name, */
+/* #address, */
 #description,
 #website,
 #social-links {
@@ -87,3 +83,24 @@
     padding: 0;
     background-color: #063367;
 }
+
+/* ---------------------------------------------------Venue information */
+
+/* ---------------------------------Name */
+
+#name {
+    padding-left: 5px;
+    font-size: 40px;
+    color: #fff;
+}
+
+/* ---------------------------------Address */
+
+#address {
+    /* margin: 0; */
+    color: #fff;
+    font-weight: 100;
+    padding-left: 5px;
+    margin-top: -10px;
+}
+

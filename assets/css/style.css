@@ -19,8 +19,7 @@
 /* #name, */
 /* #address, */
 #description,
-#website,
-#social-links {
+#website {
     background-color: #fff;
     border: solid 5px #063367;
     border-radius: 10px;
@@ -97,10 +96,38 @@
 /* ---------------------------------Address */
 
 #address {
-    /* margin: 0; */
     color: #fff;
     font-weight: 100;
     padding-left: 5px;
     margin-top: -10px;
 }
 
+/* ---------------------------------Social links */
+
+#social-links {
+    text-align: center;
+}
+
+#facebook a,
+#twitter a,
+#instagram a,
+#tripadvisor a {
+    color:#fff;
+    font-size: 40px;
+    padding: 0 20px 0 20px;
+}
+
+
+/* ---------------------------------------------------Media queries */
+
+
+
+@media screen and (max-width: 576px) {
+    #facebook a,
+    #twitter a,
+    #instagram a,
+    #tripadvisor a {
+        font-size: 30px;
+
+    }
+}

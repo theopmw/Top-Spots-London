@@ -31,10 +31,9 @@ body {
 /* ---------------------------------Borders*/
 
 /* REMOVE? */
-#legend,
-#filter-box {
+#legend {
     background-color: #fff;
-    /* border: solid 5px #063367; */
+    border: solid 5px #063367;
     border-radius: 10px;
 }
 
@@ -81,7 +80,7 @@ body {
     width: 100%;
     height: 85vh;
     border-radius: 10px;
-    /* border: solid 5px #063367; */
+    border: solid 5px #063367;
     
 }
 

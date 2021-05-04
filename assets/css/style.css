@@ -15,10 +15,7 @@
 /* ---------------------------------Borders*/
 
 #legend,
-#filter-box,
-/* #name, */
-/* #address, */
-#website {
+#filter-box {
     background-color: #fff;
     border: solid 5px #063367;
     border-radius: 10px;
@@ -121,6 +118,14 @@
     color:#fff;
     font-size: 40px;
     padding: 0 20px 0 20px;
+}
+
+/* ---------------------------------Website */
+
+#website a {
+    color:#fff;
+    font-size: 24px;
+    padding-left: 5px;
 }
 
 

@@ -25,7 +25,7 @@
         />
 
         <link rel="shortcut icon" href="assets/images/favicon/top_spots.ico" type="image/x-icon"/> 
-        
+
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
 
@@ -59,9 +59,25 @@
                 </ul>
             </nav>
         </header>
-        <section>
-
-        </section>
+            <div id="contact-form" class="font-londrina-solid">
+                <form>
+                    <div class="form-group">
+                        <label for="formName">Name:</label>
+                        <input type="text" class="form-control" id="formName" placeholder="Your name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail">Email address:</label>
+                        <input type="email" class="form-control" id="formEmail" placeholder="Your Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="MessageTextarea">Message:</label>
+                        <textarea class="form-control" id="MessageTextarea" rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="form-group send-button">
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly"></script>
         <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 

@@ -41,13 +41,20 @@ Screen shot of Chrome Developer Tools Console after fix:
 
 ## Testing
 
-
 ### Map not loading on every page load
 
-There was an issue with the Google Map not loading on every page load. See screenshot of site preview and error message from console below:
+Expected:  
+Google Maps API to load correctly on every page load.
+
+Testing:  
+Reload and hard reload the page to test if the map loads correctly every time.
+
+Results:   
+On some page loads the map failed to load, below is a screenshot of the site preview and console:
 
 ![Screenshot showing site preview and error message](https://i.ibb.co/47Sqfxv/Screenshot-2021-04-11-at-07-52-39.png)
 
+Fix:  
 To fix this, the callback ("&callback=initMap") was removed from the original ```<script>``` for Google Maps in the index.html file:
 
 Before:
@@ -66,7 +73,7 @@ function initMap() {
     // Function code
 };
 ```
-Doing this solved the issue and meant the map loaded reliably on verey page load as the callback was performed manually in the maps.js file, rather than in the Google Maps ```<script>```
+This solved the issue and meant the map loaded reliably on every page load, the callback was performed manually in the maps.js file, rather than in the Google Maps ```<script>```
 
 
 ### Pushing the venues into separate arrays sorted by type:

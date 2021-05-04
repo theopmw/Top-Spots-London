@@ -6,6 +6,10 @@ html {
     background-color: #063367;
 }
 
+body {
+    background-color: #063367;
+}
+
 
 /* ---------------------------------Text */
 
@@ -142,6 +146,17 @@ html {
     padding-left: 5px;
 }
 
+/* ---------------------------------------------------Contact form */
+
+#contact-form {
+    width: 66%;
+    background-color: #063367;
+    margin: 0 auto;
+}
+
+#contact-form form label {
+    color: #fff;
+}
 
 /* ---------------------------------------------------Media queries */
 

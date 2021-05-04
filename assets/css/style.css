@@ -2,6 +2,7 @@
 
 /* ---------------------------------------------------General spacing/text/borders */
 
+
 /* ---------------------------------Text */
 
 .font-londrina-shadow {
@@ -151,3 +152,8 @@
     }
 }
 
+/* Credit: code modified from https://stackoverflow.com/questions/25405105/break-a-table-row-into-multiple-line-responsive-layout */
+@media screen and (max-width: 768px) {
+    .legend-table tr {    display: table;  width:100%;    }               
+    .legend-table td {    display: table-row; }           
+}

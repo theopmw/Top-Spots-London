@@ -21,6 +21,13 @@ body {
     font-family: "Londrina Solid", sans-serif;
 }
 
+/* ---------------------------------Headings */
+
+.heading {
+    color: #fff;
+    font-size: 30px;
+}
+
 /* ---------------------------------Borders*/
 
 /* REMOVE? */

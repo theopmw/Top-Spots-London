@@ -74,7 +74,7 @@
 
 /* ---------------------------------------------------Legend */
 
-#map-filters,
+#map-filters, 
 #info-container {
     padding: 0;
     background-color: #063367;
@@ -82,6 +82,7 @@
 
 #legend {
     color:#fff;
+    padding-left: 5px;
 }
 
 #legend h2 {

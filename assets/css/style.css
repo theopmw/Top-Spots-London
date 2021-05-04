@@ -14,7 +14,7 @@
 
 /* ---------------------------------Borders*/
 
-#legend,
+/* REMOVE? */
 #filter-box {
     background-color: #fff;
     border: solid 5px #063367;
@@ -77,6 +77,14 @@
 #info-container {
     padding: 0;
     background-color: #063367;
+}
+
+#legend {
+    color:#fff;
+}
+
+#legend h2 {
+    font-size: 40px;
 }
 
 /* ---------------------------------------------------Venue information */

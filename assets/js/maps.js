@@ -390,7 +390,7 @@ function initMap() {
             venueAddress.innerHTML = venue.address;
             venueDescription.innerHTML = venue.description;
             venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
-            <span class="sr-only">Website</span>Visit ${venue.name} Website</a>`;
+            <span class="sr-only">Website</span>Visit ${venue.name} Website <i class="fas fa-external-link-alt"></i></a>`;
             // Facebook
             if (venue.facebook === "#") {
                 // Check to see if the venue.favebook value is "#"

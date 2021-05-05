@@ -162,12 +162,11 @@ body {
 
 #contact-form {
     width: 66%;
-    background-color: #063367;
     margin: 0 auto;
 }
 
 #contact-form form label {
-    color: #fff;
+    color:#063367;
 }
 
 /* ---------------------------------------------------Media queries */

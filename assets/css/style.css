@@ -15,7 +15,7 @@
 /* ---------------------------------Headings */
 
 .heading {
-    color: #fff;
+    color:#063367;
     font-size: 30px;
 }
 
@@ -114,9 +114,9 @@ html, body {
     padding-left: 5px;
 }
 
-#legend h2 {
+/* #legend h2 {
     font-size: 40px;
-}
+} */
 
 /* ---------------------------------------------------Venue information */
 

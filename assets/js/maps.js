@@ -15,8 +15,6 @@ let venueTripadvisor = document.getElementById("tripadvisor");
 // Or use JQuery:
 // let venueName = $("#name");
 
-console.log(venueName);
-
 // Empty marker arrays by venue type (Filled by markerToArray function)
 let restaurantMarkers = [];
 let pubMarkers = [];
@@ -73,6 +71,7 @@ function initMap() {
             description:
                 "Serving Breakfast, Lunch and Dinner in the crumbling grandeur of and antique-filled Georgian mansion, built for the Duke of Brunswick in 1758. Heated outdoor terrace, cocktail bar, romantic candle-lit dining room, intimate private rooms for eating and celebrating, historic vaulted cellars with an incredible list of rare wines and bar snacks.",
             website: "https://brunswickhouse.london/",
+            booking: "https://resy.com/cities/ldn/brunswick-house?date=2021-05-07&seats=2",
             facebook: "https://www.facebook.com/BrunswickHouseLondon/",
             twitter: "https://twitter.com/brunswickhse?lang=en",
             instagram: "https://www.instagram.com/brunswick_house/",
@@ -92,6 +91,7 @@ function initMap() {
             description:
                 "The Laundry is an all day neighbourhood dining destination. Set in the heart of Brixton on Coldharbour Lane, The Laundry is a bustling all-day neighbourhood Bistro, Wine Shop & Café with a heated terrace.",
             website: "https://thelaundrybrixton.com/",
+            booking: "https://thelaundrybrixton.com/reservations",
             facebook: "https://www.facebook.com/brixtonlaundry/",
             twitter: "#",
             instagram: "https://www.instagram.com/brixtonlaundry/",
@@ -111,6 +111,7 @@ function initMap() {
             description:
                 "Occupying a railway arch in London's buzzing Flat Iron Square, Bar Douro was created as a way to bring authentic Portuguese food to London. With ties to Portugal traced back through the family, Bar Douro has matched exquisite Portuguese wines with all the tradition of local Portuguese food. The atmospheric 30-cover marble counter-top dining space offers an intimate window to the best of Portuguese culinary heritage.",
             website: "https://www.bardouro.co.uk/london-bridge",
+            booking: "https://www.bardouro.co.uk/london-bridge",
             facebook: "https://www.facebook.com/bardourouk/",
             twitter: "https://twitter.com/bardouro",
             instagram: "https://www.instagram.com/bardouro/",
@@ -131,6 +132,7 @@ function initMap() {
             description:
                 "Wine Shop, Tapas Bar & Delicatessen, The Tapas Room presents an unrivalled & thorough range of specialist Spanish & Basque Wine, Sherry, Cava, Vermouth and Craft Beers alongside a refined Tapas, charcuterie, cheese & deli menu. The Tapas Room is the sister business to the acclaimed street food van and Pop Brixton restaurant Donostia Social Club and the associated DSC Imports which specialises in the exclusive distribution of Basque and Spanish wines & beers to the London bar and restaurant industry. The Tapas Room was launched in order to encourage a culture of learning more about Spanish wine, with the result of drinking better for less, in an intimate and friendly environment.",
             website: "https://www.thetapasroom.co.uk/",
+            booking: "https://www.thetapasroom.co.uk/",
             facebook: "https://www.facebook.com/thetapasroom",
             twitter: "https://twitter.com/thetapasroom",
             instagram: "https://www.instagram.com/thetapasroom/",
@@ -150,6 +152,7 @@ function initMap() {
             description:
                 "Your local South-East spot for buying and drinking great wines and eating delicious, seasonally-focused food. Peckham Cellars is your friendly neighbourhood wine bar and shop with a bonus wine delivery service!  The complete package for all your wining and dining needs. Peckham Cellars is a Bib Gourmand Winner 2021.",
             website: "https://peckhamcellars.co.uk/",
+            booking: "https://resy.com/cities/ldn/peckham-cellars?date=2021-05-07&seats=2",
             facebook: "https://www.facebook.com/peckhamcellars/",
             twitter: "https://twitter.com/peckhamcellars?lang=en",
             instagram: "https://www.instagram.com/peckhamcellars/?hl=en",
@@ -169,6 +172,7 @@ function initMap() {
             description:
                 "Cool, laid-back restaurant with quirky dishes & drinks inspired by Bangkok’s late-night canteens.",
             website: "https://www.smokinggoatbar.com/",
+            bookoing: "https://smokinggoatbar.com/reservations/",
             facebook:
                 "https://www.facebook.com/Smoking-Goat-Shoreditch-815145515363047/",
             twitter: "#",
@@ -182,12 +186,13 @@ function initMap() {
             type: "restaurant",
         },
         {
-            // DinTai Fung
+            // Din Tai Fung
             name: "Din Tai Fung",
             address: "5 Henrietta St, Covent Garden, London, WC2E 8PS",
             description:
                 "Taiwan is know for producing somne of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling",
             website: "https://www.dintaifung-uk.com/",
+            booking: "https://www.dintaifung-uk.com/reservations/",
             facebook: "https://www.facebook.com/dintaifunguk/",
             twitter: "#",
             instagram: "https://www.instagram.com/dintaifunguk/?hl=en",
@@ -206,6 +211,7 @@ function initMap() {
             description:
                 "Italian restaurant serving up traditional staples. A family run, bright and airy venue. Relaxed atmosphere with professional, friendly service.",
             website: "https://www.buonasera.co.uk/",
+            booking: "https://www.buonasera.co.uk/visit",
             facebook:
                 "https://www.facebook.com/buonaserarestaurant/?ref=page_internal",
             twitter: "#",
@@ -227,6 +233,7 @@ function initMap() {
             description:
                 "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
             website: "https://balhambowlsclub.com/",
+            booking: "https://balhambowlsclub.com/",
             facebook:
                 "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
             twitter: "https://twitter.com/balhambowls?lang=en/",
@@ -247,6 +254,7 @@ function initMap() {
             description:
                 "The Camberwell Arms is a South London restaurant and bar, headed up by Chef Director, Michael Davies, who creates regularly changing menus based on seasonal and quality ingredients. Set within a public house, bars are also an integral part of what they do. The Camberwell Arms has two bars – downstairs you will find a traditional pub, a place to drop in for a drink and a snack, whilst the upstairs bar is open late for classic drinks and great music with a 2am license.",
             website: "https://thecamberwellarms.co.uk/",
+            booking: "https://thecamberwellarms.co.uk/reservations/",
             facebook: "https://www.facebook.com/thecamberwellarms/",
             twitter: "https://twitter.com/camberwellarms",
             instagram: "https://www.instagram.com/thecamberwellarms/",
@@ -266,6 +274,7 @@ function initMap() {
             description:
                 "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
             website: "http://falteringfullback.com/",
+            booking: "#",
             facebook:
                 "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
             twitter: "#",
@@ -287,6 +296,7 @@ function initMap() {
             description:
                 "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
             website: "https://www.tolapeckham.com/",
+            booking: "#",
             facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
             twitter: "#",
             instagram: "https://www.instagram.com/tolapeckham/",
@@ -304,6 +314,7 @@ function initMap() {
             description:
                 "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well woth a visit!",
             website: "https://www.calloohcallaybar.com/",
+            booking: "https://www.calloohcallaybar.com/bookings/events/gifts",
             facebook: "https://www.facebook.com/CalloohCallayLondon",
             twitter: "https://twitter.com/callooh_callay?lang=en",
             instagram: "https://www.instagram.com/calloohcallaybar/?hl=en",
@@ -325,6 +336,7 @@ function initMap() {
                 "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
             website: "https://www.popbrixton.org/",
             facebook: "https://www.facebook.com/popbrixton/",
+            booking: "#",
             twitter: "https://twitter.com/PopBrixton",
             instagram: "https://www.instagram.com/popbrixton/",
             tripadvisor:
@@ -345,6 +357,7 @@ function initMap() {
             description:
                 "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
             website: "https://peckhamlevels.org/",
+            booking: "#",
             facebook: "https://www.facebook.com/peckhamlevels/",
             twitter: "https://twitter.com/peckhamlevels/",
             instagram: "https://www.instagram.com/peckhamlevels/",
@@ -364,6 +377,7 @@ function initMap() {
             description:
                 "Mondo Brewing is an independent brewery grounded in London, founded in 2014 by two Americans. A stone’s throw away from the iconic Battersea Power Station, their brewery and tap house are nestled just a few hundred yards south of there, waiting to be discovered by thirsty patrons.",
             website: "https://mondobeer.com/",
+            booking: "#",
             facebook: "https://www.facebook.com/mondobrewing/",
             twitter: "https://twitter.com/mondobrewing",
             instagram: "https://www.instagram.com/mondobrewing/",

@@ -205,11 +205,12 @@ html, body {
     padding: 0 20px 0 20px;
 }
 
-/* ---------------------------------Website */
+/* ---------------------------------Website/Bookings */
 
-#website a {
+#website a,
+#booking a {
     color:#063367;
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 5px;
 }
 

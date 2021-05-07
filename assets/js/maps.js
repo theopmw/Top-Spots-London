@@ -12,6 +12,11 @@ let venueFacebook = document.getElementById("facebook");
 let venueTwitter = document.getElementById("twitter");
 let venueInstagram = document.getElementById("instagram");
 let venueTripadvisor = document.getElementById("tripadvisor");
+let venueImage1 = document.getElementById("image1");
+let venueImage2 = document.getElementById("image2");
+let venueImage3 = document.getElementById("image3");
+
+
 
 // Or use JQuery:
 // let venueName = $("#name");
@@ -78,6 +83,9 @@ function initMap() {
             instagram: "https://www.instagram.com/brunswick_house/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d2402977-Reviews-Brunswick_House-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image3: "assets/images/venue_images/bottles.jpg",
             position: new google.maps.LatLng(
                 51.484885901267916,
                 -0.12661603219847756
@@ -456,6 +464,13 @@ function initMap() {
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
             }
+            // Venue Image 1
+            venueImage1.innerHTML = `<img src="${venue.image1}" alt="" width="100" height="100">`
+            // Venue Image 2
+            venueImage2.innerHTML = `<img src="${venue.image2}" alt="" width="100" height="100">`
+            // Venue Image 3
+            venueImage3.innerHTML = `<img src="${venue.image3}" alt="" width="100" height="100">`
+            
         });
 
         // Credit: code modified from https://stackoverflow.com/questions/17775270/google-maps-zoom-in-on-marker-with-one-click-multiple-markers

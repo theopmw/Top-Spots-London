@@ -81,6 +81,18 @@ html, body {
     flex-shrink: 0;
     background-color: #063367;
     height: 5rem;
+    position: relative;
+  }
+
+  /* ---------------------------------Copyright */
+
+  #copyright {
+    color:#fff;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
   }
 
 /* ---------------------------------------------------Map */
@@ -178,7 +190,6 @@ html, body {
     color:#063367;
 }
 
-/* ---------------------------------------------------Footer */
 
 
 

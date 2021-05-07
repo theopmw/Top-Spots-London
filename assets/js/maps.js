@@ -7,6 +7,7 @@ let venueName = document.getElementById("name");
 let venueAddress = document.getElementById("address");
 let venueDescription = document.getElementById("description");
 let venueWebsite = document.getElementById("website");
+let venueBooking = document.getElementById("booking");
 let venueFacebook = document.getElementById("facebook");
 let venueTwitter = document.getElementById("twitter");
 let venueInstagram = document.getElementById("instagram");
@@ -405,6 +406,16 @@ function initMap() {
             venueDescription.innerHTML = venue.description;
             venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
             <span class="sr-only">Website</span>Visit ${venue.name} Website <i class="fas fa-external-link-alt"></i></a>`;
+
+            // Booking
+            if (venue.booking === "#") {
+                // Check to see if the venue.booking value is "#"
+                venueBooking.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+            } else {
+                venueBooking.classList.remove("d-none"); // If venue.facebook has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
+                venueBooking.innerHTML = `<a href="${venue.booking}" target="_blank" rel="noopener">
+            <span class="sr-only">Booking</span>Reserve a table at ${venue.name} <i class="fas fa-external-link-alt"></i></a>`;; // generates the icon and link to be displayed in the DOM
+            }
             // Facebook
             if (venue.facebook === "#") {
                 // Check to see if the venue.favebook value is "#"

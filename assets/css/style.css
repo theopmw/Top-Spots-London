@@ -81,18 +81,51 @@ html, body {
     flex-shrink: 0;
     background-color: #063367;
     height: 5rem;
-    position: relative;
+   
   }
 
   /* ---------------------------------Copyright */
 
+
   #copyright {
     color:#fff;
     font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: table;
+    height: 5rem;
+    overflow: hidden;
+  }
 
+  .copyright-text {
+      display: table-cell;
+      vertical-align: middle;
+  }
+
+  #copyright p {
+      margin: 0;
+  }
+
+  /* ---------------------------------Footer Socials */
+
+  #footer-socials {
+      text-align: right;
+      font-size: 30px;
+      display: table;
+      height: 5rem;
+      overflow: hidden;
+  }
+
+  .footer-social-links {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .footer-social-links ul {
+      margin: 0
+  }
+
+  #footer-socials a {
+      color: #fff;
+      padding: 0 1.25rem 0 1.25rem;
   }
 
 /* ---------------------------------------------------Map */

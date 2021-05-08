@@ -84,8 +84,11 @@ function initMap() {
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d2402977-Reviews-Brunswick_House-London_England.html",
             image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
             image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
             image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.484885901267916,
                 -0.12661603219847756
@@ -106,6 +109,12 @@ function initMap() {
             instagram: "https://www.instagram.com/brixtonlaundry/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d19430377-Reviews-The_Laundry-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.46288429684225,
                 -0.1110045386230423
@@ -126,6 +135,12 @@ function initMap() {
             instagram: "https://www.instagram.com/bardouro/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.50460622554422,
                 -0.09526187321534595
@@ -147,6 +162,12 @@ function initMap() {
             instagram: "https://www.instagram.com/thetapasroom/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d21237612-Reviews-The_Tapas_Room-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.462593456997624,
                 -0.11181741121010706
@@ -167,6 +188,12 @@ function initMap() {
             instagram: "https://www.instagram.com/peckhamcellars/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d20083945-Reviews-Peckham_Cellars-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.47387240142246,
                 -0.05882183068764925
@@ -188,6 +215,12 @@ function initMap() {
             instagram: "https://www.instagram.com/smokinggoatbar/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d13078857-Reviews-Smoking_Goat_Shoreditch-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.52495237670227,
                 -0.07757001481354464
@@ -207,6 +240,12 @@ function initMap() {
             instagram: "https://www.instagram.com/dintaifunguk/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d15599297-Reviews-Din_Tai_Fung_UK-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.51128445720902,
                 -0.12321491534128642
@@ -227,6 +266,12 @@ function initMap() {
             instagram: "https://www.instagram.com/buonasera.restaurant/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.460318082023775,
                 -0.16687674600056668
@@ -249,6 +294,12 @@ function initMap() {
             instagram: "https://www.instagram.com/balhambowls/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.445067652541034,
                 -0.15250217267682872
@@ -269,6 +320,12 @@ function initMap() {
             instagram: "https://www.instagram.com/thecamberwellarms/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.47442936151898,
                 -0.08844233069014149
@@ -290,6 +347,12 @@ function initMap() {
             instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.56868558992803,
                 -0.10817859523605393
@@ -310,6 +373,12 @@ function initMap() {
             twitter: "#",
             instagram: "https://www.instagram.com/tolapeckham/",
             tripadvisor: "#",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.473367183358455,
                 -0.07046348616823567
@@ -329,6 +398,12 @@ function initMap() {
             instagram: "https://www.instagram.com/calloohcallaybar/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.5263352998997,
                 -0.07990549598159494
@@ -350,6 +425,12 @@ function initMap() {
             instagram: "https://www.instagram.com/popbrixton/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.46341404023569,
                 -0.11228722008675468
@@ -371,6 +452,12 @@ function initMap() {
             twitter: "https://twitter.com/peckhamlevels/",
             instagram: "https://www.instagram.com/peckhamlevels/",
             tripadvisor: "#",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.471557276187816,
                 -0.06720426931757024
@@ -391,6 +478,12 @@ function initMap() {
             twitter: "https://twitter.com/mondobrewing",
             instagram: "https://www.instagram.com/mondobrewing/",
             tripadvisor: "#",
+            image1: "assets/images/venue_images/bottles.jpg",
+            image1Alt: "Bottles on bar shelf",
+            image2: "assets/images/venue_images/bottles.jpg",
+            image2Alt: "",
+            image3: "assets/images/venue_images/bottles.jpg",
+            image3Alt: "",
             position: new google.maps.LatLng(
                 51.47515303781801,
                 -0.14036621534394356
@@ -465,7 +558,7 @@ function initMap() {
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
             }
             // Venue Image 1
-            venueImage1.innerHTML = `<img src="${venue.image1}" alt="" width="100" height="100">`
+            venueImage1.innerHTML = `<img src="${venue.image1}" alt="${venue.image1Alt}" width="100" height="100">`
             // Venue Image 2
             venueImage2.innerHTML = `<img src="${venue.image2}" alt="" width="100" height="100">`
             // Venue Image 3

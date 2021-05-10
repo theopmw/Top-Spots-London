@@ -63,37 +63,63 @@ The colour used for map marker icons is dusky blue (#005B8F) for the background 
 
 ## Features
 
-Each page features a responsive **navigation bar** with conventional placing of logo (top left) and navigation menu items (top right).
+### Consistent Site Features and Components
 
-Each page features a **footer** with (social media links and?) copyright information.
+* All pages of the site contain the same **Header** and **Footer** components:
 
-Each page features a **hero image** featuring the London skyline.
+    * The **Header** consists of the site logo in the centre of the page with the navbar menu items situated undernath it.
+        * The navigation menu (situated beneath the site logo on all pages) was built using the bootstrap **Navbar** component and features two menu items, **Home** and **Contact**.
+    
+    * The **Footer** contains the copyright information for the site to the left and links to the Top Spots social media accounts to the right. Note that at the time of publishing, Top Spots does not have any social media accounts, so the link icons are placeholders and link to the home page of the social media platform.
 
-#### Home
+### Home Page
 
-The landing page features an **interactive map** (Google Maps API) displaying a range of **custom markers** denoting the type of venue, the map also utilises the Google Places API to allow users to search for places on the map that are not among the featured destinations. 
+* Interactive Map:
+    * The **interactive map** is constructed using the [Google Maps API](https://developers.google.com/maps) and features **custom markers** from [Map Icons Collection](https://mapicons.mapsmarker.com) denoting the type of venue. The map also utilises the [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to allow users to search for places on the map that are not among the featured destinations and add a marker to that location if selected.
 
-Above the map there is also a **key/ledgend** that also acts as a filter to show and hide different catgories of venue through checking and unchecking the relevant checkboxes. 
+* Legend:
+     * The map **legend** uses a table of checkboxes to allow the user to toggle whether to show or hide map markers by venue type or completely hide all markers.
 
-To the right of the **key/legend** are a series of 3 dropdown **combo boxes** that allow the user to filter by location, venue type and venue. 
+* Information Box (Performs two functions on the site):
+    * On page load, the **Information Box** displays a welcome message to to welcome users to the site and provide a brief bit of information on the site and how to use it.
 
-Below the **combo boxes** is an **info box** which displays information on the selected venue. The information displayed for each venue is as follows:
+    * On marker click, the **Information Box** provides details of the venue, these include:
+        * The venue name
+        * The venue address
+        * A brief description of the venue
+        * A link to the venue website
+        * A link to make a reservation at the venue
+        * Links to the venue social media accounts and Trip Advisor page
+        * Images of the venue
 
-* The name of the venue
-* The address of the venue
-* A brief summary of the venue and what it offers
-* Images of the venue
-* Link to the venues website
-* Link to the venues social media
-* Link to the venues trip advisor page
+### Contact Page
 
-#### About
+ADD HERO IMAGE DETAILS HERE ------------------------------
 
-The About page features a brief paragraph about the site and its goals
+* Contact Form:
+    * The **Contact Form** uses [EmailJS](https://www.emailjs.com/). It will generate an email referencing the sendEmail.js file when a user submits their information and message.
 
-#### Contact
+### Responsive for Device Size
 
-The contact page features a contact form allowing the user to send direct messages to ask questions, ask for further information or suggest/recommend places to add to the ste.
+The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the site was responsive on all device sizes.
+
+* Mobile Devices (Extra Small and Small screen size):
+
+    * The **Bootstrap Grid System** was utilised to stack information vertically on small device sizes to provide positive and efficient UX and allow information to be read easily by the user.
+
+    * If more pages are added to the site and the number of menu items in the navigation bar increrases, the Bootstrap navbar toggler will be utilised to improve UX by reducing the menu items to a dropdown menu format on mobile devices, placed to the right of the site logo. As there are currently only 2 pages to the site, this is not currently needed as the site can be navigated easily on mobile devices.
+
+* Tablet Devices (Medium screen size):
+
+    * At tablet size, the **Bootstrap Grid Sytem** was used to size **Interactive Map** to 2/3 of the screen width (from left), with the **legend** taking up the final 1/3 to the right side of the device viewport.The Information box sits beneath the map and legend, taking up the full width of the device viewport.
+
+    SCREENSHOT
+
+* Desktop/Laptop (Large and Extra Large screen size):
+
+    * At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen
+
+    SCREENSHOT
 
 ### Existing Features
 
@@ -113,12 +139,14 @@ The contact page features a contact form allowing the user to send direct messag
 * [Git](https://git-scm.com/) - **Git** was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/) - **GitHub** is used to store the projects code after being pushed from Git.
 * [Bootstrap 4.5.3](https://www.bootstrapcdn.com/) - **Bootstrap** was used to assist with the responsiveness and styling of the website.
+* [JQuery](https://jquery.com/) - **JQuery** JavaScript library was used to simplify JavaScript code
 * [Font Awesome](https://fontawesome.com/) - **Font Awesome** was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-* [Google Fonts](https://fonts.google.com/) - **Google fonts** were used to import the 'Roboto' font into the style.css file to style the fonts used on all pages of the project.
+* [Google Fonts](https://fonts.google.com/) - **Google Fonts** were used to import the 'Londrina Shadow' and 'Londrina Solid' fonts into the style.css file to style the fonts used on all pages of the project.
+* [EmailJS](https://www.emailjs.com/) - **EmialJS** was used for contact age email.
 * [TinyPNG](https://tinypng.com/) - **TinyPNG** was used to reduce the file size of .png/.jpg files used.
-* [JQuery](https://jquery.com/) - **jQuery** came with Bootstrap to make the navbar responsive but was also used for Bootstrap's Javascript modal component.
 * [Balsamiq](https://balsamiq.com/) - **Balsamiq** was used to create the wireframes during the design process.
 * [Web Formatter](https://webformatter.com/) - **Web Formatter** was used to beautify code.
+* [Am I Responsive](http://ami.responsivedesign.is/) - **Am I Reponsive** was used to test page layouts during the build process.
 
 ## Testing
 
@@ -164,6 +192,8 @@ $ git clone https://github.com/theopmw/Top-Spots-London
 
 ## Credits
 
+* [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout the project for the Bootstrap Grid System, to make the site responsive and for select Bootstrap Components.
+
 ### Code
 
 ### Content
@@ -179,8 +209,6 @@ Map marker icons used were taken from [Map Icons Collection](https://mapicons.ma
 * [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
 
 ### Acknowledgements
-
-* Thanks to my Code Institute Mentor, Akshat Garg, for continuous feedback and support.
 
 ### Disclaimer
 

@@ -141,9 +141,7 @@ html, body {
 
 .map-container {
     /* background-color: #063367; */
-    padding-top: 0.3125rem;
-
-    
+    padding: 0.3125rem 0.938rem 0.3125rem 0.3125rem;
 }
 
 /* ---------------------------------------------------Legend */
@@ -214,6 +212,22 @@ html, body {
     padding-left: 5px;
 }
 
+/* ---------------------------------Venue images */
+
+/* #venue-images {
+    text-align: center;
+}
+
+#image1,
+#image2,
+#image3 {
+    margin: 1.25rem 2.5rem 1.25rem 2.5rem;
+    border-radius: 10px;
+    border: solid 5px #063367;
+
+} */
+
+
 /* ---------------------------------------------------Contact form */
 
 #contact-form {
@@ -225,14 +239,35 @@ html, body {
     color:#063367;
 }
 
-
-
-
 /* ---------------------------------------------------Media queries */
 
-
-
 @media screen and (max-width: 576px) {
+
+    .map-container {
+        /* background-color: #063367; */
+        padding: 0.3125rem;
+    }
+
+    #name {
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #address {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #description {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #website,
+    #booking {
+        text-align: center;
+    }
+
     #facebook a,
     #twitter a,
     #instagram a,
@@ -242,6 +277,14 @@ html, body {
 
     #legend {
         margin: 5px;
+    }
+
+    #footer-socials {
+        font-size: 20px;
+    }
+
+    #footer-socials a {
+    padding: 0 0.625rem 0 0.625rem;
     }
 }
 

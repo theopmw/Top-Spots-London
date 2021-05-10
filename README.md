@@ -231,12 +231,18 @@ $ git clone https://github.com/theopmw/Top-Spots-London
 ### Media
 
 Map marker icons used were taken from [Map Icons Collection](https://mapicons.mapsmarker.com) (full licence information [here](https://mapicons.mapsmarker.com/about/license/)):
-* [Restaurant Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/restaurant/)
-* [Pub Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/bar/)
-* [Cocktail Bar Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/cocktail-bar/)
-* [Street Food Market Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/terrace/)
-* [Brewery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
-* [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
+
+![Restaurant Icon](assets/images/map_icons/restaurant.png) [Restaurant Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/restaurant/)
+
+![Pub Icon](assets/images/map_icons/pub.png) [Pub Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/bar/)
+
+![Cocktail Bar Icon](assets/images/map_icons/cocktail_bar.png)[Cocktail Bar Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/cocktail-bar/)
+
+![Street Food Market Icon](assets/images/map_icons/street_food_market.png)[Street Food Market Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/terrace/)
+
+![Breyery Icon](assets/images/map_icons/distillery.png) [Brewery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
+
+![Distillery Icon](assets/images/map_icons/distillery.png) [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
 
 ### Acknowledgements
 

@@ -10,7 +10,7 @@ Top Spots London showcases some of the most exciting food and drink destinations
 ## Site Goals
 ---
 
-The aim of this site is to provide users with a curated list of the best places to eat and drink in London.
+The aim of the site is to provide users with a curated list of the best places to eat and drink in London. The main goal is to provide users with ideas and inspiration on where to go out in London and to encourage them to try new places.
 
 The site provides the user with the followiing information for each of the venues listed:
 
@@ -26,6 +26,17 @@ The site has been designed to be accessible and respoinsive on a range of device
 Through the contact page, users are encouraged to provide feeback on the site and reccommend venues they would like to see added to the site.
 
 <!-- The site has also been designed to allow the user to filter by type of venue so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries. -->
+
+If the site is perceived as successful, it is anticipated that the site could be expanded to include the following features:
+
+* Add a way for users to save or mark the venues they like
+* Add weekly/monthly round-ups of venues, for example "Best venues to visit this week"/"This months Top Spots"
+* Add a way for users to browse venues in list format, rather than using the interactive map
+* Add a way for users to search or filter venues by area
+* Add details of any special events or promotions happening at a venue
+* Add a way for users to add comments on the venues - could be implemented at the bottom of each venues information page
+* Add an integrated directions API, for example Google Directions or Citymapper
+
 
 Mention something about the range of culinary experiences available in London and how diverse the London food/drink scene is? Explosion of streetfood over the last 10-15 years?
 

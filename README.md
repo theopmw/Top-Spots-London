@@ -1,16 +1,38 @@
+
+![Top Spots London Logo](assets/images/logo/top_spots_london_logo.png)
+
+[Table of contents generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc/)
+
 # Top Spots London
 
 Top Spots London showcases some of the most exciting food and drink destinations across the capital. It has been designed to allow the user to interact with the site on several levels to really explore the food and drink scene in London and discover a wide range of exciting and unique places to visit.
 
+## Site Goals
+---
+
+The aim of this site is to provide users with a curated list of the best places to eat and drink in London.
+
+The site provides the user with the followiing information for each of the venues listed:
+
+* Venue Name
+* Venue Address
+* Venue Description
+* Link to venue website
+* Link to venue booking/reservations page
+* Links to the venues social media accounts and Trip Advisor page
+
 The site has been designed to be accessible and respoinsive on a range of devices to allow users to search for recommended destinations from wherever they are.
 
-The site has also been designed to allow the user to filter by type of venue so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries.
+Through the contact page, users are encouraged to provide feeback on the site and reccommend venues they would like to see added to the site.
+
+<!-- The site has also been designed to allow the user to filter by type of venue so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries. -->
 
 Mention something about the range of culinary experiences available in London and how diverse the London food/drink scene is? Explosion of streetfood over the last 10-15 years?
 
 Something about having an easily accessible, well curated list of London food/drink destinations?
 
 ## UX
+---
 
 ### Ideal User
 
@@ -130,6 +152,7 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 ### Features to Implement in Future
 
 ## Technologies Used
+---
 
 ### Languages Used
 
@@ -153,10 +176,12 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 * [Am I Responsive](http://ami.responsivedesign.is/) - **Am I Reponsive** was used to test page layouts during the build process.
 
 ## Testing
+---
 
 Detailed testing information can be found in separate [TESTING.md](TESTING.md) file.
 
 ## Deployment
+---
 
 ### GitHub Pages
 
@@ -195,6 +220,7 @@ $ git clone https://github.com/theopmw/Top-Spots-London
 7. Press Enter and your local clone will be created.
 
 ## Credits
+---
 
 * [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout the project for the Bootstrap Grid System, to make the site responsive and for select Bootstrap Components.
 

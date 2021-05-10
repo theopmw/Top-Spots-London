@@ -55,9 +55,13 @@ Something about having an easily accessible, well curated list of London food/dr
 
 #### Colour Scheme
 
-The colour used for map marker icons is dusky blue (#005B8F) for the background and white (#FFFFFF) for the image.
+Navy blue (#005B8F) and White (#FFFFFF) were the primary colours used in the site. White text on a navy blue background in the header and footer and navy blue text on a white background for the main page content. These colours complement each other well and inverting them provides a clean point of difference between the header/footer and main body of the pages.
 
 #### Typography
+
+Londrina Shadow is the main font used throughout the site for the site logo and headings.
+
+Londrina Solid is used as the secondary font as it complements the main font and provides a point of difference to the typography of the website
 
 #### Imagery
 

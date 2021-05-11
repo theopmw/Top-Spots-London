@@ -159,7 +159,7 @@ html, body {
     
 }
 
-.map-container {
+.container-map {
     /* background-color: #063367; */
     padding: 0.3125rem 0.938rem 0.3125rem 0.3125rem;
 }
@@ -167,7 +167,7 @@ html, body {
 /* ---------------------------------------------------Legend */
 
 #map-filters, 
-#info-container {
+#container-info {
     padding: 0;
     /* background-color: #063367; */
 }
@@ -264,7 +264,7 @@ html, body {
 
 @media screen and (max-width: 576px) {
 
-    .map-container {
+    .container-map {
         /* background-color: #063367; */
         padding: 0.3125rem;
     }

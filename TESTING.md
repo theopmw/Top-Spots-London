@@ -168,6 +168,29 @@ Screenshot:
 
 ![Venue Image Border Fix](assets/images/testingscreenshots/venue_image_border_fix.png)
 
+### Map search box loading outside the map on page load then popping in:
+
+Expected:   
+The map search box loads in the correct position, within the map, on page load.
+
+Testing:   
+Load the page and check whether the search box loads inside the map.
+
+Result:   
+The search box loads outside the map, then pops inside it to the correct position.
+
+Screenshot of bug:
+![Map Search Box Bug](assets/images/testingscreenshots/map_search_bar_bug.png)
+
+Fix:   
+A page loader was added while the full site loads and add a 1 second ```setTimeout``` to ensure the page had enough time to load before the page loader fades out. The ```initMap()``` function was then moved above the ```setTimeout``` and ```fadeOut```.
+
+Screenshot of page loader fix:
+![Map Search Box Page Loader Fix](assets/images/testingscreenshots/map_search_bar_fix_1.png)
+
+Screenshot of map after page loader fadeout:
+![Map Search Box Page Loader Fix](assets/images/testingscreenshots/map_search_bar_fix_2.png)
+
 ### Pushing the venues into separate arrays sorted by type:
 
 Below is the inital code to loop over the venue array and generate a marker for each one:

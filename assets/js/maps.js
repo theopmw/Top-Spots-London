@@ -29,15 +29,15 @@ let streetMarkers = [];
 let breweryMarkers = [];
 let distilleryMarkers = [];
 
-// preloader animation (.gif)
-// $(window).on("load", function () {
-//     initMap();
-//     setTimeout(() => {
-//         $("#container-loader").fadeOut();
-//     }, 1000);
-// });
+// Preloader animation (.gif)
+$(window).on("load", function () {
+    initMap();
+    setTimeout(() => {
+        $("#container-loader").fadeOut();
+    }, 1000);
+});
 
-initMap();
+// initMap();
 function initMap() {
     const mapProp = {
         // Create a variable to store the map properties

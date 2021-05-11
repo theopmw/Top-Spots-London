@@ -38,9 +38,6 @@ Screen shot of Chrome Developer Tools Console after fix:
 
 ![Screenshot showing console after fix](https://i.ibb.co/DYr9rCk/Screenshot-2021-04-27-at-15-18-46.png)
 
-
-## Testing 
-
 ### Map not loading on every page load
 
 Expected:  
@@ -185,6 +182,16 @@ Screenshot of bug:
 Fix:   
 A page loader was added while the full site loads and add a 1 second ```setTimeout``` to ensure the page had enough time to load before the page loader fades out. The ```initMap()``` function was then moved above the ```setTimeout``` and ```fadeOut```.
 
+Code snippet for page loader:
+```
+$(window).on("load", function () {
+    initMap();
+    setTimeout(() => {
+        $("#container-loader").fadeOut();
+    }, 1000);
+});
+```
+
 Screenshot of page loader fix:
 ![Map Search Box Page Loader Fix](assets/images/testingscreenshots/map_search_bar_fix_1.png)
 
@@ -289,4 +296,10 @@ In the code to show and hide each venue type marker, code was simplified from:
 ```
 
 This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesarry to gain the functionality required amd was just wasted code.
+
+
+
+## Testing 
+
+### Google Lighthouse Testing
 

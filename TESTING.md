@@ -134,6 +134,40 @@ This fixed the issue and the outcome was as expected:
 
 ![Venue Images Fix](assets/images/testingscreenshots/venue_images_testing_fix.png)
 
+### Venue image borders displaying on page load
+
+Expected:   
+Image borders only display after a map marker has been clicked.
+
+Testing:   
+Load the page and check whether the borders display on page load, below the welcome message.
+
+Results:    
+The borders were visible as navy blue dots underneath the welcome message:
+
+![Venue Image Border Bug](assets/images/testingscreenshots/venue_image_border_bug.png)
+
+Fix:
+The border was removed from the style.css file and added to the venue images in the maps.js file, to load after the venue marker is clicked:
+
+Code snippet from maps.js once border styles were added to venue images:
+
+```
+            // Venue Image 1
+            venueImage1.innerHTML = `<img src="${venue.image1}" alt="${venue.image1Alt}" width="100" height="100">`;
+            venueImage1.style = "border: 5px solid #063367;";
+            // Venue Image 2
+            venueImage2.innerHTML = `<img src="${venue.image2}" alt="${venue.image2Alt}" width="100" height="100">`;
+            venueImage2.style = "border: 5px solid #063367;";
+            // Venue Image 3
+            venueImage3.innerHTML = `<img src="${venue.image3}" alt="${venue.image3Alt}" width="100" height="100">`;
+            venueImage3.style = "border: 5px solid #063367;";
+```
+
+Screenshot:
+
+![Venue Image Border Fix](assets/images/testingscreenshots/venue_image_border_fix.png)
+
 ### Pushing the venues into separate arrays sorted by type:
 
 Below is the inital code to loop over the venue array and generate a marker for each one:

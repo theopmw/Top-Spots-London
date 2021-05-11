@@ -39,7 +39,7 @@ Screen shot of Chrome Developer Tools Console after fix:
 ![Screenshot showing console after fix](https://i.ibb.co/DYr9rCk/Screenshot-2021-04-27-at-15-18-46.png)
 
 
-## Testing
+## Testing 
 
 ### Map not loading on every page load
 
@@ -75,6 +75,64 @@ function initMap() {
 ```
 This solved the issue and meant the map loaded reliably on every page load, the callback was performed manually in the maps.js file, rather than in the Google Maps ```<script>```
 
+### Venue image borders not displaying correctly
+
+Expected:  
+When a venue map marker is clicked, the venue images display correctly, with a solid, navy blue, 5px border with 10px border radius.
+
+Testing:   
+Load the page and click a venue map marker to load the venue information. Check whether the images load correctly with the border as expected.
+
+Results:   
+When the venue information is loaded, only the firast venue image is displayed as expected, the other 2 images display with the border behind them and not fitting the image:
+
+![Venue Images Bug](assets/images/testingscreenshots/venue_images_testing_bug.png)
+
+Fix:   
+The code that produced the above bug used the Bootstrap ```d-none``` class to hide the 2nd and 3rd images on small screen sizes. In order to fix this, these classes were removed and the ```display: none``` property was added to the style.css file as a media query.
+
+Snippet of original code using Bootstrap ```d-none``` class to hide images from the index.html file:
+
+``` 
+<div class="container-fluid">
+    <div class="row">
+        <div id="venue-images" class="col list-inline">
+            <div id="image1" class="list-inline-item"></div>
+            <div id="image2" class="list-inline-item d-none d-md-inline"></div>
+            <div id="image3" class="list-inline-item d-none d-md-inline"></div>
+        </div> 
+    </div>
+</div>
+```
+
+The Bootstrap classes were then removed from ```image2``` and ```image3```:
+
+``` 
+<div class="container-fluid">
+    <div class="row">
+        <div id="venue-images" class="col list-inline">
+            <div id="image1" class="list-inline-item"></div>
+            <div id="image2" class="list-inline-item"></div>
+            <div id="image3" class="list-inline-item"></div>
+        </div> 
+    </div>
+</div>
+```
+
+And ```display: none``` was added in the style.css file:
+
+```
+@media screen and (max-width: 576px) {
+    #image2,
+    #image3 {
+        display: none;
+    }
+}
+
+```
+This fixed the issue and the outcome was as expected:
+
+![Venue Images Fix](assets/images/testingscreenshots/venue_images_testing_fix.png)
 
 ### Pushing the venues into separate arrays sorted by type:
 
@@ -174,3 +232,4 @@ In the code to show and hide each venue type marker, code was simplified from:
 ```
 
 This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesarry to gain the functionality required amd was just wasted code.
+

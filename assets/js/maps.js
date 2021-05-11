@@ -29,6 +29,14 @@ let streetMarkers = [];
 let breweryMarkers = [];
 let distilleryMarkers = [];
 
+// preloader animation (.gif)
+// $(window).on("load", function () {
+//     initMap();
+//     setTimeout(() => {
+//         $("#container-loader").fadeOut();
+//     }, 1000);
+// });
+
 initMap();
 function initMap() {
     const mapProp = {
@@ -558,11 +566,14 @@ function initMap() {
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
             }
             // Venue Image 1
-            venueImage1.innerHTML = `<img src="${venue.image1}" alt="${venue.image1Alt}" width="100" height="100">`
+            venueImage1.innerHTML = `<img src="${venue.image1}" alt="${venue.image1Alt}" width="100" height="100">`;
+            venueImage1.style = "border: 5px solid #063367;";
             // Venue Image 2
-            venueImage2.innerHTML = `<img src="${venue.image2}" alt="${venue.image2Alt}" width="100" height="100">`
+            venueImage2.innerHTML = `<img src="${venue.image2}" alt="${venue.image2Alt}" width="100" height="100">`;
+            venueImage2.style = "border: 5px solid #063367;";
             // Venue Image 3
-            venueImage3.innerHTML = `<img src="${venue.image3}" alt="${venue.image3Alt}" width="100" height="100">`
+            venueImage3.innerHTML = `<img src="${venue.image3}" alt="${venue.image3Alt}" width="100" height="100">`;
+            venueImage3.style = "border: 5px solid #063367;";
             
         });
 

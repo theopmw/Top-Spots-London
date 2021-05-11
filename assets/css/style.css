@@ -28,6 +28,26 @@
     border-radius: 10px;
 }
 
+/* ---------------------------------------------------Loader */
+
+/* #container-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
 /* ---------------------------------------------------Header */
 
 /* ---------------------------------Logo */
@@ -214,7 +234,7 @@ html, body {
 
 /* ---------------------------------Venue images */
 
-/* #venue-images {
+#venue-images {
     text-align: center;
 }
 
@@ -223,9 +243,10 @@ html, body {
 #image3 {
     margin: 1.25rem 2.5rem 1.25rem 2.5rem;
     border-radius: 10px;
-    border: solid 5px #063367;
+    /* border: solid 5px #063367; */
 
-} */
+
+}
 
 
 /* ---------------------------------------------------Contact form */
@@ -285,6 +306,11 @@ html, body {
 
     #footer-socials a {
     padding: 0 0.625rem 0 0.625rem;
+    }
+
+    #image2,
+    #image3 {
+        display: none;
     }
 }
 

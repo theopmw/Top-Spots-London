@@ -43,6 +43,14 @@ function initMap() {
         // Create a variable to store the map properties
         center: new google.maps.LatLng(51.50146775108939, -0.12200993061141865), // Set the coordinates of the centre of the map
         zoom: 12, // Set the zoom level of the map
+        // Credit: control options modified from https://developers.google.com/maps/documentation/javascript/controls
+        fullscreenControl: false,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.BOTTOM_CENTER,
+
+        }
     };
 
     map = new google.maps.Map(document.getElementById("map"), mapProp); // Creates a new map inside the div that has the id of "map" and calls mapProp to see how to render the map
@@ -827,7 +835,7 @@ function initMap() {
     // Create the search box and link it to the UI element.
     const input = document.getElementById("pac-input");
     const searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
     // Bias the SearchBox results towards current map's viewport.
     map.addListener("bounds_changed", () => {
         searchBox.setBounds(map.getBounds());

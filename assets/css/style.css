@@ -173,6 +173,14 @@ body {
     padding: 0.3125rem 0.938rem 0.3125rem 0.3125rem;
 }
 
+#pac-input {
+    margin: 8px;
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    border: solid 2px #063367;
+}
+
 /* ---------------------------------------------------Legend */
 
 #map-filters, 

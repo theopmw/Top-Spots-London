@@ -337,12 +337,12 @@ function initMap() {
             instagram: "https://www.instagram.com/thecamberwellarms/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/camberwell_arms/camberwell_arms_bar.png",
+            image1Alt: "The bar at The Camberwell Arms",
+            image2: "assets/images/venue_images/camberwell_arms/camberwell_arms_food.png",
+            image2Alt: "Table of food at The Camberwell Arms",
+            image3: "assets/images/venue_images/camberwell_arms/camberwell_arms_exterior.png",
+            image3Alt: "Customers sitting at the front of The Camberwell Arms",
             position: new google.maps.LatLng(
                 51.47442936151898,
                 -0.08844233069014149

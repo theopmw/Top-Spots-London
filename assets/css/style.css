@@ -274,7 +274,7 @@ body {
 #image1,
 #image2,
 #image3 {
-    margin: 1.25rem 2.5rem 1.25rem 2.5rem;
+    margin: 1.25rem 1.25rem 1.25rem 1.25rem;
     border-radius: 10px;
     /* border: solid 5px #063367; */
 }
@@ -283,8 +283,8 @@ body {
 #image2 img,
 #image3 img {
     border-radius: 5px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 

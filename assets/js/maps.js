@@ -442,12 +442,12 @@ function initMap() {
             instagram: "https://www.instagram.com/popbrixton/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/pop_brixton/pop_brixton_main_square.png",
+            image1Alt: "Pop Brixton Event Space artwork",
+            image2: "assets/images/venue_images/pop_brixton/pop_brixton_ramen.png",
+            image2Alt: "Ramen at Pop Brixton",
+            image3: "assets/images/venue_images/pop_brixton/pop_brixton_back_square.png",
+            image3Alt: "Back arera of Pop Brixton",
             position: new google.maps.LatLng(
                 51.46341404023569,
                 -0.11228722008675468

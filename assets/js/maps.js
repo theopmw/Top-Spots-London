@@ -205,12 +205,12 @@ function initMap() {
             instagram: "https://www.instagram.com/peckhamcellars/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d20083945-Reviews-Peckham_Cellars-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/peckham_cellars/peckham_cellars_wine.png",
+            image1Alt: "Wine selection at Peckham Cellars",
+            image2: "assets/images/venue_images/peckham_cellars/peckham_cellars_exterior.png",
+            image2Alt: "Peckham Cellars exterior",
+            image3: "assets/images/venue_images/peckham_cellars/peckham_cellars_burger.png",
+            image3Alt: "Peckham Cellars chicken burder with hash brown",
             position: new google.maps.LatLng(
                 51.47387240142246,
                 -0.05882183068764925

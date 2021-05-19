@@ -390,12 +390,12 @@ function initMap() {
             twitter: "#",
             instagram: "https://www.instagram.com/tolapeckham/",
             tripadvisor: "#",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/tola/tola_roof_terrace.png",
+            image1Alt: "The Tola roof terrace, full of guests",
+            image2: "assets/images/venue_images/tola/tola_cocktail.png",
+            image2Alt: "Negroni cocktail at Tola",
+            image3: "assets/images/venue_images/tola/tola_cocktail_bar.png",
+            image3Alt: "The Tola cocktail bar",
             position: new google.maps.LatLng(
                 51.473367183358455,
                 -0.07046348616823567

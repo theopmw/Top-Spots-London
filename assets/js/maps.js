@@ -283,12 +283,12 @@ function initMap() {
             instagram: "https://www.instagram.com/buonasera.restaurant/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/buona_sera/buona_sera_exterior.png",
+            image1Alt: "Buona Sera exterior",
+            image2: "assets/images/venue_images/buona_sera/buona_sera_eggs_bennedetto.png",
+            image2Alt: "Eggs Bennedetto at Buona Sera",
+            image3: "assets/images/venue_images/buona_sera/buona_sera_outside_dining.png",
+            image3Alt: "Customers dining outside at Buona Sera",
             position: new google.maps.LatLng(
                 51.460318082023775,
                 -0.16687674600056668

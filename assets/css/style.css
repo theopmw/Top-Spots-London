@@ -283,6 +283,8 @@ body {
 #image2 img,
 #image3 img {
     border-radius: 5px;
+    height: 100px;
+    width: 100px;
 }
 
 
@@ -354,9 +356,10 @@ body {
     }
 
     #image1 {
-        width: 100%;
+        /* width: 100%;
         height: 100%;
-        margin: 0 auto;
+        margin: 0 5px 0 5px; */
+        margin: 0 5px;
     }
 
     #image1 img {

@@ -364,12 +364,12 @@ function initMap() {
             instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/faltering_fullback/faltering_fullback_entrance.png",
+            image1Alt: "Entrance of The Faltering Fullback",
+            image2: "assets/images/venue_images/faltering_fullback/faltering_fullback_interior.png",
+            image2Alt: "A look inside The Faltering Fullback",
+            image3: "assets/images/venue_images/faltering_fullback/faltering_fullbeck_garden.png",
+            image3Alt: "The Faltering Fullback garden",
             position: new google.maps.LatLng(
                 51.56868558992803,
                 -0.10817859523605393

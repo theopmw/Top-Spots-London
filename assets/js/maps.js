@@ -566,7 +566,8 @@ function initMap() {
             //Trip Advisor
             if (venue.tripadvisor === "#") {
                 // Check to see if the venue.tripadvisor value is "#"
-                venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+                venueTripadvisor.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+                // venue.classList.add("d-none"); FOR BUGS IN TESTING
             } else {
                 venueTripadvisor.classList.remove("d-none"); // If venue.tripadvisor has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
                 venueTripadvisor.innerHTML = `<a href="${venue.tripadvisor}" target="_blank" rel="noopener"> 

@@ -257,12 +257,12 @@ function initMap() {
             instagram: "https://www.instagram.com/dintaifunguk/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d15599297-Reviews-Din_Tai_Fung_UK-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/din_tai_fung/din_tai_fung_food.png",
+            image1Alt: "Table with dumplings, fried rice and greens",
+            image2: "assets/images/venue_images/din_tai_fung/din_tai_fung_dumplings.png",
+            image2Alt: "Chef holding tray of dumplings",
+            image3: "assets/images/venue_images/din_tai_fung/din_tai_fung_bartender.png",
+            image3Alt: "Bartender pouring a drink at the bar",
             position: new google.maps.LatLng(
                 51.51128445720902,
                 -0.12321491534128642

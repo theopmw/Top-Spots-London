@@ -495,12 +495,12 @@ function initMap() {
             twitter: "https://twitter.com/mondobrewing",
             instagram: "https://www.instagram.com/mondobrewing/",
             tripadvisor: "#",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/mondo/mondo_beers.png",
+            image1Alt: "Cheers from Mondo Brewery",
+            image2: "assets/images/venue_images/mondo/mondo_tap_room_entrance.png",
+            image2Alt: "The Mondo Tap Room entrance",
+            image3: "assets/images/venue_images/mondo/mondo_tap_room.png",
+            image3Alt: "Guests having a drink at the Mondo Tap Room",
             position: new google.maps.LatLng(
                 51.47515303781801,
                 -0.14036621534394356

@@ -152,12 +152,12 @@ function initMap() {
             instagram: "https://www.instagram.com/bardouro/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/bar_douro/bar_douro_interior.png",
+            image1Alt: "Bar Douro Interior",
+            image2: "assets/images/venue_images/bar_douro/bar_douro_food.png",
+            image2Alt: "Bar Douro Food",
+            image3: "assets/images/venue_images/bar_douro/bar_douro_exterior.png",
+            image3Alt: "Bar Douro Exterior",
             position: new google.maps.LatLng(
                 51.50460622554422,
                 -0.09526187321534595

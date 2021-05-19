@@ -179,12 +179,12 @@ function initMap() {
             instagram: "https://www.instagram.com/thetapasroom/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d21237612-Reviews-The_Tapas_Room-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/tapas_room/tapas_room_interior.png",
+            image1Alt: "Tapas Room Interior",
+            image2: "assets/images/venue_images/tapas_room/tappas_room_food.png",
+            image2Alt: "Plate of meats and caperberries",
+            image3: "assets/images/venue_images/tapas_room/tapas_room_exterior.png",
+            image3Alt: "Tapas Room Exterior",
             position: new google.maps.LatLng(
                 51.462593456997624,
                 -0.11181741121010706

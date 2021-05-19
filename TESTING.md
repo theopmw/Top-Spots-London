@@ -198,6 +198,38 @@ Screenshot of page loader fix:
 Screenshot of map after page loader fadeout:
 ![Map Search Box Page Loader Fix](assets/images/testingscreenshots/map_search_bar_fix_2.png)
 
+### Venues with tripadvisor value "#" not displaying the set of 3 venue images correctly
+
+Expected:   
+When a venue marker is clicked, 3 venue images are dispayed (only one on mobile devices).
+
+Testing:   
+Click all venue markers and check that they all show the correct set of images as assigned to them.
+
+Result:   
+On venues with a tripadvisor value of "#", the images don't load correctly (they images of the previous marker clicked remain).
+
+On those venues the following is dispalyed in the console:
+![Venue Images not Displaying Console](assets/images/testingscreenshots/venue_image_display_console.png)
+
+And a screenshot of the site preview showing the wrong images:
+![Venue Images not Displaying Bug](assets/images/testingscreenshots/venue_image_display_bug.png)
+
+Fix:   
+The bug was being caused by the Bootstrap d-none class being applied to the wrong element.
+
+Here is the code that caused the bug:
+```
+venue.classList.add("d-none"); 
+```
+The class had to be added to venueTripadvisor, not the venue, so by changing the code to the below, the bug was fixed:
+```
+venueTripadvisor.classList.add("d-none");
+```
+Here is a screenshot of the fixed result:
+![Venue Images not Displaying Fix](assets/images/testingscreenshots/venue_image_display_fix.png)
+
+
 ### Pushing the venues into separate arrays sorted by type:
 
 Below is the inital code to loop over the venue array and generate a marker for each one:

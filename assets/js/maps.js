@@ -100,12 +100,12 @@ function initMap() {
             instagram: "https://www.instagram.com/brunswick_house/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d2402977-Reviews-Brunswick_House-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/brunswick_house/brunswick_house_exterior.png",
+            image1Alt: "Brunswick House Exterior",
+            image2: "assets/images/venue_images/brunswick_house/brunswick_house_interior.png",
+            image2Alt: "Brunswick House Interior",
+            image3: "assets/images/venue_images/brunswick_house/brunswick_house_food.png",
+            image3Alt: "Brunswick House Food",
             position: new google.maps.LatLng(
                 51.484885901267916,
                 -0.12661603219847756

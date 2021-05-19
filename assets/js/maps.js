@@ -232,12 +232,12 @@ function initMap() {
             instagram: "https://www.instagram.com/smokinggoatbar/",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d13078857-Reviews-Smoking_Goat_Shoreditch-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/smoking_goat/smoking_goat_chilli_fish_sauce_wings.png",
+            image1Alt: "Chilli Fish Sauce Wings at Smoking Goat",
+            image2: "assets/images/venue_images/smoking_goat/smoking_goat_bar.png",
+            image2Alt: "Bar at Smoking Goat",
+            image3: "assets/images/venue_images/smoking_goat/smoking_goat_interior.png",
+            image3Alt: "Smoking Goat interior",
             position: new google.maps.LatLng(
                 51.52495237670227,
                 -0.07757001481354464

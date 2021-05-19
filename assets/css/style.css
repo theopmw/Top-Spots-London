@@ -175,7 +175,8 @@ body {
 
 /* ---------------------------------------------------Legend */
 
-#map-filters, 
+/* #container-images, */
+#container-legend, 
 #container-info {
     padding: 0;
     /* background-color: #063367; */
@@ -245,7 +246,21 @@ body {
 
 #venue-images {
     text-align: center;
+    padding: 0;
     /* display: flex;*/
+}
+
+/* CAN I GET THIS TO SHOW AS ORIGINAL HERO IMAGE ON PAGE LOAD THEN REVERT TO VENUE IMAGES AND STYLES (3 DISPLAY:INLINE IMAGES?) ADD IMAGE USING D-NONE THENN HIDE AFTER VENUE CLICK? */
+/*  */
+#hero-image {
+    background-image: url("../images/hero/home_hero.jpg");
+    height: 10rem;
+    margin: 0 5px 0 0;
+    border: 5px solid #063367;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #image1,
@@ -323,7 +338,7 @@ body {
     }
 
     #venue-images {
-        padding: 5px;
+        padding: 0;
     }
 
     #image1 {
@@ -350,7 +365,11 @@ body {
     }               
     .legend-table td { 
         display: table-row; 
-    }           
+    }  
+    
+    #hero-image {
+        margin: 0 5px 0 5px;
+    }
 }
 
 @media screen and (min-width: 992px) {

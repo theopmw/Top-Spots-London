@@ -12,6 +12,7 @@ let venueFacebook = document.getElementById("facebook");
 let venueTwitter = document.getElementById("twitter");
 let venueInstagram = document.getElementById("instagram");
 let venueTripadvisor = document.getElementById("tripadvisor");
+let heroImage = document.getElementById("hero-image");
 let venueImage1 = document.getElementById("image1");
 let venueImage2 = document.getElementById("image2");
 let venueImage3 = document.getElementById("image3");
@@ -523,7 +524,6 @@ function initMap() {
             venueDescription.innerHTML = venue.description;
             venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
             <span class="sr-only">Website</span>Visit ${venue.name} Website <i class="fas fa-external-link-alt"></i></a>`;
-
             // Booking
             if (venue.booking === "#") {
                 // Check to see if the venue.booking value is "#"
@@ -573,6 +573,8 @@ function initMap() {
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
             }
+            // heroImage.innerHTML = `<div class="d-none"></div>`
+            heroImage.classList.add("d-none");
             // Venue Image 1
             venueImage1.innerHTML = `<img src="${venue.image1}" alt="${venue.image1Alt}" width="100" height="100">`;
             venueImage1.style = "border: 5px solid #063367;";

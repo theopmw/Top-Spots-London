@@ -556,7 +556,7 @@ function initMap() {
             // Instagram
             if (venue.instagram === "#") {
                 // Check to see if the venue.instagram value is "#"
-                venue.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
+                venueInstagram.classList.add("d-none"); // If it is use the Bootstrap class "d-none" to hide the icon/link
             } else {
                 venueInstagram.classList.remove("d-none"); // If venue.instagram has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
                 venueInstagram.innerHTML = `<a href="${venue.instagram}" target="_blank" rel="noopener"> 

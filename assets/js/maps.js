@@ -311,12 +311,12 @@ function initMap() {
             instagram: "https://www.instagram.com/balhambowls/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/balham_bowls_club/bbc_exterior.png",
+            image1Alt: "View of front of Balham Bowls Club",
+            image2: "assets/images/venue_images/balham_bowls_club/bbc_sunday_roast.png",
+            image2Alt: "Sunday roast at Balham Bowls Club",
+            image3: "assets/images/venue_images/balham_bowls_club/bbc_garden.png",
+            image3Alt: "Balham Bowls Club pub garden",
             position: new google.maps.LatLng(
                 51.445067652541034,
                 -0.15250217267682872

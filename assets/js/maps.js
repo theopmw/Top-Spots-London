@@ -415,12 +415,12 @@ function initMap() {
             instagram: "https://www.instagram.com/calloohcallaybar/?hl=en",
             tripadvisor:
                 "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/callooh_callay/callooh_callay_interior_day.png",
+            image1Alt: "Guests drinking in the Callooh Callay main bar",
+            image2: "assets/images/venue_images/callooh_callay/callooh_callay_cocktails.png",
+            image2Alt: "A selection of Callooh Callay cocktails",
+            image3: "assets/images/venue_images/callooh_callay/callooh_callay_interior_night.png",
+            image3Alt: "Guests in the Callooh Callay back room",
             position: new google.maps.LatLng(
                 51.5263352998997,
                 -0.07990549598159494

@@ -469,12 +469,12 @@ function initMap() {
             twitter: "https://twitter.com/peckhamlevels/",
             instagram: "https://www.instagram.com/peckhamlevels/",
             tripadvisor: "#",
-            image1: "assets/images/venue_images/bottles.jpg",
-            image1Alt: "Bottles on bar shelf",
-            image2: "assets/images/venue_images/bottles.jpg",
-            image2Alt: "",
-            image3: "assets/images/venue_images/bottles.jpg",
-            image3Alt: "",
+            image1: "assets/images/venue_images/peckham_levels/peckham_levels_cinema.png",
+            image1Alt: "Guests in the main seating area at Peckham Levels",
+            image2: "assets/images/venue_images/peckham_levels/peckham_levels_food.png",
+            image2Alt: "Selection of food at Peckham levels",
+            image3: "assets/images/venue_images/peckham_levels/peckham_levels_cinema.png",
+            image3Alt: "Pop-up cinema at Peckham Levels",
             position: new google.maps.LatLng(
                 51.471557276187816,
                 -0.06720426931757024
@@ -573,7 +573,7 @@ function initMap() {
             <i class="fab fa-tripadvisor" aria-hidden="true"></i>
             <span class="sr-only">Trip Advisor</span>`; // generates the icon and link to be displayed in the DOM
             }
-            // heroImage.innerHTML = `<div class="d-none"></div>`
+            // Hide landing page hero image once a marker is clicked
             heroImage.classList.add("d-none");
             // Venue Image 1
             venueImage1.innerHTML = `<img src="${venue.image1}" alt="${venue.image1Alt}" width="100" height="100">`;

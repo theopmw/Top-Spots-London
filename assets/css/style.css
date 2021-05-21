@@ -264,7 +264,7 @@ body {
 /*  */
 #hero-image {
     background-image: url("../images/hero/home_hero.jpg");
-    height: 10rem;
+    height: 20rem;
     margin: 0 5px 0 0;
     border: 5px solid #063367;
     border-radius: 10px;

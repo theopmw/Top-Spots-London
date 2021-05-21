@@ -225,14 +225,15 @@ body {
 
 #description {
     color:#063367;
-    padding: 1.25rem 0 1.25rem 0.313rem;
+    padding-left: 5px
+    /* padding: 1.25rem 0 1.25rem 0.313rem; */
 }
 
 /* ---------------------------------Social links */
 
 #social-links {
     text-align: center;
-    padding: 1.25rem 0 0.3125rem 1.0625rem;
+    /* padding: 1.25rem 0 0.3125rem 1.0625rem; */
 }
 
 #facebook a,

@@ -8,6 +8,7 @@ let venueAddress = document.getElementById("address");
 let venueDescription = document.getElementById("description");
 let venueWebsite = document.getElementById("website");
 let venueBooking = document.getElementById("booking");
+let VenueSocialLinks = document.getElementById("social-links");
 let venueFacebook = document.getElementById("facebook");
 let venueTwitter = document.getElementById("twitter");
 let venueInstagram = document.getElementById("instagram");
@@ -522,6 +523,7 @@ function initMap() {
             venueName.innerHTML = venue.name;
             venueAddress.innerHTML = venue.address;
             venueDescription.innerHTML = venue.description;
+            venueDescription.style = "padding: 1.25rem 0 1.25rem 0.313rem";
             venueWebsite.innerHTML = `<a href="${venue.website}" target="_blank" rel="noopener">
             <span class="sr-only">Website</span>Visit ${venue.name} Website <i class="fas fa-external-link-alt"></i></a>`;
             // Booking
@@ -533,6 +535,8 @@ function initMap() {
                 venueBooking.innerHTML = `<a href="${venue.booking}" target="_blank" rel="noopener">
             <span class="sr-only">Booking</span>Reserve a table at ${venue.name} <i class="fas fa-external-link-alt"></i></a>`;; // generates the icon and link to be displayed in the DOM
             }
+            // Social Links
+            VenueSocialLinks.style = "padding: 1.25rem 0 0.3125rem 1.0625rem";
             // Facebook
             if (venue.facebook === "#") {
                 // Check to see if the venue.favebook value is "#"

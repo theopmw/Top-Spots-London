@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Spots London</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" />
+
+        <!-- Credit: Favicon created using https://favicon.io/ -->
+        <link rel="shortcut icon" href="assets/images/favicon/top_spots.ico" type="image/x-icon"/> 
+    
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <div id="container-loader">
+        <div id="loader">
+            <img src="assets/images/loader/spin_loader.gif" alt="Loader">
+            <br><br>
+            <h3 class="font-londrina-shadow heading">. . . L O A D I N G . . .</h3>
+        </div>
+    </div>
+
+    <div id="page-content">
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col logo">
+                    <h4 class="font-londrina-shadow logo-1 d-flex justify-content-center">
+                        TOP SPOTS
+                    </h4>
+                    <h5 class="font-londrina-solid logo-2 d-flex justify-content-center">
+                        LONDON
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-dark navbar-expand font-londrina-solid">
+            <ul class="navbar-nav mx-auto">
+                <li class="active nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home-content">
+
+        <div id="container-info" class="col-12 col-md-12 col-lg-8 float-right">
+            <div id="name" class="font-londrina-shadow">
+                Welcome To Top Spots London
+            </div>
+            <div id="address" class="font-londrina-solid"></div>
+            <div id="description" class="font-raleway">
+                <p>Click on a map marker to start exploring!</p>
+            </div>
+            <div id="website" class="font-raleway"></div>
+            <div id="booking" class="font-raleway"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="social-links" class="col list-inline">
+                        <div id="facebook" class="list-inline-item"></div>
+                        <div id="twitter" class="list-inline-item"></div>
+                        <div id="instagram" class="list-inline-item"></div>
+                        <div id="tripadvisor" class="list-inline-item"></div>
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="venue-images" class="col list-inline">
+                            <div id="hero-image"></div>
+                            <div id="image1" class="list-inline-item"></div>
+                            <div id="image2" class="list-inline-item"></div>
+                            <div id="image3" class="list-inline-item"></div>
+                        </div> 
+                    </div>
+                </div>
+            
+        </div>
+        <div class="container-fluid">
+            <div class="row d-md-block">
+                <div class="col-12 col-md-8 col-lg-4 float-left container-map">
+                    <!-- Credit: https://developers.google.com/maps/documentation/javascript/examples/places-searchbox#maps_places_searchbox-html -->
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+                    <div id="map"></div>
+                </div>
+
+                <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
+
+                
+
+                <div id="container-legend" class="col-12 col-md-4 col-lg-8 float-right">
+                    <div id="legend">
+                        <div class="legend">
+                            <table class="legend-table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2 class="font-londrina-shadow heading">Legend</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="font-raleway">
+                                    <tr>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="show-hide-all-checkbox" />
+                                                    Show/Hide All
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input venue-type-checkbox"
+                                                        id="restaurant-checkbox" /><img
+                                                        src="assets/images/map_icons/restaurant.png" />
+                                                    Restaurants
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input venue-type-checkbox"
+                                                        id="pub-checkbox" /><img
+                                                        src="assets/images/map_icons/pub.png" />
+                                                    Pubs
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input venue-type-checkbox"
+                                                        id="cocktail-bar-checkbox" /><img
+                                                        src="assets/images/map_icons/cocktail_bar.png" />
+                                                    Cocktail Bars
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input venue-type-checkbox"
+                                                        id="street-food-market-checkbox" /><img
+                                                        src="assets/images/map_icons/street_food_market.png" />
+                                                    Street Food Markets
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input venue-type-checkbox"
+                                                        id="brewery-checkbox" /><img
+                                                        src="assets/images/map_icons/brewery.png" />
+                                                    Breweries
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input venue-type-checkbox"
+                                                        id="distillery-checkbox" /><img
+                                                        src="assets/images/map_icons/distillery.png" />
+                                                    Distilleries
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- <div id="filter-box">
+                            <h1>Filter Boxes</h1>
+                        </div> -->
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="copyright" class="col-6">
+                    <div class="copyright-text">
+                    <p class="font-londrina-solid"><i class="far fa-copyright"></i> Top Spots London, All Rights Reserved</p>
+                </div>
+                </div>
+                <div id="footer-socials" class="col-6">
+                    <div class="footer-social-links">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly">
+    </script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/maps.js"></script>
+</body>
+
+</html>

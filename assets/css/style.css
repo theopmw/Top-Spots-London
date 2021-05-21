@@ -290,7 +290,42 @@ body {
 }
 
 
-/* ---------------------------------------------------Contact form */
+/* ---------------------------------------------------Contact Page */
+
+/* ---------------------------------Contact heading */
+
+/* ---------------------------------Contact text */
+
+#contact-heading {
+    padding: 1.25rem 0 0 0;
+}
+
+#contact-info-text {
+    color: #063367;
+    width: 66%;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+}
+
+.btn-primary {
+    background-color:#063367;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn:focus {
+    color:#063367 ;
+    background-color: #fff;
+    border-color: #063367;
+    box-shadow: none;
+}
+
+/* ---------------------------------Contact form */
 
 #contact-form {
     width: 66%;

@@ -469,7 +469,7 @@ function initMap() {
             twitter: "https://twitter.com/peckhamlevels/",
             instagram: "https://www.instagram.com/peckhamlevels/",
             tripadvisor: "#",
-            image1: "assets/images/venue_images/peckham_levels/peckham_levels_cinema.png",
+            image1: "assets/images/venue_images/peckham_levels/peckham_levels_indoors.png",
             image1Alt: "Guests in the main seating area at Peckham Levels",
             image2: "assets/images/venue_images/peckham_levels/peckham_levels_food.png",
             image2Alt: "Selection of food at Peckham levels",

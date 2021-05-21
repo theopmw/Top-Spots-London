@@ -230,6 +230,48 @@ $ git clone https://github.com/theopmw/Top-Spots-London
 
 7. Press Enter and your local clone will be created.
 
+### Google Maps API Deployment
+
+#### Setting up the project and generating an API Key:
+
+1. Set up the project:
+*  In the [Google Cloud Console](https://console.cloud.google.com/), navigate to the project selector page and click **Create Project** to begin creating a new Cloud project.
+    * Note that you must also make sure that billing is enabled for your Cloud project. You can check that [here](https://console.cloud.google.com/projectselector2/billing).
+2. Enable APIs or SDKs:
+* In order to use the Google Maps Platform, you must enable the APIs or SDKs you plan to use with your project on Cloud Console. To enable one or more APIs or SDKs they must be selected from the [Maps API Library page](https://console.cloud.google.com/apis/library).
+* From the Maps API Library page, click the API or SDK you want to enable (Top Spots London uses Maps JavaScript API and Places API).
+    * If the button says **ENABLE**, click the button to enable the API or SDK.
+    * If the button says **MANAGE**, the API or SDK is already enabled and you don't need to do anything further.
+    * Clicking either button will display the dashboard for the API or SDK (click the **DISABLE** button to remove the API or SDK from the project).
+3. Get an API Key:
+* The API key is a unique identifier that authenticates requests associated with your project for usage and billing purposes. You must have at least one API key associated with a project.
+* To create an API key:
+    1. Go to the **APIs & Services > Credentials** page.
+    2. On the **Credentials** page, click **Create credentials > API key**. The **API key created** dialog displays your newly created API key. An API key is a long string containing upper and lower case letters, numbers, and dashes.
+    3. Click **Close**. 
+    4. The new **API key** is listed on the Credentials page under **API keys** (You must apply restrictions to the API key before using it in production, see below)
+
+#### Restricting the API Key(s):
+
+* API Keys must be restricted to help prevent unauthorized use and quota theft.
+* To restrict the API key:
+    1. Go to the **APIs & Services > Credentials** page.
+    2. Select the project you wish to restrict.
+    3. Click the **API Key** you wish to restrict from the List of API Keys.
+    4. Select the **application restriction** from the list (Top Spots London uses **HTTP referrers (web sites)**)
+    5. In the **Website restrictions** panel below add the website URL you want to restrict the API Key usage to.
+    6. Click *ADD AN ITEM**.
+    7. Click **SAVE**.
+    8. The restrictions will now be saved.
+
+* Note that on this page you can also restrict the APIs that a key can call. Just select **Restrict key** under the **API restrictions** heading, check the relevant API checkboxes, click **OK** and then click **SAVE**. Top Spots London uses the Maps Javacript API and the Place API so is restricted to these two
+
+
+For futher reading on API Keys, see the Google Documentation for [using API Keys](https://cloud.google.com/docs/authentication/api-keys?hl=en&visit_id=637572115857682925-2461310236&rd=1).
+
+
+
+
 ## Credits
 ---
 

@@ -410,6 +410,18 @@ body {
     #image3 {
         display: none;
     }
+
+    #contact-info-text {
+        width: 90%;
+    }
+
+    .send-button {
+        text-align: center;
+    }
+
+    #contact-form {
+        width: 90%;
+    }
 }
 
 /* Credit: code modified from https://stackoverflow.com/questions/25405105/break-a-table-row-into-multiple-line-responsive-layout */

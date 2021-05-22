@@ -186,7 +186,7 @@ Reload and hard reload the page to test if the map loads correctly every time.
 Results:   
 On some page loads the map failed to load, below is a screenshot of the site preview and console:
 
-![Screenshot showing site preview and error message](https://i.ibb.co/47Sqfxv/Screenshot-2021-04-11-at-07-52-39.png)
+![Screenshot showing site preview and error message](assets/images/testing_screenshots/map_not_loading_bug.png)
 
 Fix:  
 To fix this, the callback ("&callback=initMap") was removed from the original ```<script>``` for Google Maps in the index.html file:

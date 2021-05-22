@@ -1,3 +1,11 @@
+# Testing
+
+**W3C  Markup Validation Service**, **W3C CSS Validation Service** and **JSHint** were used by the developer to check the website code.
+
+* [W3C Markup Validation](https://validator.w3.org/)
+* [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+* [JSHint](https://jshint.com/)
+
 ## User Stories
 ---
 The user stories are annotated below to describe funtionality and highlight the way in which the project fulfills the objectives set out. Relevant screenshots relating to each of the user stories below can be found in the main [README.md](https://github.com/theopmw/Top-Spots-London/blob/master/README.md) file.
@@ -36,6 +44,73 @@ The user stories are annotated below to describe funtionality and highlight the 
 * As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map and find out where they are.
     * The search bar at the top of the map allows users to search for locations and add a temporary marker to the map.
 
+## Manual Testing
+
+### Page load (Preloader):
+* Load the page and confirm that the preloader is displayed and fades out after 1000ms to show the main site.
+* Confirm that the main site has fully loaded on preloader fadeout.
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
+
+### Header/Navigation Bar:
+* From the Home Page, click the "Contact" navigation menu item to confirm it links to the Contact Page.
+* From the Contact Page, click the "Home" navigation menu item to confirm it links to the Home Page.
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
+
+### Home Page (On Page Load):
+* Confirm Google Map API loads correctly.
+* Confirm custom map markers load correctly.
+* Confirm welcome message loads correctly.
+* Confirm hero image loads correctly.
+* Confirm legend loads correctly. 
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
+
+### Home Page (Interactive Elements):
+#### Map markers and venue information:
+* Scroll over each marker to confirm that an info window with the venue name is displayed.
+* Click each marker on the map to confirm the correct venue is displayed in the Information Box.
+* For each venue confirm the following:
+    * The correct venue name is displayed.
+    * The correct venue address is displayed.
+    * The correct venue description is displayed.
+    * The correct venue name is displayed in the "Visit (venue name) website" link.
+    * The "Visit (venue name) website" link directs to the correct website and opens in a new tab.
+    * The correct venue name is displayed in the "Book a table at (venue name)" link
+    * The "Book a table at (venue name)" link directs to the correct website and opens in a new tab.
+    * If the venue does not accept bookings, the "Book a table at (venue name)" link is hidden.
+    * The correct social media/trip advisor links are displayed (if a venue doesn't have one of the profiles, the icon is hidden).
+    * The social media/trip advisor links direct to the correct page and open in a new tab.
+    * The correct venue images display and have unique and appropriate alt attributes to display if the images don't load correctly.
+* Confirm that all venue information loads correctly every time a different marker is clicked.
+* Double click each marker to confirm zoom functionality works as expected.
+* Enter text in to the search bar to confirm search suggestions are presented under the bar.
+* Complete a search or select a sugestion from the dropdown to confirm the map zooms in on the location and a marker is placed.
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
+
+#### Legend
+* Click each checkbox in the legend to confirm that the show/hide functionality is working correctly and shows/hides the correct map markers.
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
+
+### Contact Page
+* Navigate to the Contact Page using the navigation bar.
+* Fill out the form and click send.
+* Confirm email is sent to the correct address and the contents of the message are as expected.
+* Hover over the "Send" button to confirm colour transition is correct.
+* With the form inputs completely clear of information, click the send button to confirm The "Please fill in this field" alert box is displayed under the "Name" input.
+* With the form name input filled in, click the send button to confirm The "Please fill in this field" alert box is displayed under the "Email address" input.
+* With the form name and email input filled in, click the send button to confirm The "Please fill in this field" alert box is displayed under the "Message" input.
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
+
+### Footer
+
+### Responsive design
+* Reduce the screen size to confirm that all elements behave as expected and display as they should on all device sizes.
+* Ensure that all elements have adequate space and the site is still easily legible and easy to use.
 
 ## Bugs
 

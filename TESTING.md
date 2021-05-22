@@ -1,3 +1,42 @@
+## User Stories
+---
+The user stories are annotated below to describe funtionality and highlight the way in which the project fulfills the objectives set out. Relevant screenshots relating to each of the user stories below can be found in the main [README.md](https://github.com/theopmw/Top-Spots-London/blob/master/README.md) file.
+
+### First Time User Goals
+
+* As a first time user, I want to easily understand the purpose of the site.
+    * The Information Box on the landing page provides a brief explanation of the site.
+    * The Information Box is clearly visible as soon as the user lands on the page on all devices.
+* As a first time user, I want to easily understand how to use the site.
+     * The information box on the landing page prompts the user to interact with the map to start exploring.
+     * The Information Box is clearly visible as soon as the user lands on the page on all devices.
+* As a first time user, I want to easily understand how to navigate the site in order to find what I need efficiently.
+    * The use of the site is intuitive and the brief information given in the Information Box provodes all the information needed to use the site.
+    * The navigation bar situated in the header, beneath the site logo is clear, intuitive and easy to understand.
+
+### Returning User Goals
+
+* As a returning user, I want to easily find new places I would like to visit.
+    * The Information Box will be updated with brief information on additions when published.
+* As a returning user, I would like to be able to make contact with any questions or comments I have.
+    * The Contact Page is easily accessible via the navigation bar and diplays a clear and intuitve contact form. This allows users to contact the site with any questions or comments they may have.
+* As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
+    * For each venue, the Information Box clearly displays a link to the website of that venue, under the venue information.
+    * For each venue, the Information Box displays a direct link to the book a table at that venue. If the venue does not accept bookings, this element is hidden to improve the UX and avoid displaying misleading information.
+* As a returning user, I would like the abilty to easily find links to a venues social media channels.
+    * For each venue, the Information Box displays a direct link to each of the venues social media channels (in the form of a Font Awesome icon). If the venue does not subscribe to one or more of the social media platforms, the icon is hidden to improve the UX and avoid displaying misleading information.
+* As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
+    * For each venue, the Information Box displays a direct link to each of the venues Trip Advisor page (in the form of a Font Awesome icon). If the venue is not on Trip Advisor, the icon is hidden to improve the UX and avoid displaying misleading information.
+
+
+### Frequent User Goals
+
+* As a frequent user, I would like the ability to recommend venues that I have discovered that I would like to see added to the site.
+    * Users can reccomend places they would like to see added to the site via the contact form on the contact page.
+* As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map and find out where they are.
+    * The search bar at the top of the map allows users to search for locations and add a temporary marker to the map.
+
+
 ## Bugs
 
 ### Map search box not working correctly and breaking map functionality
@@ -327,7 +366,7 @@ In the code to show and hide each venue type marker, code was simplified from:
     });
 ```
 
-This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesarry to gain the functionality required amd was just wasted code.
+This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesary to gain the functionality required and was just wasted code.
 
 
 

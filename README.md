@@ -264,13 +264,37 @@ $ git clone https://github.com/theopmw/Top-Spots-London
     7. Click **SAVE**.
     8. The restrictions will now be saved.
 
-* Note that on this page you can also restrict the APIs that a key can call. Just select **Restrict key** under the **API restrictions** heading, check the relevant API checkboxes, click **OK** and then click **SAVE**. Top Spots London uses the Maps Javacript API and the Place API so is restricted to these two
+* Note that on this page you can also restrict the APIs that a key can call. Just select **Restrict key** under the **API restrictions** heading, check the relevant API checkboxes, click **OK** and then click **SAVE**. Top Spots London uses the Maps Javacript API and the Place API so is restricted to these two.
 
+For futher reading on API Keys, see the Google Documentation [here](https://cloud.google.com/docs/authentication/api-keys?hl=en&visit_id=637572115857682925-2461310236&rd=1).
 
-For futher reading on API Keys, see the Google Documentation for [using API Keys](https://cloud.google.com/docs/authentication/api-keys?hl=en&visit_id=637572115857682925-2461310236&rd=1).
+#### Maps Javascript API:
 
+* Top Spots London uses the **inline loading** method to load the **Maps JavaScript API**:
+    1. The Maps JavaScript API is loaded using a ```script``` tag, which can be added inline in your HTML file or dynamically using a separate JavaScript file.
+    2. Top Spots London uses the **Inline Loading** method.
+    3. To load the Maps JavaScript API inline in an HTML file, add a script tag as show below: 
+    ```
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    ```
+For futher reading on Maps JavaScript API, see the Google Documentation [here](https://developers.google.com/maps/documentation/javascript/overview#Inline).
 
+#### Adding the Places API:
 
+* Libraries are modules of code that provide additional functionality to the main Maps JavaScript API but are not loaded unless you specifically request them. Top Spots London uses the Places API in order to add search funtionality to the masp, allowing users to serch for places and add a temporary mraker to the map.
+* To load the Places API:
+    1. As above, to load the JavaScript code for the JavaScript API, you include a bootstrap URL on your page, of the form ```https://maps.googleapis.com/maps/api/js```. This bootstrap request loads all of the main JavaScript objects and symbols for use in the Maps JavaScript API. Some of the API features are also available in self-contained libraries which are not loaded unless you specifically request them. Breaking up supplemental components into libraries allows the main API to load (and parse) quickly. You only incur the additional overhead of loading and parsing libraries if you need them.
+    2. You can load additional libraries by specifying a libraries parameter in the bootstrap request, and supplying the name of the library or libraries. You can specify multiple libraries as a comma-separated list. You then access the libraries via the ```google.maps.libraryName``` namespace.
+    3. In the case of Top Spots London the bootstrap reqest is as below:
+    ```
+    <script
+    src="https://maps.googleapis.com/maps/api/js?   key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly">
+    </script>
+    ```
+
+For futher reading on additional libraries, see the Google Documentation [here](https://developers.google.com/maps/documentation/javascript/libraries)
 
 ## Credits
 ---
@@ -282,6 +306,8 @@ For futher reading on API Keys, see the Google Documentation for [using API Keys
 ### Content
 
 ### Media
+
+#### Icons
 
 Map marker icons used were taken from [Map Icons Collection](https://mapicons.mapsmarker.com) (full licence information [here](https://mapicons.mapsmarker.com/about/license/)):
 
@@ -296,6 +322,8 @@ Map marker icons used were taken from [Map Icons Collection](https://mapicons.ma
 ![Breyery Icon](assets/images/map_icons/distillery.png) [Brewery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
 
 ![Distillery Icon](assets/images/map_icons/distillery.png) [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
+
+
 
 ### Acknowledgements
 

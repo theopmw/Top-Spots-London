@@ -68,19 +68,15 @@ Something about having an easily accessible, well curated list of London food/dr
 * Returning user goals:
 
     1. As a returning user, I want to easily find new places I would like to visit.
-    2. As a returning user, I want to be able to filter places by area and or category in order to easily find what I am looking for.
-    3. As a returning user, I would like to be able to make contact with any questions or comments I have.
-    4. As a returning user, I would like to be able to find out more about the site and its goals.
-    5. As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
+    2. As a returning user, I would like to be able to make contact with any questions or comments I have.
+    3. As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
     6. As a returning user, I would like the abilty to easily find links to a venues social media channels.
     7. As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
 
 * Frequent user goals:
 
     1. As a frequent user, I would like the ability to recommend venues that I have discovered that I would like to see added to the site.
-    2. As a frequent user, I would like the ability to pin places I would like to visit.
-    3. As a frequent user, I would like the ability to rate or mark the places I have been.
-    4. As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map.
+    4. As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map and find out where they are.
     
 ### Wireframes
 
@@ -96,7 +92,15 @@ Londrina Shadow is the main font used throughout the site for the site logo and 
 
 Londrina Solid is used as the secondary font as it complements the main font and provides a point of difference to the typography of the website
 
+Raleway is used as the third font as it is very clear and legible. This fonr was used for the main blocks of text as it is very easy to read. Additional letter spacing was added to improve legibilty further, especailly on smaller devices.
+
 #### Imagery
+
+The imagery used for the hero image is from [Unsplash](https://unsplash.com/).
+
+Venue images were taken from the individual venue accounts on [Instagram](https://www.instagram.com/).
+
+Further details can be found in the Acknolegements section below.
 
 ## Features
 
@@ -128,6 +132,7 @@ Londrina Solid is used as the secondary font as it complements the main font and
         * A link to make a reservation at the venue
         * Links to the venue social media accounts and Trip Advisor page
         * Images of the venue
+    * The reservations and social liks are dynamic so if the venue does not have one of them (eg. no Twitter account) it will be hidden on their page, improving the UX.
 
 ### Contact Page
 
@@ -148,13 +153,13 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 
 * Tablet Devices (Medium screen size):
 
-    * At tablet size, the **Bootstrap Grid Sytem** was used to size **Interactive Map** to 2/3 of the screen width (from left), with the **legend** taking up the final 1/3 to the right side of the device viewport.The Information box sits beneath the map and legend, taking up the full width of the device viewport.
+    * At tablet size, the **Bootstrap Grid Sytem** was used to size **Interactive Map** to 2/3 of the screen width (from left), with the **legend** taking up the final 1/3 to the right side of the device viewport.The Information box sits above the map and legend, taking up the full width of the device viewport.
 
     SCREENSHOT
 
 * Desktop/Laptop (Large and Extra Large screen size):
 
-    * At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen
+    * At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen.
 
     SCREENSHOT
 
@@ -164,7 +169,6 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 
 ## Technologies Used
 ---
-
 ### Languages Used
 
 * HTML
@@ -332,7 +336,7 @@ For futher reading on additional libraries, see the Google Documentation [here](
 
 #### Favicon: 
 
-* The page favicon was generated using https://favicon.io/
+* The page favicon was generated using https://favicon.io/.
 
 #### Imagery:
 

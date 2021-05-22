@@ -27,12 +27,12 @@ Through the contact page, users are encouraged to provide feeback on the site an
 
 <!-- The site has also been designed to allow the user to filter by type of venue so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries. -->
 
-If the site is perceived as successful, it is anticipated that the site could be expanded to include the following features:
+If the site is perceived as successful there is scope to substantially increase the scale of the site, it is anticipated that the site could be expanded to include the following features:
 
 * Add a way for users to save or mark the venues they like
 * Add weekly/monthly round-ups of venues, for example "Best venues to visit this week"/"This months Top Spots"
 * Add a way for users to browse venues in list format, rather than using the interactive map
-* Add a way for users to search or filter venues by area
+* Add a way for users to search or filter venues by area and offering (cuisine, craft beer etc.)
 * Add details of any special events or promotions happening at a venue
 * Add a way for users to add comments on the venues - could be implemented at the bottom of each venues information page
 * Add an integrated directions API, for example Google Directions or Citymapper
@@ -113,13 +113,17 @@ Further details can be found in the Acknolegements section below.
     
     * The **Footer** contains the copyright information for the site to the left and links to the Top Spots social media accounts to the right. Note that at the time of publishing, Top Spots does not have any social media accounts, so the link icons are placeholders and link to the home page of the social media platform.
 
+### Preloader
+
+* The site features a **preloader** to allow the site to fully load before the page is displayed
+
 ### Home Page
 
 * Interactive Map:
-    * The **interactive map** is constructed using the [Google Maps API](https://developers.google.com/maps) and features **custom markers** from [Map Icons Collection](https://mapicons.mapsmarker.com) denoting the type of venue. The map also utilises the [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to allow users to search for places on the map that are not among the featured destinations and add a marker to that location if selected.
+    * The **interactive map** is constructed using the Google [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview#Inline) and features **custom markers** from [Map Icons Collection](https://mapicons.mapsmarker.com) denoting the type of venue. The map also utilises the [Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to allow users to search for places on the map that are not among the featured destinations and add a marker to that location if selected.
 
-* Legend:
-     * The map **legend** uses a table of checkboxes to allow the user to toggle whether to show or hide map markers by venue type or completely hide all markers.
+* Hero Image:
+    * The site features a **hero image** on page load. On marker click, this is hidden and replaced but 3 images of the venue linked to the marker.
 
 * Information Box (Performs two functions on the site):
     * On page load, the **Information Box** displays a welcome message to to welcome users to the site and provide a brief bit of information on the site and how to use it.
@@ -134,12 +138,14 @@ Further details can be found in the Acknolegements section below.
         * Images of the venue
     * The reservations and social liks are dynamic so if the venue does not have one of them (eg. no Twitter account) it will be hidden on their page, improving the UX.
 
-### Contact Page
+* Legend:
+     * The map **legend** uses a table of checkboxes to allow the user to toggle whether to show or hide map markers by venue type or completely hide all markers.
 
-ADD HERO IMAGE DETAILS HERE ------------------------------
+### Contact Page
 
 * Contact Form:
     * The **Contact Form** uses [EmailJS](https://www.emailjs.com/). It will generate an email referencing the sendEmail.js file when a user submits their information and message.
+    * The form will generate a "Please fill in this field" alert box if the user does not fill out all input boxes. It will also check for a valid email before allowing the form to be submitted
 
 ### Responsive for Device Size
 
@@ -150,6 +156,8 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
     * The **Bootstrap Grid System** was utilised to stack information vertically on small device sizes to provide positive and efficient UX and allow information to be read easily by the user.
 
     * If more pages are added to the site and the number of menu items in the navigation bar increrases, the Bootstrap navbar toggler will be utilised to improve UX by reducing the menu items to a dropdown menu format on mobile devices, placed to the right of the site logo. As there are currently only 2 pages to the site, this is not currently needed as the site can be navigated easily on mobile devices.
+
+    SCREENSHOT
 
 * Tablet Devices (Medium screen size):
 
@@ -162,10 +170,6 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
     * At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen.
 
     SCREENSHOT
-
-### Existing Features
-
-### Features to Implement in Future
 
 ## Technologies Used
 ---
@@ -196,7 +200,7 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 ## Testing
 ---
 
-Detailed testing information can be found in separate [TESTING.md](TESTING.md) file.
+Detailed testing information can be found in separate [TESTING.md](https://github.com/theopmw/Top-Spots-London/blob/master/TESTING.md) file.
 
 ## Deployment
 ---
@@ -311,6 +315,7 @@ For futher reading on additional libraries, see the Google Documentation [here](
 * [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout the project for the Bootstrap Grid System, to make the site responsive and for select Bootstrap Components.
 * Various online resources utilised for guidance throught the project - [CSS Tricks](https://css-tricks.com/), [Stack Overflow](https://stackoverflow.com/), [W3 Schools](https://www.w3schools.com/) and Google Developers Documentation.
     * All code modified from external sources to suit the needs of the project are attributed via comments above the code throughout the project.
+* The Code Institute Tutor Team for assistance with the creation of the site, especially in the development of the preloader.
 
 ### Content
 

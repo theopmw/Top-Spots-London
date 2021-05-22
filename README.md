@@ -181,8 +181,9 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 * [Favicon.io](https://favicon.io/) - **Favicon.io** was used to create the favicon for the website.
 * [Imgbb](https://imgbb.com/) - **Imgbb** was used to host the custom map markers used on the website
 * [Font Awesome](https://fontawesome.com/) - **Font Awesome** was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+* [Loading.io](https://loading.io/) - **Loading.io** used to create preloader.
 * [Google Fonts](https://fonts.google.com/) - **Google Fonts** were used to import the 'Londrina Shadow' and 'Londrina Solid' fonts into the style.css file to style the fonts used on all pages of the project.
-* [EmailJS](https://www.emailjs.com/) - **EmialJS** was used for contact age email.
+* [EmailJS](https://www.emailjs.com/) - **EmialJS** was used for contact page email.
 * [TinyPNG](https://tinypng.com/) - **TinyPNG** was used to reduce the file size of .png/.jpg files used.
 * [Balsamiq](https://balsamiq.com/) - **Balsamiq** was used to create the wireframes during the design process.
 * [Web Formatter](https://webformatter.com/) - **Web Formatter** was used to beautify code.
@@ -338,6 +339,10 @@ For futher reading on additional libraries, see the Google Documentation [here](
 * Hero image: [Assorted Wine Bottles by David Straight](https://unsplash.com/photos/VZY6o3Q0EEI), Unsplash.
 
 * Venue Images: All other images are from the venue profiles on [Instagram.com](https://www.instagram.com/).
+
+#### Loader 
+
+* Preloader created using [Loading.io](https://loading.io/).
 
 ### Acknowledgements
 

@@ -107,11 +107,34 @@ The user stories are annotated below to describe funtionality and highlight the 
 * Review and confirm responsiveness and functionality on tablet and mobile devices.
 
 ### Footer
+* Confirm copyright text is displayed as expected.
+* Confirm social links dirct you to the home page of the relevant platform (as Top Spots London is for educational purposes only, it does not have social media).
+* Review and confirm responsiveness and functionality on different browsers.
+* Review and confirm responsiveness and functionality on tablet and mobile devices.
 
 ### Responsive design
 * Reduce the screen size to confirm that all elements behave as expected and display as they should on all device sizes.
 * Ensure that all elements have adequate space and the site is still easily legible and easy to use.
 
+#### Mobile devices:
+* Home Page:
+    * Confirm that the page content stacks vertically, with the Welcome Message/Information Box at the top, followed by the hero image, map and legend, and all page elements have enough space.
+
+* Contact Page:
+    * Confirm that the contact form width increases to take up a larger portion of the screen (90%) to allow the user to filol in the fields easily.
+
+#### Tablet Devices:
+* Home page:
+    * Confirm that the Welcome Message/Information Box stacks to the top of the page at full width, with hero image beneath and the map and legend beneath that. (the map taking up the left 2/3 of the screen and the legend the right 1/3).
+* Contact Page:
+    * Confirm that the contact from takes up the correct portion of the screen (66%) and is easy to read and fill out.
+
+#### Desktop Devices:
+* Home Page:
+    * Confirm that the Map takes up the left 1/3 of the screen, with the welcome message, hero image and legend stacked on the right 2/3.
+* Contact Page:
+    * Confirm that the contact from takes up the correct portion of the screen (66%) and is easy to read and fill out.
+    
 ## Bugs
 
 ### Map search box not working correctly and breaking map functionality

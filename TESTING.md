@@ -369,6 +369,7 @@ Here is a screenshot of the fixed result:
 
 ### Pushing the venues into separate arrays sorted by type:
 
+Expected:   
 Below is the inital code to loop over the venue array and generate a marker for each one:
 
 ```
@@ -381,7 +382,9 @@ Below is the inital code to loop over the venue array and generate a marker for 
         });
     };
 ```
-In order to push each venue marker into a separate array based on the type of venue (as below) this code had to be refactored.
+
+
+In order to push each venue marker into a separate array based on the type of venue to allow for the legend checkboxes to show and hide venues by type (as below) this code had to be refactored.
 
 ```
 // Empty marker arrays by venue type (Filled by markerToArray function)
@@ -465,10 +468,6 @@ In the code to show and hide each venue type marker, code was simplified from:
 ```
 
 This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesary to gain the functionality required and was just wasted code.
-
-
-
-## Testing 
 
 ### Google Lighthouse Testing
 

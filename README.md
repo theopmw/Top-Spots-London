@@ -294,22 +294,26 @@ For futher reading on Maps JavaScript API, see the Google Documentation [here](h
     </script>
     ```
 
-For futher reading on additional libraries, see the Google Documentation [here](https://developers.google.com/maps/documentation/javascript/libraries)
+For futher reading on additional libraries, see the Google Documentation [here](https://developers.google.com/maps/documentation/javascript/libraries).
 
 ## Credits
 ---
-
-* [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout the project for the Bootstrap Grid System, to make the site responsive and for select Bootstrap Components.
-
 ### Code
+
+* My Mentor, Spencer Barriball for providing guidance and inspiration.
+* [Bootstrap4](https://getbootstrap.com/): Bootstrap Library used throughout the project for the Bootstrap Grid System, to make the site responsive and for select Bootstrap Components.
+* Various online resources utilised for guidance throught the project - [CSS Tricks](https://css-tricks.com/), [Stack Overflow](https://stackoverflow.com/), [W3 Schools](https://www.w3schools.com/) and Google Developers Documentation.
+    * All code modified from external sources to suit the needs of the project are attributed via comments above the code throughout the project.
 
 ### Content
 
+* All content was written by the developer.
+
 ### Media
 
-#### Icons
+#### Icons:
 
-Map marker icons used were taken from [Map Icons Collection](https://mapicons.mapsmarker.com) (full licence information [here](https://mapicons.mapsmarker.com/about/license/)):
+* Map marker icons used were created using [Map Icons Collection](https://mapicons.mapsmarker.com) (full licence information [here](https://mapicons.mapsmarker.com/about/license/)):
 
 ![Restaurant Icon](assets/images/map_icons/restaurant.png) [Restaurant Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/restaurants/restaurant/)
 
@@ -323,9 +327,21 @@ Map marker icons used were taken from [Map Icons Collection](https://mapicons.ma
 
 ![Distillery Icon](assets/images/map_icons/distillery.png) [Distillery Icon](https://mapicons.mapsmarker.com/markers/restaurants-bars/bars/whiskey/)
 
+#### Favicon: 
 
+* The page favicon was generated using https://favicon.io/
+
+#### Imagery:
+
+* Hero image: [Assorted Wine Bottles by David Straight](https://unsplash.com/photos/VZY6o3Q0EEI), Unsplash.
+
+* Venue Images: All other images are from the venue profiles on [Instagram.com](https://www.instagram.com/).
 
 ### Acknowledgements
+
+* My Mentor, Spencer Barriball, for continuous feedback, support, guidance and inspiration.
+* Code Institute Tutor Support, for their continuous support and guidance.
+* Code Institute Assesment team, for providing insightful feedback, reducing any re-ocurring errors that may have carried over from my MS1 project, [Done London](https://github.com/theopmw/Done-London).
 
 ### Disclaimer
 

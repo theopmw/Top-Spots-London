@@ -177,7 +177,9 @@ The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the sit
 * [Git](https://git-scm.com/) - **Git** was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/) - **GitHub** is used to store the projects code after being pushed from Git.
 * [Bootstrap 4.5.3](https://www.bootstrapcdn.com/) - **Bootstrap** was used to assist with the responsiveness and styling of the website.
-* [JQuery](https://jquery.com/) - **JQuery** JavaScript library was used to simplify JavaScript code
+* [JQuery](https://jquery.com/) - **JQuery** JavaScript library was used to simplify JavaScript code.
+* [Favicon.io](https://favicon.io/) - **Favicon.io** was used to create the favicon for the website.
+* [Imgbb](https://imgbb.com/) - **Imgbb** was used to host the custom map markers used on the website
 * [Font Awesome](https://fontawesome.com/) - **Font Awesome** was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 * [Google Fonts](https://fonts.google.com/) - **Google Fonts** were used to import the 'Londrina Shadow' and 'Londrina Solid' fonts into the style.css file to style the fonts used on all pages of the project.
 * [EmailJS](https://www.emailjs.com/) - **EmialJS** was used for contact age email.

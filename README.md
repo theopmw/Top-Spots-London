@@ -228,12 +228,13 @@ For each change made, the following process was followed, a description of the d
 
 Git branching was also utilised to isolate the production of new features and merge them with the master branch throughout the development cycle of the project.
 
-* New branches were created using ```git branch new-branch```.
-* ```git switch new-branch``` was used to swich to the new branch.
-* A feature was then worked on in the new branch and modifications were staged, committed and pushed.
-* ```git switch master``` was used to switch back to the master branch.
-* The branch was then merged with the master using ```git merge new-branch```
-* When the branch had been merged with the master and was no longer needed, ```git branch -d new-branch``` was used to delete the branch.
+* Branches
+    * New branches were created using ```git branch new-branch```.
+    * ```git switch new-branch``` was used to swich to the new branch.
+    * A feature was then worked on in the new branch and modifications were staged, committed and pushed.
+    * ```git switch master``` was used to switch back to the master branch.
+    * The branch was then merged with the master using ```git merge new-branch```
+    * When the branch had been merged with the master and was no longer needed, ```git branch -d new-branch``` was used to delete the branch.
 
 Parts of this section used the following article for reference: [How To Use Git: A Reference Guide](https://dev.to/digitalocean/how-to-use-git-a-reference-guide-6b6).
 

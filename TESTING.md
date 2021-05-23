@@ -38,6 +38,8 @@ The user stories are annotated below to describe funtionality and highlight the 
     * For each venue, the Information Box displays a direct link to each of the venues social media channels (in the form of a Font Awesome icon). If the venue does not subscribe to one or more of the social media platforms, the icon is hidden to improve the UX and avoid displaying misleading information.
 * As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
     * For each venue, the Information Box displays a direct link to each of the venues Trip Advisor page (in the form of a Font Awesome icon). If the venue is not on Trip Advisor, the icon is hidden to improve the UX and avoid displaying misleading information.
+* As a returning user, I would like to see images of the venues.
+    * Each venue has a set of 3 images to give a feel of the venue. This drops to 1 image on mobile devices to provide a clean UX.
 * As a returning user, I would like the ability to filter venues on the map by type.
     * The map legend is dynanmic and allows users to show or hide venue markers by type or hide all markers entirely.
 

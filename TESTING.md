@@ -532,3 +532,20 @@ This was done in order to avoid defining a function to just immediately call it,
 
 ## Known Bugs and Issues
 
+### Map Positioning
+
+On smaller desktop devices and when the window is reduced vertically, there is white space under the map container:
+
+![Map Height Bug](assets/images/testing_screenshots/map_height_bug.png)
+
+This is caused by the ```container-map``` element having a height setting of ```height: calc(100vh - 190px)``` to sit between the header (130px)  and the footer (80px). So if the footer is not visible in the viewport, the map is pushed up as it must retain its vh value.
+
+In order to fix this, the index.html code must be refactored. The current code uses Bootstrap float classes to float the map right and the Information Box (Welcome message, Hero image, Legend on landing page and Venue information and Legend on all venue pages) left.
+
+In order to fix this problem, either Bootstrap nested rows or CSS Grid (with vthe help of Flexbox) will be implemennted.
+
+Due to time constraints this feature has been unable to be implemented but will be written in in future updates to improve the site responsiveness and UX. It will also allow for improved potential scalability of the site if it should grow in size and complexity in the future.
+
+
+
+

@@ -119,7 +119,7 @@ The user stories are annotated below to describe funtionality and highlight the 
 
 ### Footer
 * Confirm copyright text is displayed as expected.
-* Confirm social links dirct you to the home page of the relevant platform (as Top Spots London is for educational purposes only, it does not have social media).
+* Confirm social links direct you to the home page of the relevant platform (as Top Spots London is for educational purposes only, it does not have social media).
 * Review and confirm responsiveness and functionality on different browsers.
 * Review and confirm responsiveness and functionality on tablet and mobile devices.
 
@@ -146,20 +146,53 @@ The user stories are annotated below to describe funtionality and highlight the 
 * Contact Page:
     * Confirm that the contact from takes up the correct portion of the screen (66%) and is easy to read and fill out.
 
-## W3C Markup Validation
+## Automated Testing
 
-The [W3C Markup Validation Service](https://validator.w3.org/) highlighted the following 3 warnings when the index.html file was run through it:
+The following automated tools were used to test the project code throughout the development process:
+
+### W3C Markup Validation (HTML)
+
+Home page:
+
+* [W3C Markup Validation Service](https://validator.w3.org/) highlighted the following 3 warnings when the index.html file was tested:
 
 ![W3C Validation Warnings](assets/images/testing_screenshots/w3c_html_validation.png)
 
-Below are the methods implemented to fix the issues: 
+* Below are the methods implemented to fix the issues: 
 
-1. To resolve this warning, 2 empty columns were added on the table row in question.
+    1. To resolve this warning, 2 empty columns were added on the table row in question.
 
-2. To resolve this warning, 2 empty columns were added on the table row in question.
+    2. To resolve this warning, 2 empty columns were added on the table row in question.
 
-3. To resolve this warning, the semantic section tags was replaced with non-sematic div tags as a heading was not required. 
+    3. To resolve this warning, the semantic section tags was replaced with non-sematic div tags as a heading was not required. 
 
+Contact page:
+
+* No errors or warnings were found when the conatct.html file was tested.
+
+### W3C CSS Validation Service (CSS)
+
+* No errors or warnings were found when the styles.css file was tested using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+### JSHint (JavaScript)
+
+[JSHint](https://jshint.com/) was used to test all JavaScript files.
+
+maps.js:
+
+* No errors or warnings found in the maps.js file other than "One undefined variable" relating to the use of "google" throughout the file:
+
+![JSHint maps.js Errors](assets/images/testing_screenshots/maps.js_jshint_testing.png)
+
+* This could not be avoided as it points to the google variable used throughout the file in order to make the Google Maps API work.
+
+sendEmail.js:
+
+* No errors or warnings found in the sendEmail.js file other than:
+
+![JSHint sendEmail.js Errors](assets/images/testing_screenshots/sendEmail.js_jshint_testing.png)
+
+* This could not be avoided as both "emailjs" and "sendMail" are required for [EmailJS](https://www.emailjs.com/) to work.
 
 ### Google Lighthouse Testing
     

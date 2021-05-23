@@ -12,7 +12,7 @@ Top Spots London showcases some of the most exciting food and drink destinations
 
 The aim of the site is to provide users with a curated list of the best places to eat and drink in London. The main goal is to provide users with ideas and inspiration on where to go out in London and to encourage them to try new places.
 
-The site provides the user with the followiing information for each of the venues listed:
+The site provides the user with the following information for each of the venues listed:
 
 * Venue Name
 * Venue Address
@@ -21,26 +21,21 @@ The site provides the user with the followiing information for each of the venue
 * Link to venue booking/reservations page
 * Links to the venues social media accounts and Trip Advisor page
 
-The site has been designed to be accessible and respoinsive on a range of devices to allow users to search for recommended destinations from wherever they are.
+The site has been designed to be accessible and respoinsive on a range of devices to allow users to easily search for recommended destinations from wherever they are.
 
-Through the contact page, users are encouraged to provide feeback on the site and reccommend venues they would like to see added to the site.
+Through the contact page, users are encouraged to provide feeback on the site and recommend venues they would like to see added to the site.
 
-<!-- The site has also been designed to allow the user to filter by type of venue so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries. -->
+The site has been designed to include an interactive legend to allow users to filter the venues by type, so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries.
 
-If the site is perceived as successful there is scope to substantially increase the scale of the site, it is anticipated that the site could be expanded to include the following features:
+If the site is successful and generates inteerest and traffic, there is scope to substantially increase the scale of the site, it is anticipated that the site could be expanded to include the following features:
 
-* Add a way for users to save or mark the venues they like
-* Add weekly/monthly round-ups of venues, for example "Best venues to visit this week"/"This months Top Spots"
-* Add a way for users to browse venues in list format, rather than using the interactive map
-* Add a way for users to search or filter venues by area and offering (cuisine, craft beer etc.)
-* Add details of any special events or promotions happening at a venue
-* Add a way for users to add comments on the venues - could be implemented at the bottom of each venues information page
-* Add an integrated directions API, for example Google Directions or Citymapper
-
-
-Mention something about the range of culinary experiences available in London and how diverse the London food/drink scene is? Explosion of streetfood over the last 10-15 years?
-
-Something about having an easily accessible, well curated list of London food/drink destinations?
+* Add a way for users to save or mark the venues they like.
+* Add weekly/monthly round-ups of venues, for example "Best venues to visit this week"/"This months Top Spots".
+* Add a way for users to browse venues in list format, rather than using the interactive map.
+* Add a way for users to search or filter venues by area and offering (cuisine, craft beer etc.).
+* Add details of any special events or promotions happening at a venue.
+* Add a way for users to add comments on the venues - could be implemented at the bottom of each venues information page.
+* Add an integrated directions API, for example Google Directions or Citymapper.
 
 ## UX
 ---
@@ -85,7 +80,7 @@ Returning user goals:
 
 ![Website and Booking Links Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_website_booking.png)
 
-4. As a returning user, I would like the abilty to easily find links to a venues social media channels.
+4. As a returning user, I would like the abilty to easily find links to a venues social media channels so I can find out more about them, like/follow them or contact them via their socials.
 
 ![Social Links Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_socials.png)
 
@@ -97,7 +92,7 @@ Returning user goals:
 
 ![Venue Images Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_venue_images.png)
 
-7. As a returning user, I would like the ability to filter venues on the map by type.
+7. As a returning user, I would like the ability to filter venues on the map by type so I can narrow down what I'm looking for.
 
 ![Legend and Map Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_legend.png)
 
@@ -125,7 +120,7 @@ Londrina Shadow is the main font used throughout the site for the site logo and 
 
 Londrina Solid is used as the secondary font as it complements the main font and provides a point of difference to the typography of the website
 
-Raleway is used as the third font as it is very clear and legible. This fonr was used for the main blocks of text as it is very easy to read. Additional letter spacing was added to improve legibilty further, especailly on smaller devices.
+Raleway is used as the third font as it is very clear and legible. This font was used for the main blocks of text as it is very easy to read. Additional letter spacing was added to improve legibilty further, especailly on smaller devices.
 
 #### Imagery
 
@@ -152,33 +147,42 @@ Further details can be found in the Acknolegements section below.
 
 ### Home Page
 
-* Interactive Map:
-    * The **interactive map** is constructed using the Google [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview#Inline) and features **custom markers** from [Map Icons Collection](https://mapicons.mapsmarker.com) denoting the type of venue. The map also utilises the [Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to allow users to search for places on the map that are not among the featured destinations and add a marker to that location if selected.
+Interactive Map:
+* The **interactive map** is constructed using the Google [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview#Inline) and features **custom markers** from [Map Icons Collection](https://mapicons.mapsmarker.com) denoting the type of venue. The map also utilises the [Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to allow users to search for places on the map that are not among the featured destinations and add a marker to that location if selected.
+* A mouse click on any venue marker will launch the information for that venue
+* A double click on any venue marker will zoom in on the marker, allowing the user to get a better look at the area surrounding the marker.
 
-* Hero Image:
-    * The site features a **hero image** on page load. On marker click, this is hidden and replaced but 3 images of the venue linked to the marker.
+Hero Image:
+* The site features a **hero image** on page load. On marker click, this is hidden and replaced by 3 images of the venue that is linked to the marker.
 
-* Information Box (Performs two functions on the site):
-    * On page load, the **Information Box** displays a welcome message to to welcome users to the site and provide a brief bit of information on the site and how to use it.
+Information Box (Performs two functions on the site):
+* On page load, the **Information Box** displays a welcome message to to welcome users to the site and provide a brief bit of information on the site and how to use it.
 
-    * On marker click, the **Information Box** provides details of the venue, these include:
-        * The venue name
-        * The venue address
-        * A brief description of the venue
-        * A link to the venue website
-        * A link to make a reservation at the venue
-        * Links to the venue social media accounts and Trip Advisor page
-        * Images of the venue
-    * The reservations and social liks are dynamic so if the venue does not have one of them (eg. no Twitter account) it will be hidden on their page, improving the UX.
+* On marker click, the **Information Box** provides details of the venue, these include:
+    * The venue name
+    * The venue address
+    * A brief description of the venue
+    * A link to the venue website
+    * A link to make a reservation at the venue
+    * Links to the venue social media accounts and Trip Advisor page
+    * Images of the venue
+* The reservations and social liks are dynamic so if the venue does not have one of them (eg. no Twitter account) it will be hidden on their page, improving the UX.
 
-* Legend:
-     * The map **legend** uses a table of checkboxes to allow the user to toggle whether to show or hide map markers by venue type or completely hide all markers.
+Legend:
+* The map **legend** uses a table of checkboxes to allow the user to toggle whether to show or hide map markers by venue type or completely hide all markers.
 
 ### Contact Page
 
-* Contact Form:
-    * The **Contact Form** uses [EmailJS](https://www.emailjs.com/). It will generate an email referencing the sendEmail.js file when a user submits their information and message.
-    * The form will generate a "Please fill in this field" alert box if the user does not fill out all input boxes. It will also check for a valid email before allowing the form to be submitted
+Contact Form:
+* The **Contact Form** uses [EmailJS](https://www.emailjs.com/). It will generate an email referencing the sendEmail.js file when a user submits their information and message.
+* The form will generate a "Please fill in this field" alert box if the user does not fill out all input boxes. It will also check for a valid email before allowing the form to be submitted
+* On successful submission of the form, a modal is triggered informing the user their message has been sent.
+
+![Success Modal](assets/images/readme_screenshots/success_modal.png)
+
+* If for any reason the form fails to send, a modal is triggered informing the user that an error has occred and prompts them to try again later.
+
+![Error Modal](assets/images/readme_screenshots/error_modal.png)
 
 ### Responsive for Device Size
 

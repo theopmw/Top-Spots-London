@@ -65,20 +65,41 @@ First time user goals:
 2. As a first time user, I want to easily understand how to use the site.
 3. As a first time user, I want to easily understand how to navigate the site in order to find what I need efficiently.
 
-![First Time user Goals Landing Page](assets/images/readme_screenshots/first_time_user_goals-landing_page.png)
+![Landing Page](assets/images/readme_screenshots/first_time_user_goals-landing_page.png)
 
 4. As a first time user, I want to be able to easily interact with the map to find out information about a venue.
 
-![First Time User Goals Venue](assets/images/readme_screenshots/first_time_user_goals_venue.png)
+![Venue Page](assets/images/readme_screenshots/first_time_user_goals_venue.png)
 
 Returning user goals:
 
 1. As a returning user, I want to easily find other places I would like to visit.
+
+![Map of Places](assets/images/readme_screenshots/returning_user_goals_map.png)
+
 2. As a returning user, I would like to be able to make contact with any questions or comments I have.
+
+![Contact Page](assets/images/readme_screenshots/returning_user_goals_contact_page.png)
+
 3. As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
+
+![Website and Booking Links Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_website_booking.png)
+
 4. As a returning user, I would like the abilty to easily find links to a venues social media channels.
+
+![Social Links Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_socials.png)
+
 5. As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
-6. As a returning user, I would like the ability to filter venues on the map by type.
+
+![Trip Advisor Link Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_tripadvisor.png)
+
+6. As a returning user, I would like to see images of the venues.
+
+![Venue Images Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_venue_images.png)
+
+7. As a returning user, I would like the ability to filter venues on the map by type.
+
+![Legend and Map Highlighted on Venue Page](assets/images/readme_screenshots/returning_user_goals_legend.png)
 
 Frequent user goals:
 

@@ -31,6 +31,8 @@ The user stories are annotated below to describe funtionality and highlight the 
     * The Information Box will be updated with brief information on additions when published.
 * As a returning user, I would like to be able to make contact with any questions or comments I have.
     * The Contact Page is easily accessible via the navigation bar and diplays a clear and intuitve contact form. This allows users to contact the site with any questions or comments they may have.
+    * On successful form submission a modal is triggered confirming sucessful form submission.
+    * If an error has occured, a separate modal is triggered to inform the user and advise them to try agan at a later date
 * As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
     * For each venue, the Information Box clearly displays a link to the website of that venue, under the venue information.
     * For each venue, the Information Box displays a direct link to the book a table at that venue. If the venue does not accept bookings, this element is hidden to improve the UX and avoid displaying misleading information.

@@ -493,7 +493,7 @@ function initMap() {
             image3: "assets/images/venue_images/haymans/haymans_distillery.png",
             image3Alt: "View of the Hayman's distillery",
             position: new google.maps.LatLng(
-                51.4461758272542, 
+                51.4461758272542,
                 -0.14383563863141202
             ),
             type: "distillery",
@@ -524,7 +524,7 @@ function initMap() {
             } else {
                 venueBooking.classList.remove("d-none"); // If venue.facebook has a value other than "#", remove the Bootstrap class "d-none" to show the icon/link
                 venueBooking.innerHTML = `<a href="${venue.booking}" target="_blank" rel="noopener">
-            <span class="sr-only">Booking</span>Reserve a table at ${venue.name} <i class="fas fa-external-link-alt"></i></a>`;; // generates the icon and link to be displayed in the DOM
+            <span class="sr-only">Booking</span>Reserve a table at ${venue.name} <i class="fas fa-external-link-alt"></i></a>`; // generates the icon and link to be displayed in the DOM
             }
             // Social Links
             VenueSocialLinks.style = "padding: 1.25rem 0 0.3125rem 1.0625rem";
@@ -845,7 +845,7 @@ function initMap() {
     searchBox.addListener("places_changed", () => {
         const places = searchBox.getPlaces();
 
-        if (places.length == 0) {
+        if (places.length === 0) {
             return;
         }
         // Clear out the old markers on new user search

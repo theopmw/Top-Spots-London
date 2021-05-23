@@ -92,15 +92,13 @@ function initMap() {
             name: "Brunswick House",
             address: "30 Wandsworth Rd, Vauxhall, London, SW8 2LG",
             // Credit: text taken from https://brunswickhouse.london/
-            description:
-                "Serving Breakfast, Lunch and Dinner in the crumbling grandeur of and antique-filled Georgian mansion, built for the Duke of Brunswick in 1758. Heated outdoor terrace, cocktail bar, romantic candle-lit dining room, intimate private rooms for eating and celebrating, historic vaulted cellars with an incredible list of rare wines and bar snacks.",
+            description: "Serving Breakfast, Lunch and Dinner in the crumbling grandeur of and antique-filled Georgian mansion, built for the Duke of Brunswick in 1758. Heated outdoor terrace, cocktail bar, romantic candle-lit dining room, intimate private rooms for eating and celebrating, historic vaulted cellars with an incredible list of rare wines and bar snacks.",
             website: "https://brunswickhouse.london/",
             booking: "https://resy.com/cities/ldn/brunswick-house?date=2021-05-07&seats=2",
             facebook: "https://www.facebook.com/BrunswickHouseLondon/",
             twitter: "https://twitter.com/brunswickhse?lang=en",
             instagram: "https://www.instagram.com/brunswick_house/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d2402977-Reviews-Brunswick_House-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d2402977-Reviews-Brunswick_House-London_England.html",
             image1: "assets/images/venue_images/brunswick_house/brunswick_house_exterior.png",
             image1Alt: "Brunswick House Exterior",
             image2: "assets/images/venue_images/brunswick_house/brunswick_house_interior.png",
@@ -118,15 +116,13 @@ function initMap() {
             name: "The Laundry",
             address: "374 Coldharbour Ln, Brixton, London SW9 8PL",
             // Credit: text taken from https://thelaundrybrixton.com/
-            description:
-                "The Laundry is an all day neighbourhood dining destination. Set in the heart of Brixton on Coldharbour Lane, The Laundry is a bustling all-day neighbourhood Bistro, Wine Shop & Café with a heated terrace.",
+            description: "The Laundry is an all day neighbourhood dining destination. Set in the heart of Brixton on Coldharbour Lane, The Laundry is a bustling all-day neighbourhood Bistro, Wine Shop & Café with a heated terrace.",
             website: "https://thelaundrybrixton.com/",
             booking: "https://thelaundrybrixton.com/reservations",
             facebook: "https://www.facebook.com/brixtonlaundry/",
             twitter: "#",
             instagram: "https://www.instagram.com/brixtonlaundry/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d19430377-Reviews-The_Laundry-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d19430377-Reviews-The_Laundry-London_England.html",
             image1: "assets/images/venue_images/the_laundry/the_laundry_exterior.png",
             image1Alt: "Exterior of The Laundry, Brixton",
             image2: "assets/images/venue_images/the_laundry/the_laundry_food.png",
@@ -144,15 +140,13 @@ function initMap() {
             name: "Bar Douro",
             address: "35B, Arch, 85B Southwark Bridge Rd, London, SE1 0NQ",
             // Credit: text taken from https://www.bardouro.co.uk/london-bridge
-            description:
-                "Occupying a railway arch in London's buzzing Flat Iron Square, Bar Douro was created as a way to bring authentic Portuguese food to London. With ties to Portugal traced back through the family, Bar Douro has matched exquisite Portuguese wines with all the tradition of local Portuguese food. The atmospheric 30-cover marble counter-top dining space offers an intimate window to the best of Portuguese culinary heritage.",
+            description: "Occupying a railway arch in London's buzzing Flat Iron Square, Bar Douro was created as a way to bring authentic Portuguese food to London. With ties to Portugal traced back through the family, Bar Douro has matched exquisite Portuguese wines with all the tradition of local Portuguese food. The atmospheric 30-cover marble counter-top dining space offers an intimate window to the best of Portuguese culinary heritage.",
             website: "https://www.bardouro.co.uk/london-bridge",
             booking: "https://www.bardouro.co.uk/london-bridge",
             facebook: "https://www.facebook.com/bardourouk/",
             twitter: "https://twitter.com/bardouro",
             instagram: "https://www.instagram.com/bardouro/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11856169-Reviews-Bar_Douro_London_Bridge-London_England.html",
             image1: "assets/images/venue_images/bar_douro/bar_douro_interior.png",
             image1Alt: "Bar Douro Interior",
             image2: "assets/images/venue_images/bar_douro/bar_douro_food.png",
@@ -168,18 +162,15 @@ function initMap() {
         {
             // The Tapas Room, Brixton Village
             name: "The Tapas Room, Brixton Village",
-            address:
-                "Unit 52, Brixton Village, Coldharbour Ln, Brixton, London, SW9 8PS",
+            address: "Unit 52, Brixton Village, Coldharbour Ln, Brixton, London, SW9 8PS",
             // Credit: text taken from https://www.thetapasroom.co.uk/
-            description:
-                "Wine Shop, Tapas Bar & Delicatessen, The Tapas Room presents an unrivalled & thorough range of specialist Spanish & Basque Wine, Sherry, Cava, Vermouth and Craft Beers alongside a refined Tapas, charcuterie, cheese & deli menu. The Tapas Room is the sister business to the acclaimed street food van and Pop Brixton restaurant Donostia Social Club and the associated DSC Imports which specialises in the exclusive distribution of Basque and Spanish wines & beers to the London bar and restaurant industry. The Tapas Room was launched in order to encourage a culture of learning more about Spanish wine, with the result of drinking better for less, in an intimate and friendly environment.",
+            description: "Wine Shop, Tapas Bar & Delicatessen, The Tapas Room presents an unrivalled & thorough range of specialist Spanish & Basque Wine, Sherry, Cava, Vermouth and Craft Beers alongside a refined Tapas, charcuterie, cheese & deli menu. The Tapas Room is the sister business to the acclaimed street food van and Pop Brixton restaurant Donostia Social Club and the associated DSC Imports which specialises in the exclusive distribution of Basque and Spanish wines & beers to the London bar and restaurant industry. The Tapas Room was launched in order to encourage a culture of learning more about Spanish wine, with the result of drinking better for less, in an intimate and friendly environment.",
             website: "https://www.thetapasroom.co.uk/",
             booking: "https://www.thetapasroom.co.uk/",
             facebook: "https://www.facebook.com/thetapasroom",
             twitter: "https://twitter.com/thetapasroom",
             instagram: "https://www.instagram.com/thetapasroom/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d21237612-Reviews-The_Tapas_Room-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d21237612-Reviews-The_Tapas_Room-London_England.html",
             image1: "assets/images/venue_images/tapas_room/tapas_room_interior.png",
             image1Alt: "Tapas Room Interior",
             image2: "assets/images/venue_images/tapas_room/tappas_room_food.png",
@@ -197,15 +188,13 @@ function initMap() {
             name: "Peckham Cellars",
             address: "125 Queen's Rd, Peckham, London, SE15 2ND",
             // Credit: text taken from https://peckhamcellars.co.uk/
-            description:
-                "Your local South-East spot for buying and drinking great wines and eating delicious, seasonally-focused food. Peckham Cellars is your friendly neighbourhood wine bar and shop with a bonus wine delivery service!  The complete package for all your wining and dining needs. Peckham Cellars is a Bib Gourmand Winner 2021.",
+            description: "Your local South-East spot for buying and drinking great wines and eating delicious, seasonally-focused food. Peckham Cellars is your friendly neighbourhood wine bar and shop with a bonus wine delivery service!  The complete package for all your wining and dining needs. Peckham Cellars is a Bib Gourmand Winner 2021.",
             website: "https://peckhamcellars.co.uk/",
             booking: "https://resy.com/cities/ldn/peckham-cellars?date=2021-05-07&seats=2",
             facebook: "https://www.facebook.com/peckhamcellars/",
             twitter: "https://twitter.com/peckhamcellars?lang=en",
             instagram: "https://www.instagram.com/peckhamcellars/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d20083945-Reviews-Peckham_Cellars-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d20083945-Reviews-Peckham_Cellars-London_England.html",
             image1: "assets/images/venue_images/peckham_cellars/peckham_cellars_wine.png",
             image1Alt: "Wine selection at Peckham Cellars",
             image2: "assets/images/venue_images/peckham_cellars/peckham_cellars_exterior.png",
@@ -223,16 +212,13 @@ function initMap() {
             name: "Smoking Goat",
             address: "64 Shoreditch High St, Shoreditch, London, E1 6JJ",
             // Credit: text taken from https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TEkrryyzSEo3YLRSNagwsTA3M0xOMkgyTzZMMzFIsjKoMDRNNjQ1TUpLS7RIMrG0MPPiKc7Nz87MS1dIz08sAQCmGRRj&q=smoking+goat&rlz=1C5CHFA_enGB919GB919&oq=smoking+&aqs=chrome.1.69i57j46i131i175i199i433j0i433l6j0.2861j0j4&sourceid=chrome&ie=UTF-8
-            description:
-                "Cool, laid-back restaurant with quirky dishes & drinks inspired by Bangkok’s late-night canteens.",
+            description: "Cool, laid-back restaurant with quirky dishes & drinks inspired by Bangkok’s late-night canteens.",
             website: "https://www.smokinggoatbar.com/",
             bookoing: "https://smokinggoatbar.com/reservations/",
-            facebook:
-                "https://www.facebook.com/Smoking-Goat-Shoreditch-815145515363047/",
+            facebook: "https://www.facebook.com/Smoking-Goat-Shoreditch-815145515363047/",
             twitter: "#",
             instagram: "https://www.instagram.com/smokinggoatbar/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d13078857-Reviews-Smoking_Goat_Shoreditch-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d13078857-Reviews-Smoking_Goat_Shoreditch-London_England.html",
             image1: "assets/images/venue_images/smoking_goat/smoking_goat_chilli_fish_sauce_wings.png",
             image1Alt: "Chilli Fish Sauce Wings at Smoking Goat",
             image2: "assets/images/venue_images/smoking_goat/smoking_goat_bar.png",
@@ -249,15 +235,13 @@ function initMap() {
             // Din Tai Fung
             name: "Din Tai Fung",
             address: "5 Henrietta St, Covent Garden, London, WC2E 8PS",
-            description:
-                "Taiwan is know for producing some of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling.",
+            description: "Taiwan is know for producing some of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling.",
             website: "https://www.dintaifung-uk.com/",
             booking: "https://www.dintaifung-uk.com/reservations/",
             facebook: "https://www.facebook.com/dintaifunguk/",
             twitter: "#",
             instagram: "https://www.instagram.com/dintaifunguk/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d15599297-Reviews-Din_Tai_Fung_UK-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d15599297-Reviews-Din_Tai_Fung_UK-London_England.html",
             image1: "assets/images/venue_images/din_tai_fung/din_tai_fung_food.png",
             image1Alt: "Table with dumplings, fried rice and greens",
             image2: "assets/images/venue_images/din_tai_fung/din_tai_fung_dumplings.png",
@@ -274,16 +258,13 @@ function initMap() {
             // Buona Sera
             name: "Buona Sera",
             address: "22-26 Northcote Rd, London, SW11 1NX",
-            description:
-                "Italian restaurant serving up traditional staples. A family run, bright and airy venue. Relaxed atmosphere with professional, friendly service.",
+            description: "Italian restaurant serving up traditional staples. A family run, bright and airy venue. Relaxed atmosphere with professional, friendly service.",
             website: "https://www.buonasera.co.uk/",
             booking: "https://www.buonasera.co.uk/visit",
-            facebook:
-                "https://www.facebook.com/buonaserarestaurant/?ref=page_internal",
+            facebook: "https://www.facebook.com/buonaserarestaurant/?ref=page_internal",
             twitter: "#",
             instagram: "https://www.instagram.com/buonasera.restaurant/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d1014303-Reviews-Buona_Sera-London_England.html",
             image1: "assets/images/venue_images/buona_sera/buona_sera_exterior.png",
             image1Alt: "Buona Sera exterior",
             image2: "assets/images/venue_images/buona_sera/buona_sera_eggs_bennedetto.png",
@@ -302,16 +283,13 @@ function initMap() {
             name: "Balham Bowls Club",
             address: "7-9 Ramsden Rd, Balham, London, SW12 8QX",
             // Credit: text taken from https://balhambowlsclub.com/
-            description:
-                "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
+            description: "Charming pub and restaurant set in an old bowling club with a large beer garden, two large function rooms for hire and a diverse programme of events.",
             website: "https://balhambowlsclub.com/",
             booking: "https://balhambowlsclub.com/",
-            facebook:
-                "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
+            facebook: "https://www.facebook.com/pages/Balham%20Bowls%20Club/240883992993515/",
             twitter: "https://twitter.com/balhambowls?lang=en/",
             instagram: "https://www.instagram.com/balhambowls/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3492324-Reviews-Balham_Bowls_Club-London_England.html",
             image1: "assets/images/venue_images/balham_bowls_club/bbc_exterior.png",
             image1Alt: "View of front of Balham Bowls Club",
             image2: "assets/images/venue_images/balham_bowls_club/bbc_sunday_roast.png",
@@ -329,15 +307,13 @@ function initMap() {
             name: "The Camberwell Arms",
             address: "65 Camberwell Church St, Camberwell, London, SE5 8TR",
             // Credit: text taken from https://thecamberwellarms.co.uk/about/
-            description:
-                "The Camberwell Arms is a South London restaurant and bar, headed up by Chef Director, Michael Davies, who creates regularly changing menus based on seasonal and quality ingredients. Set within a public house, bars are also an integral part of what they do. The Camberwell Arms has two bars – downstairs you will find a traditional pub, a place to drop in for a drink and a snack, whilst the upstairs bar is open late for classic drinks and great music with a 2am license.",
+            description: "The Camberwell Arms is a South London restaurant and bar, headed up by Chef Director, Michael Davies, who creates regularly changing menus based on seasonal and quality ingredients. Set within a public house, bars are also an integral part of what they do. The Camberwell Arms has two bars – downstairs you will find a traditional pub, a place to drop in for a drink and a snack, whilst the upstairs bar is open late for classic drinks and great music with a 2am license.",
             website: "https://thecamberwellarms.co.uk/",
             booking: "https://thecamberwellarms.co.uk/reservations/",
             facebook: "https://www.facebook.com/thecamberwellarms/",
             twitter: "https://twitter.com/camberwellarms",
             instagram: "https://www.instagram.com/thecamberwellarms/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d7222373-Reviews-The_Camberwell_Arms-London_England.html",
             image1: "assets/images/venue_images/camberwell_arms/camberwell_arms_bar.png",
             image1Alt: "The bar at The Camberwell Arms",
             image2: "assets/images/venue_images/camberwell_arms/camberwell_arms_food.png",
@@ -355,16 +331,13 @@ function initMap() {
             name: "The Faltering Fullback",
             address: "19 Perth Rd, Stroud Green, London, N4 3HB",
             // Credit: text taken from http://falteringfullback.com/
-            description:
-                "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
+            description: "Hidden away on the leafy avenue of Perth Road, tucked behind Finsbury Park, you'll find this charming, well loved Irish pub. Grab a pint and your own corner in the amazing garden, in front of the big screen sports, or by the bar. Wile away your day contemplating the ceiling inspiration, challenge your brain in our hugely popular quiz, or party with pals till late on Fridays and Saturdays. With all the sports and eclectic, lively atmosphere, not to mention the wide choice of drinks.",
             website: "http://falteringfullback.com/",
             booking: "#",
-            facebook:
-                "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
+            facebook: "https://www.facebook.com/pages/The%20Faltering%20Fullback/160854973929138/",
             twitter: "#",
             instagram: "https://www.instagram.com/thefalteringfullback/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d3515424-Reviews-The_Faltering_Fullback-London_England.html",
             image1: "assets/images/venue_images/faltering_fullback/faltering_fullback_entrance.png",
             image1Alt: "Entrance of The Faltering Fullback",
             image2: "assets/images/venue_images/faltering_fullback/faltering_fullback_interior.png",
@@ -383,8 +356,7 @@ function initMap() {
             name: "Tola",
             address: "56 Peckham High St, Peckham, London, SE15 5DP",
             // Credit: text taken from https://www.tolapeckham.com/
-            description:
-                "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
+            description: "Tola is a late night music venue, bar and roof terrace situated in the heart of Peckham.",
             website: "https://www.tolapeckham.com/",
             booking: "#",
             facebook: "https://www.facebook.com/tolapeckham/?_rdc=1&_rdr",
@@ -407,15 +379,13 @@ function initMap() {
             // Callooh Callay
             name: "Callooh Callay",
             address: "65 Rivington St, Shoreditch, London, EC2A 3AY",
-            description:
-                "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well worth a visit!",
+            description: "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well worth a visit!",
             website: "https://www.calloohcallaybar.com/",
             booking: "https://www.calloohcallaybar.com/bookings/events/gifts",
             facebook: "https://www.facebook.com/CalloohCallayLondon",
             twitter: "https://twitter.com/callooh_callay?lang=en",
             instagram: "https://www.instagram.com/calloohcallaybar/?hl=en",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d3385183-Reviews-Callooh_Callay_Bar-London_England.html",
             image1: "assets/images/venue_images/callooh_callay/callooh_callay_interior_day.png",
             image1Alt: "Guests drinking in the Callooh Callay main bar",
             image2: "assets/images/venue_images/callooh_callay/callooh_callay_cocktails.png",
@@ -434,15 +404,13 @@ function initMap() {
             name: "Pop Brixton",
             address: "49 Brixton Station Rd, Brixton, London, SW9 8PQ",
             // Credit: text taken from https://www.popbrixton.org/
-            description:
-                "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
+            description: "Pop Brixton is a temporary project that has turned disused land into a creative space for local, independent businesses. Come and discover South London’s most exciting start-ups working in food, retail, design and social enterprise.",
             website: "https://www.popbrixton.org/",
             facebook: "https://www.facebook.com/popbrixton/",
             booking: "#",
             twitter: "https://twitter.com/PopBrixton",
             instagram: "https://www.instagram.com/popbrixton/",
-            tripadvisor:
-                "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
+            tripadvisor: "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d8441770-Reviews-Pop_Brixton-London_England.html",
             image1: "assets/images/venue_images/pop_brixton/pop_brixton_main_square.png",
             image1Alt: "Pop Brixton Event Space artwork",
             image2: "assets/images/venue_images/pop_brixton/pop_brixton_ramen.png",
@@ -459,11 +427,9 @@ function initMap() {
         {
             // Peckham Levels
             name: "Peckham Levels",
-            address:
-                "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
+            address: "F1-F6 Peckham Town Centre Carpark, 95A Rye Ln, London, SE15 4ST",
             // Credit: text taken from https://peckhamlevels.org/
-            description:
-                "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
+            description: "There’s a whole host of things to do at Peckham Levels – from street food and bars, to a yoga studio and beauty salon.",
             website: "https://peckhamlevels.org/",
             booking: "#",
             facebook: "https://www.facebook.com/peckhamlevels/",
@@ -488,8 +454,7 @@ function initMap() {
             name: "Mondo Brewing Company",
             address: "86 Stewart's Rd, Nine Elms, London, SW8 4UG",
             // Credit: text taken from https://mondobeer.com/
-            description:
-                "Mondo Brewing is an independent brewery grounded in London, founded in 2014 by two Americans. A stone’s throw away from the iconic Battersea Power Station, their brewery and tap house are nestled just a few hundred yards south of there, waiting to be discovered by thirsty patrons.",
+            description: "Mondo Brewing is an independent brewery grounded in London, founded in 2014 by two Americans. A stone’s throw away from the iconic Battersea Power Station, their brewery and tap house are nestled just a few hundred yards south of there, waiting to be discovered by thirsty patrons.",
             website: "https://mondobeer.com/",
             booking: "#",
             facebook: "https://www.facebook.com/mondobrewing/",
@@ -508,7 +473,33 @@ function initMap() {
             ),
             type: "brewery",
         },
+        // --------------------------------------------Distilleries
+        {
+            // Haymans
+            name: "Hayman's Gin Distillery",
+            address: "8A Weir Rd, London, SW12 0GT",
+            // Credit: text taken from https://www.haymansgin.com/
+            description: "Hayman’s is based in Balham, South West London and only a few miles from the original family distillery in Chelsea. Repeatedly voted ‘London’s Favourite Gin Distillery’ by Trip Advisor – the Hayman Distillery is the home of English gin where visitors can learn about their handcrafted, award winning spirits, enjoy a variety of gin (learning and drinking) experiences and purchase directly from the on-site and Distillery shops.  As well as a hive of activities including tours, cocktail masterclasses and bespoke events, the Distillery is a vibrant and welcoming destination for Londoners and tourists alike.",
+            website: "https://www.haymansgin.com/",
+            booking: "https://www.haymansgin.com/tours-events/",
+            facebook: "https://www.facebook.com/haymansgin",
+            twitter: "https://twitter.com/haymansgin",
+            instagram: "https://www.instagram.com/haymansgin/",
+            tripadvisor: "https://www.tripadvisor.co.uk/Attraction_Review-g186338-d13796674-Reviews-Hayman_s_Distillery-London_England.html",
+            image1: "assets/images/venue_images/haymans/haymans_gin.png",
+            image1Alt: "Hayman's gin bottle and gin and tonic set out on a table",
+            image2: "assets/images/venue_images/haymans/haymans_still.png",
+            image2Alt: "Mirandas, one of the 3 Hayman's stills",
+            image3: "assets/images/venue_images/haymans/haymans_distillery.png",
+            image3Alt: "View of the Hayman's distillery",
+            position: new google.maps.LatLng(
+                51.4461758272542, 
+                -0.14383563863141202
+            ),
+            type: "distillery",
+        },
     ];
+
 
     // markerToArray function to take any venue, make a maker and push it into the specific array
     function markerToArray(venue, arrayName) {
@@ -589,7 +580,7 @@ function initMap() {
             // Venue Image 3
             venueImage3.innerHTML = `<img src="${venue.image3}" alt="${venue.image3Alt}" width="100" height="100">`;
             venueImage3.style = "border: 5px solid #063367;";
-            
+
         });
 
         // Credit: code modified from https://stackoverflow.com/questions/17775270/google-maps-zoom-in-on-marker-with-one-click-multiple-markers
@@ -896,4 +887,3 @@ function initMap() {
         map.fitBounds(bounds);
     });
 } // initMap END --------------------------------
-

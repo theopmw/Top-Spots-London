@@ -134,6 +134,8 @@ The user stories are annotated below to describe funtionality and highlight the 
     * Confirm that the Map takes up the left 1/3 of the screen, with the welcome message, hero image and legend stacked on the right 2/3.
 * Contact Page:
     * Confirm that the contact from takes up the correct portion of the screen (66%) and is easy to read and fill out.
+
+### Google Lighthouse Testing
     
 ## Bugs
 
@@ -469,5 +471,5 @@ In the code to show and hide each venue type marker, code was simplified from:
 
 This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesary to gain the functionality required and was just wasted code.
 
-### Google Lighthouse Testing
+## Known Bugs and Issues
 

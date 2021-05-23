@@ -250,7 +250,7 @@ function initMap() {
             name: "Din Tai Fung",
             address: "5 Henrietta St, Covent Garden, London, WC2E 8PS",
             description:
-                "Taiwan is know for producing somne of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling",
+                "Taiwan is know for producing some of the best dumplings in the world and it's Din Tai Fung that perfected the art. They specialise in the Xiao Long Bao (or XLB for short). The soup filled dumplings are just otherworldly! Each variation filled with a perfectly blended mix of broth paired with a fragrant filling.",
             website: "https://www.dintaifung-uk.com/",
             booking: "https://www.dintaifung-uk.com/reservations/",
             facebook: "https://www.facebook.com/dintaifunguk/",
@@ -408,7 +408,7 @@ function initMap() {
             name: "Callooh Callay",
             address: "65 Rivington St, Shoreditch, London, EC2A 3AY",
             description:
-                "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well woth a visit!",
+                "Low-lit Shoreditch bar with an interior themed on the works of Lewis Carroll, think Alice in Wonderland styling but actually executed well. There are two main bars: the main bar features relaxed lounge seating and if you delve a little deeper, you'll find a second bar 'hidden' behind a wardrobe door. You almost feel like you could be in wonderland after a few drinks! The well-curated menu features a wide range of weird and wonderful concoctions, alongside the more familiar fayre. This fun and lively bar is well worth a visit!",
             website: "https://www.calloohcallaybar.com/",
             booking: "https://www.calloohcallaybar.com/bookings/events/gifts",
             facebook: "https://www.facebook.com/CalloohCallayLondon",
@@ -896,3 +896,4 @@ function initMap() {
         map.fitBounds(bounds);
     });
 } // initMap END --------------------------------
+

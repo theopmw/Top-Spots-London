@@ -104,7 +104,12 @@ Returning user goals:
 Frequent user goals:
 
 1. As a frequent user, I would like the ability to recommend venues that I have discovered that I would like to see added to the site.
+
+![Contact Page](assets/images/readme_screenshots/returning_user_goals_contact_page.png)
+
 2. As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map and find out where they are.
+
+![Map Search Hightlighted on Venue Page](assets/images/readme_screenshots/frequent_user_goals_search.png)
     
 ### Wireframes
 

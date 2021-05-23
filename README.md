@@ -184,25 +184,37 @@ Further details can be found in the Acknolegements section below.
 
 The [Bootstrap4](https://getbootstrap.com/) framework was used to ensure the site was responsive on all device sizes.
 
-* Mobile Devices (Extra Small and Small screen size):
+Mobile Devices (Extra Small and Small screen size):
 
-    * The **Bootstrap Grid System** was utilised to stack information vertically on small device sizes to provide positive and efficient UX and allow information to be read easily by the user.
+* On mobile devices, the **Bootstrap Grid System** was utilised to stack information vertically on small device sizes to provide positive and efficient UX and allow information to be read easily by the user.
 
-    * If more pages are added to the site and the number of menu items in the navigation bar increrases, the Bootstrap navbar toggler will be utilised to improve UX by reducing the menu items to a dropdown menu format on mobile devices, placed to the right of the site logo. As there are currently only 2 pages to the site, this is not currently needed as the site can be navigated easily on mobile devices.
+* If more pages are added to the site and the number of menu items in the navigation bar increrases, the Bootstrap navbar toggler will be utilised to improve UX by reducing the menu items to a dropdown menu format on mobile devices, placed to the right of the site logo. As there are currently only 2 pages to the site, this is not currently needed as the site can be navigated easily on mobile devices.
 
-    SCREENSHOT
+![Landing Page on a Mobile](assets/images/readme_screenshots/mobile_landing_page.png)
 
-* Tablet Devices (Medium screen size):
+* On mobile devices, the **Contact Form** takes up 90% of the screen to maintain readablilty and provide a clean UX. 
 
-    * At tablet size, the **Bootstrap Grid Sytem** was used to size **Interactive Map** to 2/3 of the screen width (from left), with the **legend** taking up the final 1/3 to the right side of the device viewport.The Information box sits above the map and legend, taking up the full width of the device viewport.
+![Contact Page on a Mobile](assets/images/readme_screenshots/mobile_contact_page.png)
 
-    SCREENSHOT
+Tablet Devices (Medium screen size):
 
-* Desktop/Laptop (Large and Extra Large screen size):
+* At tablet size, the **Bootstrap Grid Sytem** was used to size **Interactive Map** to 2/3 of the screen width (from left), with the **legend** taking up the final 1/3 to the right side of the device viewport.The Information box sits above the map and legend, taking up the full width of the device viewport.
 
-    * At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen.
+![Landing Page on a Tablet](assets/images/readme_screenshots/tablet_landing_page.png)
 
-    SCREENSHOT
+* At tablet size, the **Contact Form** takes up 66% of the screen to maintain readablilty and provide a clean UX.  
+
+ ![Contact Page on a Tablet](assets/images/readme_screenshots/tablet_contact_page.png)
+
+Desktop/Laptop (Large and Extra Large screen size):
+
+* At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen.
+
+![Landing Page](assets/images/readme_screenshots/first_time_user_goals-landing_page.png)
+
+* At desktop size, the **Contact Form** takes up 66% of the screen to maintain readablilty and provide a clean UX.  
+
+![Contact Page](assets/images/readme_screenshots/returning_user_goals_contact_page.png)
 
 ## Technologies Used
 ---

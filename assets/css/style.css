@@ -355,26 +355,6 @@ body {
         padding: 0.3125rem;
     }
 
-    #name {
-        line-height: 40px;
-        text-align: center;
-    }
-
-    #address {
-        text-align: center;
-        margin-top: 0;
-    }
-
-    #description {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #website,
-    #booking {
-        text-align: center;
-    }
-
     #facebook a,
     #twitter a,
     #instagram a,
@@ -439,6 +419,27 @@ body {
     
     #hero-image {
         margin: 0 5px 0 5px;
+    }
+
+    #name {
+        padding-top:1.25rem;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    #address {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #description {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #website,
+    #booking {
+        text-align: center;
     }
 }
 

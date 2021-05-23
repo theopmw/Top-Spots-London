@@ -24,12 +24,12 @@ let venueImage3 = document.getElementById("image3");
 // let venueName = $("#name");
 
 // Empty marker arrays by venue type (Filled by markerToArray function)
-let restaurantMarkers = [];
-let pubMarkers = [];
-let cocktailBarMarkers = [];
-let streetMarkers = [];
-let breweryMarkers = [];
-let distilleryMarkers = [];
+const restaurantMarkers = [];
+const pubMarkers = [];
+const cocktailBarMarkers = [];
+const streetMarkers = [];
+const breweryMarkers = [];
+const distilleryMarkers = [];
 
 // Preloader animation (.gif)
 $(window).on("load", function () {

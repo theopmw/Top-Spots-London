@@ -142,6 +142,21 @@ The user stories are annotated below to describe funtionality and highlight the 
 * Contact Page:
     * Confirm that the contact from takes up the correct portion of the screen (66%) and is easy to read and fill out.
 
+## W3C Markup Validation
+
+The [W3C Markup Validation Service](https://validator.w3.org/) highlighted the following 3 warnings when the index.html file was run through it:
+
+![W3C Validation Warnings](assets/images/testing_screenshots/w3c_html_validation.png)
+
+Below are the methods implemented to fix the issues: 
+
+1. To resolve this warning, 2 empty columns were added on the table row in question.
+
+2. To resolve this warning, 2 empty columns were added on the table row in question.
+
+3. To resolve this warning, the semantic section tags was replaced with non-sematic div tags as a heading was not required. 
+
+
 ### Google Lighthouse Testing
     
 ## Bugs

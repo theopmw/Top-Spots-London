@@ -21,6 +21,9 @@ The user stories are annotated below to describe funtionality and highlight the 
 * As a first time user, I want to easily understand how to navigate the site in order to find what I need efficiently.
     * The use of the site is intuitive and the brief information given in the Information Box provodes all the information needed to use the site.
     * The navigation bar situated in the header, beneath the site logo is clear, intuitive and easy to understand.
+* As a first time user, I want to be able to easily interact with the map to find out information about a venue.
+    * When as a user clicks a marker, the info box is launched providing information about the chosen venue.
+    * When a user clicks another marker, the previous venue information is replaced by the information on the new venue.
 
 ### Returning User Goals
 
@@ -35,6 +38,8 @@ The user stories are annotated below to describe funtionality and highlight the 
     * For each venue, the Information Box displays a direct link to each of the venues social media channels (in the form of a Font Awesome icon). If the venue does not subscribe to one or more of the social media platforms, the icon is hidden to improve the UX and avoid displaying misleading information.
 * As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
     * For each venue, the Information Box displays a direct link to each of the venues Trip Advisor page (in the form of a Font Awesome icon). If the venue is not on Trip Advisor, the icon is hidden to improve the UX and avoid displaying misleading information.
+* As a returning user, I would like the ability to filter venues on the map by type.
+    * The map legend is dynanmic and allows users to show or hide venue markers by type or hide all markers entirely.
 
 
 ### Frequent User Goals
@@ -454,7 +459,7 @@ In the code to show and hide each venue type marker, code was simplified from:
         }
 
 ```
-    To:
+To:
 
 ```
     let pubCheckbox = document.querySelector("input[id=pub-checkbox]");

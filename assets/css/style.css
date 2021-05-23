@@ -14,14 +14,14 @@
 
 .font-raleway {
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
 }
 
 /* ---------------------------------Headings */
 
 .heading {
-    color:#063367;
-    font-size: 30px;
+    color: #063367;
+    font-size: 1.875rem;
 }
 
 /* ---------------------------------Borders*/
@@ -29,8 +29,8 @@
 /* REMOVE? */
 #legend {
     background-color: #fff;
-    border: solid 5px #063367;
-    border-radius: 10px;
+    border: solid 0.3125rem #063367;
+    border-radius: 0.625rem;
 }
 
 /* ---------------------------------------------------Loader */
@@ -100,105 +100,106 @@ html,
 body {
     margin: 0;
     padding: 0;
-    
-  }
-  body {
+
+}
+
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-  #page-content {
+}
+
+#page-content {
     flex: 1 0 auto;
-  }
-  #footer {
+}
+
+#footer {
     flex-shrink: 0;
     background-color: #063367;
     height: 5rem;
-   
-  }
+}
 
-  /* ---------------------------------Copyright */
+/* ---------------------------------Copyright */
 
-  /* Credit: code modified from https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div */
-  #copyright {
-    color:#fff;
-    font-size: 10px;
+#copyright {
+    color: #fff;
+    font-size: 0.625rem;
+    /* display: table; */
+    height: 0.3125rem;
+    /* overflow: hidden; */
+}
+
+.copyright-text {
+    /* display: table-cell; */
+    line-height: 5rem;
+}
+
+#copyright p {
+    margin: 0;
+}
+
+/* ---------------------------------Footer Socials */
+
+/* Credit: code modified from https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div */
+#footer-socials {
+    text-align: right;
+    font-size: 1.875rem;
     display: table;
     height: 5rem;
     overflow: hidden;
-  }
+}
 
-  .copyright-text {
-      display: table-cell;
-      vertical-align: middle;
-  }
-
-  #copyright p {
-      margin: 0;
-  }
-
-  /* ---------------------------------Footer Socials */
-
-  /* Credit: code modified from https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div */
-  #footer-socials {
-      text-align: right;
-      font-size: 30px;
-      display: table;
-      height: 5rem;
-      overflow: hidden;
-  }
-
-  .footer-social-links {
+.footer-social-links {
     display: table-cell;
     vertical-align: middle;
-  }
+}
 
-  .footer-social-links ul {
-      margin: 0
-  }
+.footer-social-links ul {
+    margin: 0
+}
 
-  #footer-socials a {
-      color: #fff;
-      padding: 0 1.25rem 0 1.25rem;
-  }
+#footer-socials a {
+    color: #fff;
+    padding: 0 1.25rem 0 1.25rem;
+}
 
 /* ---------------------------------------------------Map */
 
 #map {
     width: 100%;
-    
+
     height: 100%;
-    border-radius: 10px;
-    border: solid 5px #063367;
-    
+    border-radius: 0.625rem;
+    border: solid 0.3125rem #063367;
+
 }
 
 .container-map {
     /* background-color: #063367; */
     padding: 0.3125rem 0.938rem 0.3125rem 0.3125rem;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 11.875rem);
 }
 
 #pac-input {
-    margin: 8px;
+    margin: 0.5rem;
     width: 50%;
-    height: 25px;
-    border-radius: 5px;
-    border: solid 2px #063367;
+    height: 1.5625rem;
+    border-radius: 0.3125rem;
+    border: solid 0.125rem #063367;
 }
 
 /* ---------------------------------------------------Legend */
 
-#container-legend, 
+#container-legend,
 #container-info {
     padding: 0;
-    
+
 }
 
 #legend {
     color: #063367;
-    margin: 5px 5px 5px 0 ;
-    padding-left: 5px;
+    margin: 0.3125rem 0.3125rem 0.3125rem 0;
+    padding-left: 0.3125rem;
 }
 
 /* ---------------------------------------------------Venue information */
@@ -206,25 +207,25 @@ body {
 /* ---------------------------------Name */
 
 #name {
-    padding-left: 5px;
-    font-size: 40px;
-    color:#063367;
+    padding-left: 0.3125rem;
+    font-size: 2.5rem;
+    color: #063367;
 }
 
 /* ---------------------------------Address */
 
 #address {
-    color:#063367;
+    color: #063367;
     font-weight: 100;
-    padding-left: 5px;
-    margin-top: -10px;
+    padding-left: 0.3125rem;
+    /* margin-top: -0.625rem; */
 }
 
 /* ---------------------------------Description */
 
 #description {
-    color:#063367;
-    padding-left: 5px
+    color: #063367;
+    padding-left: 0.3125rem;
     /* padding: 1.25rem 0 1.25rem 0.313rem; */
 }
 
@@ -238,18 +239,18 @@ body {
 #twitter a,
 #instagram a,
 #tripadvisor a {
-    color:#063367;
-    font-size: 40px;
-    padding: 0 20px 0 20px;
+    color: #063367;
+    font-size: 2.5rem;
+    padding: 0 1.25rem 0 1.25rem;
 }
 
 /* ---------------------------------Website/Bookings */
 
 #website a,
 #booking a {
-    color:#063367;
-    font-size: 20px;
-    padding-left: 5px;
+    color: #063367;
+    font-size: 1.25rem;
+    padding-left: 0.3125rem;
 }
 
 /* ---------------------------------Venue images */
@@ -262,9 +263,9 @@ body {
 #hero-image {
     background-image: url("../images/hero/home_hero.jpg");
     height: 20rem;
-    margin: 0 5px 0 0;
-    border: 5px solid #063367;
-    border-radius: 10px;
+    margin: 0 0.3125rem 0 0;
+    border: 0.3125rem solid #063367;
+    border-radius: 0.625rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -274,15 +275,15 @@ body {
 #image2,
 #image3 {
     margin: 1.25rem 1.25rem 1.25rem 1.25rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #image1 img,
 #image2 img,
 #image3 img {
-    border-radius: 5px;
-    height: 150px;
-    width: 150px;
+    border-radius: 0.3125rem;
+    height: 9.375rem;
+    width: 9.375rem;
 }
 
 /* ---------------------------------------------------Contact Page */
@@ -301,7 +302,7 @@ body {
 }
 
 .btn-primary {
-    background-color:#063367;
+    background-color: #063367;
     color: #fff;
     border-color: #fff;
 }
@@ -312,7 +313,7 @@ body {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn:focus {
-    color:#063367 ;
+    color: #063367;
     background-color: #fff;
     border-color: #063367;
     box-shadow: none;
@@ -326,7 +327,7 @@ body {
 }
 
 #contact-form form label {
-    color:#063367;
+    color: #063367;
 }
 
 .send-button {
@@ -334,7 +335,7 @@ body {
 }
 
 .modal {
-    color:#063367
+    color: #063367
 }
 
 .modal-title {
@@ -356,19 +357,19 @@ body {
     #twitter a,
     #instagram a,
     #tripadvisor a {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     #legend {
-        margin: 5px;
+        margin: 0.3125rem;
     }
 
     #footer-socials {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     #footer-socials a {
-    padding: 0 0.625rem 0 0.625rem;
+        padding: 0 0.625rem 0 0.625rem;
     }
 
     #venue-images {
@@ -376,11 +377,11 @@ body {
     }
 
     #hero-image {
-        margin: 0 5px 0 5px;
+        margin: 0 0.3125rem 0 0.3125rem;
     }
 
     #image1 {
-        margin: 0 5px;
+        margin: 0 0.3125rem;
     }
 
     #image1 img {
@@ -405,19 +406,21 @@ body {
 /* Credit: code modified from https://stackoverflow.com/questions/25405105/break-a-table-row-into-multiple-line-responsive-layout */
 @media screen and (max-width: 991px) {
     .legend-table tr {
-        display: table;  width:100%;    
-    }               
-    .legend-table td { 
-        display: table-row; 
-    }  
-    
+        display: table;
+        width: 100%;
+    }
+
+    .legend-table td {
+        display: table-row;
+    }
+
     #hero-image {
-        margin: 0 5px 0 5px;
+        margin: 0 0.3125rem 0 0.3125rem;
     }
 
     #name {
-        padding-top:1.25rem;
-        line-height: 40px;
+        padding-top: 0.625rem;
+        line-height: 2.5rem;
         text-align: center;
     }
 
@@ -427,7 +430,7 @@ body {
     }
 
     #description {
-        padding: 10px;
+        padding: 0.625rem;
         text-align: center;
     }
 
@@ -436,4 +439,3 @@ body {
         text-align: center;
     }
 }
-

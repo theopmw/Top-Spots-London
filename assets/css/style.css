@@ -77,6 +77,10 @@
     margin-bottom: 0;
 }
 
+.logo-link:hover {
+    text-decoration: none;
+}
+
 /* ---------------------------------Navbar */
 
 .navbar {

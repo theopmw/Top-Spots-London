@@ -59,24 +59,31 @@ Something about having an easily accessible, well curated list of London food/dr
 
 ### User Stories
 
-* First time user goals:
+First time user goals:
 
-    1. As a first time user, I want to easily understand the purpose of the site.
-    2. As a first time user, I want to easily understand how to use the site.
-    3. As a first time user, I want to easily understand how to navigate the site in order to find what I need efficiently.
+1. As a first time user, I want to easily understand the purpose of the site.
+2. As a first time user, I want to easily understand how to use the site.
+3. As a first time user, I want to easily understand how to navigate the site in order to find what I need efficiently.
 
-* Returning user goals:
+![First Time user Goals Landing Page](assets/images/readme_screenshots/first_time_user_goals-landing_page.png)
 
-    1. As a returning user, I want to easily find new places I would like to visit.
-    2. As a returning user, I would like to be able to make contact with any questions or comments I have.
-    3. As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
-    6. As a returning user, I would like the abilty to easily find links to a venues social media channels.
-    7. As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
+4. As a first time user, I want to be able to easily interact with the map to find out information about a venue.
 
-* Frequent user goals:
+![First Time User Goals Venue](assets/images/readme_screenshots/first_time_user_goals_venue.png)
 
-    1. As a frequent user, I would like the ability to recommend venues that I have discovered that I would like to see added to the site.
-    4. As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map and find out where they are.
+Returning user goals:
+
+1. As a returning user, I want to easily find other places I would like to visit.
+2. As a returning user, I would like to be able to make contact with any questions or comments I have.
+3. As a returning user, I would like the ability to easily find a link to a venues website to find out more information and allow me to make a booking.
+4. As a returning user, I would like the abilty to easily find links to a venues social media channels.
+5. As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
+6. As a returning user, I would like the ability to filter venues on the map by type.
+
+Frequent user goals:
+
+1. As a frequent user, I would like the ability to recommend venues that I have discovered that I would like to see added to the site.
+2. As a frequent user, I would like to be able to search for new destinations that are not featured using the interactive map and find out where they are.
     
 ### Wireframes
 

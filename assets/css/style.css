@@ -166,8 +166,8 @@ body {
 
 #map {
     width: 100%;
-    height: calc(100vh - 190px);
     
+    height: 100%;
     border-radius: 10px;
     border: solid 5px #063367;
     
@@ -176,7 +176,7 @@ body {
 .container-map {
     /* background-color: #063367; */
     padding: 0.3125rem 0.938rem 0.3125rem 0.3125rem;
-    height: 100%;
+    height: calc(100vh - 190px);
 }
 
 #pac-input {
@@ -342,6 +342,10 @@ body {
     color:#063367;
 }
 
+.send-button {
+    text-align: center;
+}
+
 /* ---------------------------------------------------Media queries */
 
 @media screen and (max-width: 767px) {
@@ -417,10 +421,6 @@ body {
 
     #contact-info-text {
         width: 90%;
-    }
-
-    .send-button {
-        text-align: center;
     }
 
     #contact-form {

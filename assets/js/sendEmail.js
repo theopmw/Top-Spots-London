@@ -6,9 +6,19 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            console.log('SUCCESS!', response.status, response.text);
+            formReset();
         }, function(error) {
-            console.log('FAILED...', error);
+            $('.error-modal').modal('show');
         })
         return false;
 }
+
+function formReset() {
+    document.getElementById("form").reset();
+  }
+  
+  $(document).ready(function () {
+    $("form").submit(function () {
+        $('.success-modal').modal('show');
+    });
+  });

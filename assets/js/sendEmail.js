@@ -11,9 +11,9 @@ function sendMail(contactForm) {
             },
             function (error) {
                 $('.error-modal').modal('show'); // Show error modal
-            })
+            });
     return false;
-};
+}
 
 // Vertically align modal
 // Credit: code taken from https://www.tutorialrepublic.com/faq/how-to-align-bootstrap-modal-vertically-center.php

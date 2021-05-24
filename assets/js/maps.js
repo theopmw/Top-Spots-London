@@ -18,11 +18,6 @@ let venueImage1 = document.getElementById("image1");
 let venueImage2 = document.getElementById("image2");
 let venueImage3 = document.getElementById("image3");
 
-
-
-// Or use JQuery:
-// let venueName = $("#name");
-
 // Empty marker arrays by venue type (Filled by markerToArray function)
 const restaurantMarkers = [];
 const pubMarkers = [];
@@ -500,7 +495,6 @@ function initMap() {
         },
     ];
 
-
     // markerToArray function to take any venue, make a maker and push it into the specific array
     function markerToArray(venue, arrayName) {
         const marker = new google.maps.Marker({
@@ -652,17 +646,9 @@ function initMap() {
         if (this.checked) {
             // Shows any markers currently in the array
             restaurantSetMapOnAll(map);
-            // function showMarkers() {
-            //     restaurantSetMapOnAll(map);
-            // }
-            // showMarkers();
         } else {
             // Hides any markers currently in the array
             restaurantSetMapOnAll(null);
-            // function clearMarkers() {
-            //     restaurantSetMapOnAll(null);
-            // }
-            // clearMarkers();
         }
     });
 

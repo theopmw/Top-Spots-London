@@ -27,7 +27,7 @@ Through the contact page, users are encouraged to provide feeback on the site an
 
 The site has been designed to include an interactive legend to allow users to filter the venues by type, so they can quickly and efficiently search for the type of experience they seek: restaurants, pubs, streetfood markets, breweries/tap rooms or distilleries.
 
-If the site is successful and generates inteerest and traffic, there is scope to substantially increase the scale of the site, it is anticipated that the site could be expanded to include the following features:
+If the site is successful and generates interest and traffic, there is scope to substantially increase the scale of the site, it is anticipated that the site could be expanded to include the following features:
 
 * Add a way for users to save or mark the venues they like.
 * Add weekly/monthly round-ups of venues, for example "Best venues to visit this week"/"This months Top Spots".
@@ -218,7 +218,7 @@ Tablet Devices (Medium screen size):
 
 Desktop/Laptop (Large and Extra Large screen size):
 
-* At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Legend and Information box content are stacked vertically on the right 2/3 of the screen.
+* At desktop size, the **Bootstrap Grid Sytem** was used to position the **Interactive Map** to the left 1/3 of the screen. The Information box and legend are stacked vertically on the right 2/3 of the screen.
 
 ![Landing Page](assets/images/readme_screenshots/first_time_user_goals-landing_page.png)
 
@@ -262,7 +262,7 @@ Detailed testing information can be found in separate [TESTING.md](https://githu
 
 This project is managed using Git version control system.
 
-For each maningful change made, Git is used to stage, commit and push the files to the [Top Spots London repository](https://github.com/theopmw/Top-Spots-London) on GitHub.
+For each meaningful change made, Git is used to stage, commit and push the files to the [Top Spots London repository](https://github.com/theopmw/Top-Spots-London) on GitHub.
 
 For each change made, the following process was followed, a description of the different commands used throughout the project and their uses has also been provided:
 
@@ -270,11 +270,11 @@ For each change made, the following process was followed, a description of the d
     * When a file has been modified and it must be marked to go it to your next commit.
     * To check the status of your Git repository, including files that are not staged and files that are staged, the ```git status``` command is used.
     * To stage modified files, the ```add``` command is used, which can be run multiple times before a commit. 
-        * You can either specify the specific file with ```add```. For example: "```git add my_file.html```". Or add stage all files in te current directory with "```git add .```".
+        * You can either specify the specific file with ```add```. For example: "```git add my_file.html```". Or add stage all files in the current directory with "```git add .```".
         * You can also remove files from staging without losing the changes made to the file using ```reset```. For example: "```git reset my_file.html```".
 * Committing:
     * Once updates have been staged, you are ready to commit them, which will record the changes made to the repository.
-    * Run the ```commit``` command to commit staged files, a meaningfull commit message must be included to track commits. For example: "```git commit -m "Meaningful commit message" "```.
+    * Run the ```commit``` command to commit staged files, a meaningful commit message must be included to track commits. For example: "```git commit -m "Meaningful commit message" "```.
     * You can stage and commit all tracked files with a condensed message: "```git commit -am "Meaningful commit message" "```.
     * The commit message can be modified using the ```--amend``` flag. For example: "```git commit --amend -m "New commit message""```.
 * Pushing:
@@ -374,8 +374,7 @@ For futher reading on API Keys, see the Google Documentation [here](https://clou
 
 * Top Spots London uses the **inline loading** method to load the **Maps JavaScript API**:
     1. The Maps JavaScript API is loaded using a ```script``` tag, which can be added inline in your HTML file or dynamically using a separate JavaScript file.
-    2. Top Spots London uses the **Inline Loading** method.
-    3. To load the Maps JavaScript API inline in an HTML file, add a script tag as show below: 
+    2. To load the Maps JavaScript API inline in an HTML file, add a script tag as show below: 
     ```
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">

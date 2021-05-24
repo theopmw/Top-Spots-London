@@ -108,6 +108,12 @@ Frequent user goals:
     
 ### Wireframes
 
+* [Home Page - Welcome wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_home_welcome_wireframe.pdf)
+
+* [Home Page - Venue Infromation wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_home_venue_wireframe.pdf)
+
+* [Contact Page wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_contact_wireframe.pdf)
+
 ### Design
 
 #### Colour Scheme

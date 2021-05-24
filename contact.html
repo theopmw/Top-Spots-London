@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Top Spots London showcases a carefully curated selection of the best places to eat and drink in London" />
+    <meta name="description"
+        content="Top Spots London showcases a carefully curated selection of the best places to eat and drink in London" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top Spots London</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -14,11 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
         integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
         crossorigin="anonymous" />
-
     <link rel="shortcut icon" href="assets/images/favicon/top_spots.ico" type="image/x-icon" />
-
     <link rel="stylesheet" href="assets/css/style.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script>
         (function () {
@@ -29,131 +26,152 @@
 
 <body>
     <div id="page-content">
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col logo">
-                    <a href="index.html" class="logo-link">
-                        <h4 class="font-londrina-shadow logo-1 d-flex justify-content-center">
-                            TOP SPOTS
-                        </h4>
-                        <h5 class="font-londrina-solid logo-2 d-flex justify-content-center">
-                            LONDON
-                        </h5>
-                    </a>
+        <!-- Header -->
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col logo">
+                        <a href="index.html" class="logo-link">
+                            <h4 class="font-londrina-shadow logo-1 d-flex justify-content-center">
+                                TOP SPOTS
+                            </h4>
+                            <h5 class="font-londrina-solid logo-2 d-flex justify-content-center">
+                                LONDON
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-dark navbar-expand font-londrina-solid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="active nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <!-- Heading -->
+            <div id="contact-heading" class="heading font-londrina-shadow text-center">
+                <h2>Contact Us</h2>
+            </div>
+
+            <!-- Info Text -->
+            <div id="contact-info-text" class="font-raleway text-center">
+                <p>If you've got any questions or comments, we'd love to hear from you. We're also always on the lookout
+                    for exciting new venues to add to the Top Spots London site so if you've got a place you'd like to
+                    see added to the map please let us know!</p>
+                <p>Fill out the form below to get in touch or recommend a place you think is a Top Spot!</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div id="contact-form" class="font-londrina-solid">
+                <form id="form" onsubmit="return sendMail(this);">
+                    <div class="form-group">
+                        <label for="formName">Name:</label>
+                        <input type="text" name="name" class="form-control" id="formName" placeholder="Your name"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail">Email address:</label>
+                        <input type="email" name="email" class="form-control" id="formEmail" placeholder="Your Email"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="MessageTextarea">Message:</label>
+                        <textarea class="form-control" name="message" id="MessageTextarea" rows="3"
+                            placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group send-button">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal success-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header font-londrina-shadow">
+                    <h5 class="modal-title">Form successfully submitted!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body font-raleway">
+                    <p>Thank you for getting in contact with us!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-
-        <nav class="navbar navbar-dark navbar-expand font-londrina-solid">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="active nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div id="contact-heading" class="heading font-londrina-shadow text-center">
-        <h2>Contact Us</h2>
-    </div>
-    <div id="contact-info-text" class="font-raleway text-center">
-        <p>If you've got any questions or comments, we'd love to hear from you. We're also always on the lookout for exciting new venues to add to the Top Spots London site so if you've got a place you'd like to see added to the map please let us know!</p>
-        <p>Fill out the form below to get in touch or recommend a place you think is a Top Spot!</p>
     </div>
 
-    <div id="contact-form" class="font-londrina-solid">
-        <form id="form" onsubmit="return sendMail(this);">
-            <div class="form-group">
-                <label for="formName">Name:</label>
-                <input type="text" name="name" class="form-control" id="formName" placeholder="Your name" required/>
-            </div>
-            <div class="form-group">
-                <label for="formEmail">Email address:</label>
-                <input type="email" name="email" class="form-control" id="formEmail" placeholder="Your Email" required/>
-            </div>
-            <div class="form-group">
-                <label for="MessageTextarea">Message:</label>
-                <textarea class="form-control" name="message" id="MessageTextarea" rows="3" placeholder="Your Message" required></textarea>
-            </div>
-            <div class="form-group send-button">
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-        </form>
-    </div>
-</div>
-
-    <div class="modal success-modal" tabindex="-1" role="dialog">
+    <!-- Error Modal -->
+    <div class="modal error-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header font-londrina-shadow">
-              <h5 class="modal-title">Form successfully submitted!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header font-londrina-shadow">
+                    <h5 class="modal-title">Form submission error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body font-raleway">
+                    <p>Sorry! There has been an error submitting your form, please try again later.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-body font-raleway">
-              <p>Thank you for getting in contact with us!</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <div class="modal error-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header font-londrina-shadow">
-              <h5 class="modal-title">Form submission error</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body font-raleway">
-              <p>Sorry! There has been an error submitting your form, please try again later.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <!-- Footer -->
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
+                <!-- Copyright -->
                 <div id="copyright" class="col-6">
                     <div class="copyright-text">
-                    <p class="font-londrina-solid"><i class="far fa-copyright"></i> Top Spots London, All Rights Reserved</p>
+                        <p class="font-londrina-solid"><i class="far fa-copyright"></i> Top Spots London, All Rights
+                            Reserved</p>
+                    </div>
                 </div>
-                </div>
+                <!-- Socials -->
                 <div id="footer-socials" class="col-6">
                     <div class="footer-social-links">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#" target="_blank" rel="noopener">
-                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" target="_blank" rel="noopener">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" target="_blank" rel="noopener">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" rel="noopener">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" rel="noopener">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" target="_blank" rel="noopener">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

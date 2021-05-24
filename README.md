@@ -1,3 +1,7 @@
+# Top Spots London
+
+Top Spots London showcases some of the most exciting food and drink destinations across the capital. It has been designed to allow the user to interact with the site on several levels to really explore the food and drink scene in London and discover a wide range of exciting and unique places to visit.
+
 
 ![Top Spots London Logo](assets/images/logo/top_spots_london_logo.png)
 
@@ -46,9 +50,7 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-# Top Spots London
 
-Top Spots London showcases some of the most exciting food and drink destinations across the capital. It has been designed to allow the user to interact with the site on several levels to really explore the food and drink scene in London and discover a wide range of exciting and unique places to visit.
 
 ## Site Goals
 ---

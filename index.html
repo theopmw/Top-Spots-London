@@ -7,7 +7,6 @@
         content="Top Spots London showcases a carefully curated selection of the best places to eat and drink in London" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top Spots London</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -15,16 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
         integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
         crossorigin="anonymous" />
-
     <!-- Credit: Favicon created using https://favicon.io/ -->
     <link rel="shortcut icon" href="assets/images/favicon/top_spots.ico" type="image/x-icon" />
-
-
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-
+    <!-- Preloader -->
     <div id="container-loader">
         <div id="loader">
             <img src="assets/images/loader/spin_loader.gif" alt="Loader">
@@ -34,9 +30,11 @@
     </div>
 
     <div id="page-content">
+        <!-- Header -->
         <header id="header">
             <div class="container-fluid">
                 <div class="row">
+                    <!-- Logo -->
                     <div class="col logo">
                         <a href="index.html" class="logo-link">
                             <h4 class="font-londrina-shadow logo-1 d-flex justify-content-center">
@@ -47,10 +45,9 @@
                             </h5>
                         </a>
                     </div>
-                    
                 </div>
             </div>
-
+            <!-- Nav Bar -->
             <nav class="navbar navbar-dark navbar-expand font-londrina-solid">
                 <ul class="navbar-nav mx-auto">
                     <li class="active nav-item">
@@ -62,19 +59,26 @@
                 </ul>
             </nav>
         </header>
-        <div id="home-content">
 
+        <!-- Page Content -->
+        <div id="home-content">
             <div id="container-info" class="col-12 col-md-12 col-lg-8 float-right">
+                <!-- Wecome Message/Venue Name -->
                 <div id="name" class="font-londrina-shadow">
                     Welcome To Top Spots London
                 </div>
+                <!-- Venue Address -->
                 <div id="address" class="font-londrina-solid"></div>
+                <!-- Welcome Info/Venue Description -->
                 <div id="description" class="font-raleway">
                     <p>Top Spots London showcases a carefully curated selection of the best places to eat and drink in
                         London. Click on a map marker to start exploring!</p>
                 </div>
+                <!-- Venue Website -->
                 <div id="website" class="font-raleway"></div>
+                <!-- Venue Booking -->
                 <div id="booking" class="font-raleway"></div>
+                <!-- Venue Socials -->
                 <div class="container-fluid">
                     <div class="row">
                         <div id="social-links" class="col list-inline">
@@ -85,6 +89,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Hero Image/Venue Images -->
                 <div class="container-fluid">
                     <div class="row">
                         <div id="venue-images" class="col list-inline">
@@ -95,8 +100,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <!-- Map -->
             <div class="container-fluid">
                 <div class="row d-md-block">
                     <div class="col-12 col-md-8 col-lg-4 float-left container-map">
@@ -105,10 +111,7 @@
                         <div id="map"></div>
                     </div>
 
-                    <!-- Could help: https://stackoverflow.com/questions/56313990/filter-google-map-markers-with-a-checkbox -->
-
-
-
+                    <!-- Legend -->
                     <div id="container-legend" class="col-12 col-md-4 col-lg-8 float-right">
                         <div id="legend">
                             <div class="legend">
@@ -143,7 +146,8 @@
                                                         <input type="checkbox"
                                                             class="form-check-input venue-type-checkbox"
                                                             id="restaurant-checkbox" /><img
-                                                            src="assets/images/map_icons/restaurant.png" alt="restaurant map icon" />
+                                                            src="assets/images/map_icons/restaurant.png"
+                                                            alt="restaurant map icon" />
                                                         Restaurants
                                                     </label>
                                                 </div>
@@ -154,7 +158,7 @@
                                                         <input type="checkbox"
                                                             class="form-check-input venue-type-checkbox"
                                                             id="pub-checkbox" /><img
-                                                            src="assets/images/map_icons/pub.png" alt="pub map icon"/>
+                                                            src="assets/images/map_icons/pub.png" alt="pub map icon" />
                                                         Pubs
                                                     </label>
                                                 </div>
@@ -165,7 +169,8 @@
                                                         <input type="checkbox"
                                                             class="form-check-input venue-type-checkbox"
                                                             id="cocktail-bar-checkbox" /><img
-                                                            src="assets/images/map_icons/cocktail_bar.png" alt="Cocktail bar map icon"/>
+                                                            src="assets/images/map_icons/cocktail_bar.png"
+                                                            alt="Cocktail bar map icon" />
                                                         Cocktail Bars
                                                     </label>
                                                 </div>
@@ -178,7 +183,8 @@
                                                         <input type="checkbox"
                                                             class="form-check-input venue-type-checkbox"
                                                             id="street-food-market-checkbox" /><img
-                                                            src="assets/images/map_icons/street_food_market.png" alt="Street food market map icon"/>
+                                                            src="assets/images/map_icons/street_food_market.png"
+                                                            alt="Street food market map icon" />
                                                         Street Food Markets
                                                     </label>
                                                 </div>
@@ -189,7 +195,8 @@
                                                         <input type="checkbox"
                                                             class="form-check-input venue-type-checkbox"
                                                             id="brewery-checkbox" /><img
-                                                            src="assets/images/map_icons/brewery.png" alt="Brewery map icon" />
+                                                            src="assets/images/map_icons/brewery.png"
+                                                            alt="Brewery map icon" />
                                                         Breweries
                                                     </label>
                                                 </div>
@@ -200,7 +207,8 @@
                                                         <input type="checkbox"
                                                             class="form-check-input venue-type-checkbox"
                                                             id="distillery-checkbox" /><img
-                                                            src="assets/images/map_icons/distillery.png" alt="Distillery map icon" />
+                                                            src="assets/images/map_icons/distillery.png"
+                                                            alt="Distillery map icon" />
                                                         Distilleries
                                                     </label>
                                                 </div>
@@ -210,27 +218,24 @@
                                 </table>
                             </div>
                         </div>
-
-                        <!-- <div id="filter-box">
-                            <h1>Filter Boxes</h1>
-                        </div> -->
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
+                <!-- Copyright Info -->
                 <div id="copyright" class="col-6">
                     <div class="copyright-text">
                         <p class="font-londrina-solid"><i class="far fa-copyright"></i> Top Spots London, All Rights
                             Reserved</p>
                     </div>
                 </div>
+                <!-- Socials -->
                 <div id="footer-socials" class="col-6">
                     <div class="footer-social-links">
                         <ul class="list-inline">
@@ -263,7 +268,6 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8&libraries=places&v=weekly">
     </script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"

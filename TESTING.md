@@ -1,10 +1,8 @@
 # Testing
 
-**W3C  Markup Validation Service**, **W3C CSS Validation Service** and **JSHint** were used by the developer to check the website code.
+![Am I Responsive](assets/images/testing_screenshots/am_i_responsive/am_i_responsive_home.png)
 
-* [W3C Markup Validation](https://validator.w3.org/)
-* [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
-* [JSHint](https://jshint.com/)
+View the live Top Spots London site [here](https://theopmw.github.io/Top-Spots-London/).
 
 ## User Stories
 ---

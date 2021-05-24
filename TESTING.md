@@ -56,6 +56,7 @@ The user stories are annotated below to describe funtionality and highlight the 
     * The search bar at the top of the map allows users to search for locations and add a temporary marker to the map.
 
 ## Manual Testing
+---
 
 ### Page load (Preloader):
 * Load the page and confirm that the preloader is displayed and fades out after 1000ms to show the main site.
@@ -148,6 +149,7 @@ The user stories are annotated below to describe funtionality and highlight the 
     * Confirm that the contact from takes up the correct portion of the screen (66%) and is easy to read and fill out.
 
 ## Automated Testing
+---
 
 The following automated tools were used to test the project code throughout the development process:
 
@@ -198,6 +200,7 @@ sendEmail.js:
 ### Google Lighthouse Testing
     
 ## Bugs
+---
 
 ### Map search box not working correctly and breaking map functionality
 
@@ -216,7 +219,7 @@ The following errors were listed in the Chrome Developer Tools Console:
 
 
 Fix:  
-To fix this, the Google Placeslaces script had to be removed and the script for the map at the end of the HTML body had to be modified from:
+To fix this, the Google Places script had to be removed and the script for the map at the end of the HTML body had to be modified from:
 ``` 
 <script 
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD34uhPBsPD7JorzkINLXHnLaGexxT8Us8">
@@ -330,7 +333,7 @@ And ```display: none``` was added in the style.css file:
 ```
 This fixed the issue and the outcome was as expected:
 
-![Venue Images Fix](assets/images/testingscreenshots/venue_images_testing_fix.png)
+![Venue Images Fix](assets/images/testing_screenshots/venue_images_testing_fix.png)
 
 ### Venue image borders displaying on page load
 
@@ -343,7 +346,7 @@ Load the page and check whether the borders display on page load, below the welc
 Results:    
 The borders were visible as navy blue dots underneath the welcome message:
 
-![Venue Image Border Bug](assets/images/testingscreenshots/venue_image_border_bug.png)
+![Venue Image Border Bug](assets/images/testing_screenshots/venue_image_border_bug.png)
 
 Fix:
 The border was removed from the style.css file and added to the venue images in the maps.js file, to load after the venue marker is clicked:
@@ -364,7 +367,7 @@ Code snippet from maps.js once border styles were added to venue images:
 
 Screenshot:
 
-![Venue Image Border Fix](assets/images/testingscreenshots/venue_image_border_fix.png)
+![Venue Image Border Fix](assets/images/testing_screenshots/venue_image_border_fix.png)
 
 ### Map search box loading outside the map on page load then popping in:
 
@@ -378,7 +381,7 @@ Result:
 The search box loads outside the map, then pops inside it to the correct position.
 
 Screenshot of bug:
-![Map Search Box Bug](assets/images/testingscreenshots/map_search_bar_bug.png)
+![Map Search Box Bug](assets/images/testing_screenshots/map_search_bar_bug.png)
 
 Fix:   
 A page loader was added while the full site loads and add a 1 second ```setTimeout``` to ensure the page had enough time to load before the page loader fades out. The ```initMap()``` function was then moved above the ```setTimeout``` and ```fadeOut```.
@@ -394,10 +397,10 @@ $(window).on("load", function () {
 ```
 
 Screenshot of page loader fix:
-![Map Search Box Page Loader Fix](assets/images/testingscreenshots/map_search_bar_fix_1.png)
+![Map Search Box Page Loader Fix](assets/images/testing_screenshots/map_search_bar_fix_1.png)
 
 Screenshot of map after page loader fadeout:
-![Map Search Box Page Loader Fix](assets/images/testingscreenshots/map_search_bar_fix_2.png)
+![Map Search Box Page Loader Fix](assets/images/testing_screenshots/map_search_bar_fix_2.png)
 
 ### Venues with tripadvisor value "#" not displaying the set of 3 venue images correctly
 
@@ -411,10 +414,10 @@ Result:
 On venues with a tripadvisor value of "#", the images don't load correctly (they images of the previous marker clicked remain).
 
 On those venues the following is dispalyed in the console:
-![Venue Images not Displaying Console](assets/images/testingscreenshots/venue_image_display_console.png)
+![Venue Images not Displaying Console](assets/images/testing_screenshots/venue_image_display_console.png)
 
 And a screenshot of the site preview showing the wrong images:
-![Venue Images not Displaying Bug](assets/images/testingscreenshots/venue_image_display_bug.png)
+![Venue Images not Displaying Bug](assets/images/testing_screenshots/venue_image_display_bug.png)
 
 Fix:   
 The bug was being caused by the Bootstrap d-none class being applied to the wrong element.
@@ -428,7 +431,7 @@ The class had to be added to venueTripadvisor, not the venue, so by changing the
 venueTripadvisor.classList.add("d-none");
 ```
 Here is a screenshot of the fixed result:
-![Venue Images not Displaying Fix](assets/images/testingscreenshots/venue_image_display_fix.png)
+![Venue Images not Displaying Fix](assets/images/testing_screenshots/venue_image_display_fix.png)
 
 
 ### Pushing the venues into separate arrays sorted by type:
@@ -534,6 +537,7 @@ To:
 This was done in order to avoid defining a function to just immediately call it, defining the outer function was not neccesary to gain the functionality required and was just wasted code.
 
 ## Known Bugs and Issues
+---
 
 ### Map Positioning
 
@@ -545,12 +549,12 @@ This is caused by the ```container-map``` element having a height setting of ```
 
 In order to fix this, the index.html code must be refactored. The current code uses Bootstrap float classes to float the map right and the Information Box (Welcome message, Hero image, Legend on landing page and Venue information and Legend on all venue pages) left.
 
-In order to fix this problem, either Bootstrap nested rows or CSS Grid (with vthe help of Flexbox) will be implemennted.
+In order to fix this problem, either Bootstrap nested rows or CSS Grid (with the help of Flexbox) will be implemented.
 
 Due to time constraints this feature has been unable to be implemented but will be written in in future updates to improve the site responsiveness and UX. It will also allow for improved potential scalability of the site if it should grow in size and complexity in the future.
 
 
-### Console Violation - non passive event listener
+### Console Violation - non-passive event listener
 
 The Top Spots London Home page shows the following violations on my system:
 

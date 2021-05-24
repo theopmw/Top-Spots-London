@@ -4,6 +4,45 @@
 
 View the live Top Spots London site [here](https://theopmw.github.io/Top-Spots-London/).
 
+- [Testing](#testing)
+  * [User Stories](#user-stories)
+    + [First Time User Goals](#first-time-user-goals)
+    + [Returning User Goals](#returning-user-goals)
+    + [Frequent User Goals](#frequent-user-goals)
+  * [Manual Testing](#manual-testing)
+    + [Page load (Preloader):](#page-load--preloader--)
+    + [Header/Navigation Bar:](#header-navigation-bar-)
+    + [Home Page (On Page Load):](#home-page--on-page-load--)
+    + [Home Page (Interactive Elements):](#home-page--interactive-elements--)
+      - [Map markers and venue information:](#map-markers-and-venue-information-)
+      - [Legend](#legend)
+    + [Contact Page](#contact-page)
+    + [Footer](#footer)
+    + [Responsive design](#responsive-design)
+      - [Mobile devices:](#mobile-devices-)
+      - [Tablet Devices:](#tablet-devices-)
+      - [Desktop Devices:](#desktop-devices-)
+  * [Automated Testing](#automated-testing)
+    + [W3C Markup Validation (HTML)](#w3c-markup-validation--html-)
+    + [W3C CSS Validation Service (CSS)](#w3c-css-validation-service--css-)
+    + [JSHint (JavaScript)](#jshint--javascript-)
+    + [Google Lighthouse Testing](#google-lighthouse-testing)
+  * [Bugs](#bugs)
+    + [Map search box not working correctly and breaking map functionality](#map-search-box-not-working-correctly-and-breaking-map-functionality)
+    + [Map not loading on every page load](#map-not-loading-on-every-page-load)
+    + [Venue image borders not displaying correctly](#venue-image-borders-not-displaying-correctly)
+    + [Venue image borders displaying on page load](#venue-image-borders-displaying-on-page-load)
+    + [Map search box loading outside the map on page load then popping in:](#map-search-box-loading-outside-the-map-on-page-load-then-popping-in-)
+    + [Venues with tripadvisor value "#" not displaying the set of 3 venue images correctly](#venues-with-tripadvisor-value-----not-displaying-the-set-of-3-venue-images-correctly)
+    + [Pushing the venues into separate arrays sorted by type:](#pushing-the-venues-into-separate-arrays-sorted-by-type-)
+      - [Refactoring code used for the map checkbox event listener](#refactoring-code-used-for-the-map-checkbox-event-listener)
+  * [Known Bugs and Issues](#known-bugs-and-issues)
+    + [Map Positioning](#map-positioning)
+    + [Console Violation - non-passive event listener](#console-violation---non-passive-event-listener)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## User Stories
 ---
 The user stories are annotated below to describe funtionality and highlight the way in which the project fulfills the objectives set out. Relevant screenshots relating to each of the user stories below can be found in the main [README.md](https://github.com/theopmw/Top-Spots-London/blob/master/README.md) file.

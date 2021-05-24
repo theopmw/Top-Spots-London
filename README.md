@@ -44,7 +44,7 @@
     + [Acknowledgements](#acknowledgements)
     + [Disclaimer](#disclaimer)
 
-[Table of contents generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc/)
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # Top Spots London
 

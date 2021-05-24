@@ -1,6 +1,49 @@
 
 ![Top Spots London Logo](assets/images/logo/top_spots_london_logo.png)
 
+- [Top Spots London](#top-spots-london)
+  * [Site Goals](#site-goals)
+  * [UX](#ux)
+    + [Ideal User](#ideal-user)
+      - [The ideal user for this site:](#the-ideal-user-for-this-site-)
+      - [Visitors to this site are searching for:](#visitors-to-this-site-are-searching-for-)
+    + [User Stories](#user-stories)
+    + [Wireframes](#wireframes)
+    + [Design](#design)
+      - [Colour Scheme](#colour-scheme)
+      - [Typography](#typography)
+      - [Imagery](#imagery)
+  * [Features](#features)
+    + [Consistent Site Features and Components](#consistent-site-features-and-components)
+    + [Preloader](#preloader)
+    + [Home Page](#home-page)
+    + [Contact Page](#contact-page)
+    + [Responsive for Device Size](#responsive-for-device-size)
+  * [Technologies Used](#technologies-used)
+    + [Languages Used](#languages-used)
+    + [Frameworks, Libraries and Programs Used](#frameworks--libraries-and-programs-used)
+  * [Testing](#testing)
+  * [Git and Version Control](#git-and-version-control)
+  * [Deployment](#deployment)
+    + [GitHub Pages](#github-pages)
+    + [Forking the GitHub Repository](#forking-the-github-repository)
+    + [Making a Local Clone](#making-a-local-clone)
+    + [Google Maps API Deployment](#google-maps-api-deployment)
+      - [Setting up the project and generating an API Key:](#setting-up-the-project-and-generating-an-api-key-)
+      - [Restricting the API Key(s):](#restricting-the-api-key-s--)
+      - [Maps Javascript API:](#maps-javascript-api-)
+      - [Adding the Places API:](#adding-the-places-api-)
+  * [Credits](#credits)
+    + [Code](#code)
+    + [Content](#content)
+    + [Media](#media)
+      - [Icons:](#icons-)
+      - [Favicon:](#favicon-)
+      - [Imagery:](#imagery-)
+      - [Loader](#loader)
+    + [Acknowledgements](#acknowledgements)
+    + [Disclaimer](#disclaimer)
+
 [Table of contents generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc/)
 
 # Top Spots London
@@ -114,7 +157,7 @@ Frequent user goals:
 
 * [Home Page - Welcome wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_home_welcome_wireframe.pdf)
 
-* [Home Page - Venue Infromation wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_home_venue_wireframe.pdf)
+* [Home Page - Venue Information wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_home_venue_wireframe.pdf)
 
 * [Contact Page wireframe](https://github.com/theopmw/Top-Spots-London/blob/master/assets/wireframes/tsl_contact_wireframe.pdf)
 

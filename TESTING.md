@@ -39,9 +39,9 @@ The user stories are annotated below to describe funtionality and highlight the 
 * As a returning user, I would like the abilty to easily find links to a venues social media channels.
     * For each venue, the Information Box displays a direct link to each of the venues social media channels (in the form of a Font Awesome icon). If the venue does not subscribe to one or more of the social media platforms, the icon is hidden to improve the UX and avoid displaying misleading information.
 * As a returning user, I would like the ability to easily find a link to a venues Trip Advisor so I can see their scores and reviews.
-    * For each venue, the Information Box displays a direct link to each of the venues Trip Advisor page (in the form of a Font Awesome icon). If the venue is not on Trip Advisor, the icon is hidden to improve the UX and avoid displaying misleading information.
+    * For each venue, the Information Box displays a direct link to the venues Trip Advisor page (in the form of a Font Awesome icon). If the venue is not on Trip Advisor, the icon is hidden to improve the UX and avoid displaying misleading information.
 * As a returning user, I would like to see images of the venues.
-    * Each venue has a set of 3 images to give a feel of the venue. This drops to 1 image on mobile devices to provide a clean UX.
+    * Each venue has a set of 3 images to give a feel of the venue. This drops to 1 image on mobile devices to provide a clean, positive UX.
 * As a returning user, I would like the ability to filter venues on the map by type.
     * The map legend is dynanmic and allows users to show or hide venue markers by type or hide all markers entirely.
 
@@ -96,7 +96,7 @@ The user stories are annotated below to describe funtionality and highlight the 
     * The correct venue images display and have unique and appropriate alt attributes to display if the images don't load correctly.
 * Confirm that all venue information loads correctly every time a different marker is clicked.
 * Double click each marker to confirm zoom functionality works as expected.
-* Enter text in to the search bar to confirm search suggestions are presented under the bar.
+* Enter text into the search bar to confirm search suggestions are presented under the bar.
 * Complete a search or select a sugestion from the dropdown to confirm the map zooms in on the location and a marker is placed.
 * Review and confirm responsiveness and functionality on different browsers.
 * Review and confirm responsiveness and functionality on tablet and mobile devices.
@@ -114,6 +114,7 @@ The user stories are annotated below to describe funtionality and highlight the 
 * With the form inputs completely clear of information, click the send button to confirm The "Please fill in this field" alert box is displayed under the "Name" input.
 * With the form name input filled in, click the send button to confirm The "Please fill in this field" alert box is displayed under the "Email address" input.
 * With the form name and email input filled in, click the send button to confirm The "Please fill in this field" alert box is displayed under the "Message" input.
+* Confrim the correct modal is launched on form submission and the form is reset.
 * Review and confirm responsiveness and functionality on different browsers.
 * Review and confirm responsiveness and functionality on tablet and mobile devices.
 
@@ -132,7 +133,7 @@ The user stories are annotated below to describe funtionality and highlight the 
     * Confirm that the page content stacks vertically, with the Welcome Message/Information Box at the top, followed by the hero image, map and legend, and all page elements have enough space.
 
 * Contact Page:
-    * Confirm that the contact form width increases to take up a larger portion of the screen (90%) to allow the user to filol in the fields easily.
+    * Confirm that the contact form width increases to take up a larger portion of the screen (90%) to allow the user to fill in the fields easily.
 
 #### Tablet Devices:
 * Home page:
@@ -211,7 +212,7 @@ Having followed the instructions listed in the Google documentation [here](https
 
 The following errors were listed in the Chrome Developer Tools Console:
 
-![Screenshot showing console before fix](https://i.ibb.co/vZqpxLW/Screenshot-2021-04-27-at-15-01-42.png)
+![Screenshot showing console before fix](assets/images/testing_screenshots/map_search_bug.png)
 
 
 Fix:  
@@ -234,7 +235,9 @@ This meant the Google Map, Google Places API and Places Library loaded correctly
 
 Screen shot of Chrome Developer Tools Console after fix:
 
-![Screenshot showing console after fix](https://i.ibb.co/DYr9rCk/Screenshot-2021-04-27-at-15-18-46.png)
+![Screenshot showing console after fix](assets/images/testing_screenshots/map_search_fix.png)
+
+(Violations shown above are addressed in Known Bugs and Issues section)
 
 ### Map not loading on every page load
 
@@ -281,7 +284,7 @@ Load the page and click a venue map marker to load the venue information. Check 
 Results:   
 When the venue information is loaded, only the firast venue image is displayed as expected, the other 2 images display with the border behind them and not fitting the image:
 
-![Venue Images Bug](assets/images/testingscreenshots/venue_images_testing_bug.png)
+![Venue Images Bug](assets/images/testing_screenshots/venue_images_testing_bug.png)
 
 Fix:   
 The code that produced the above bug used the Bootstrap ```d-none``` class to hide the 2nd and 3rd images on small screen sizes. In order to fix this, these classes were removed and the ```display: none``` property was added to the style.css file as a media query.

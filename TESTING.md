@@ -545,5 +545,10 @@ In order to fix this problem, either Bootstrap nested rows or CSS Grid (with vth
 Due to time constraints this feature has been unable to be implemented but will be written in in future updates to improve the site responsiveness and UX. It will also allow for improved potential scalability of the site if it should grow in size and complexity in the future.
 
 
+### Console Violation - non passive event listener
 
+The Top Spots London Home page shows the following violations on my system:
 
+![Non-Passive Event Listener Violation](assets/images/testing_screenshots/non-passive_event_listener_violation.png)
+
+Having tested the site on multiple other computers, it has become apparent that these violations are only local to my system. Due to time constraints I have been unable to investigate this fully and rectify the issue but this will be actioned in the future.

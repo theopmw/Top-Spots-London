@@ -1,9 +1,8 @@
+![Top Spots London Logo](assets/images/logo/top_spots_london_logo.png)
+
 # Top Spots London
 
 Top Spots London showcases some of the most exciting food and drink destinations across the capital. It has been designed to allow the user to interact with the site on several levels to really explore the food and drink scene in London and discover a wide range of exciting and unique places to visit.
-
-
-![Top Spots London Logo](assets/images/logo/top_spots_london_logo.png)
 
 - [Top Spots London](#top-spots-london)
   * [Site Goals](#site-goals)
